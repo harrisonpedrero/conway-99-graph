@@ -1,0 +1,204 @@
+{
+  "auditRecords": [
+    {
+      "ok": true,
+      "path": "scratchpad\\root_cell_permutation_formula_audit_r229.json"
+    },
+    {
+      "ok": true,
+      "path": "scratchpad\\root_cell_triangle_orbit_audit_r229.json"
+    },
+    {
+      "ok": true,
+      "path": "scratchpad\\root_cell_triangle_rep_unit_audit_r229.json"
+    },
+    {
+      "ok": true,
+      "path": "scratchpad\\root_cell_block_rep_audit_r229.json"
+    },
+    {
+      "ok": true,
+      "path": "scratchpad\\root_cell_intersecting_coset_sat_audit_r229b.json"
+    }
+  ],
+  "checkedReps": [
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_00_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_00_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 0
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_01_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_01_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 1
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_02_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_02_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 2
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_03_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_03_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 3
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_04_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_04_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 4
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_05_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_05_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 5
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_06_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_06_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 6
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_07_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_07_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 7
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_08_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_08_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 8
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_09_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_09_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 9
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_10_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_10_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 10
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_11_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_11_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 11
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_12_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_12_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 12
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_13_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_13_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 13
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_14_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_14_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 14
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_15_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_15_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 15
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_16_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_16_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 16
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_17_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_17_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 17
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_18_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_18_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 18
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_19_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_19_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 19
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_20_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_20_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 20
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_21_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_21_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 21
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_22_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_22_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 22
+    },
+    {
+      "cnf": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_23_seqcounter_intercoset.cnf",
+      "drat": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\root_cell_triangle_rep_23_seqcounter_intercoset_ascii.drat",
+      "failures": [],
+      "ok": true,
+      "rep": 23
+    }
+  ],
+  "checker": "scratchpad\\tools\\drat-trim\\drat-trim.exe",
+  "failures": [],
+  "ok": true,
+  "reps": 24,
+  "skip_hash": false,
+  "solver": "scratchpad\\tools\\cadical\\cadical.exe 3.0.0 --no-binary",
+  "summary": "scratchpad\\root_cell_triangle_rep_cloud_r229_seq_intercoset\\r229_all24_ascii_drat_checked_summary.json",
+  "type": "root_cell_r229_certificate_audit_v1",
+  "unsatCount": 24,
+  "verifiedCount": 24
+}

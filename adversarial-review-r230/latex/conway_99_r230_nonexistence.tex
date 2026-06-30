@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{claim}{Claim}
+\newtheorem{definition}{Definition}
+
+\title{A Computational Nonexistence Certificate for the Conway 99-Graph}
+\author{R230 review bundle}
+\date{June 30, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This note documents the repository-local R230 certificate for the
+nonexistence of a strongly regular graph with parameters
+\(\operatorname{srg}(99,14,1,2)\).  The proof is computational: every
+hypothetical graph is reduced to one of 24 rooted triangle representatives,
+each representative is encoded as an exact SAT instance, and every resulting
+CNF is independently checked UNSAT by DRAT proof verification.  The certificate
+summary records 24 representatives, 24 UNSAT solver outputs, and 24 independent
+\texttt{drat-trim} verifications.
+\end{abstract}
+
+\section{Statement}
+
+\begin{theorem}[R230 certificate]
+There is no strongly regular graph with parameters
+\(\operatorname{srg}(99,14,1,2)\), assuming the correctness of the explicit
+rooted reduction and the checked DRAT certificates included in this bundle.
+\end{theorem}
+
+The qualification is the standard one for a computational proof: the
+mathematical reduction and the software artifacts are part of the certificate.
+The goal of this bundle is to make those artifacts compact enough for
+adversarial review and explicit enough for independent replay.
+
+\section{Rooted setup}
+
+Let \(G\) be a hypothetical \(\operatorname{srg}(99,14,1,2)\).  Root at a
+vertex \(v\).  Since \(\lambda=1\), the neighborhood \(N(v)\) is a perfect
+matching on 14 vertices, i.e. \(7K_2\).  The remaining 84 vertices split into
+rooted far-cell fibers according to their adjacency to the matched pairs in
+\(N(v)\).
+
+The R204 reduction uses this rooted structure to replace the far-cell free-edge
+surface by a finite permutation system.  In each disjoint rooted fiber block,
+the common-neighbor equations force a \(4\times4\) permutation matrix.  Thus the
+unknown rooted surface is represented by 105 blocks, each taking values in
+\(S_4\).  The audit
+\[
+\texttt{root\_cell\_permutation\_formula\_audit.py}
+\]
+checks the formula against direct common-neighbor counts; the recorded run has
+\(\texttt{ok=true}\) and \(\texttt{pairs\_checked=69720}\).
+
+\section{Triangle representative split}
+
+The R220 split fixes a triangle of rooted fibers and quotients by the relevant
+rooted symmetry action.  The ambient assignment space has \(24^3=13824\)
+triples of \(S_4\) permutations.  The audit
+\[
+\texttt{root\_cell\_triangle\_orbit\_audit.py}
+\]
+verifies that these triples fall into exactly 24 representatives under the
+\(D_8^3 \rtimes S_3\) action.  A second audit,
+\[
+\texttt{root\_cell\_triangle\_rep\_unit\_audit.py},
+\]
+checks Boolean unit propagation for the 24 fixed representatives.  It records
+16 unit-dead representatives and 8 survivors:
+\[
+\{0,2,7,8,10,15,21,22\}.
+\]
+
+For the final certificate, all 24 representatives were nevertheless exported
+and proof-checked, giving a uniform all-case certificate rather than a split
+between unit and non-unit cases.
+
+\section{Intersecting D8-coset cuts}
+
+R229 moves the strongest compact shadow of the intersecting-fiber table into
+the SAT proof surface.  For each of the 105 intersecting rooted fiber pairs,
+there are six common disjoint fibers.  The exact R210 table has 35280 rows per
+target.  Projecting the corresponding relative permutations to right
+\(D_8\)-cosets gives 182 allowed coset rows out of \(3^6=729\), hence 547
+forbidden coset patterns per intersecting pair.
+
+The SAT encoding introduces relative-permutation literals tied back to the
+original \(S_4\) block-entry variables, then introduces right-\(D_8\)-coset
+literals and forbids the 547 impossible coset rows.  The audit
+\[
+\texttt{root\_cell\_intersecting\_coset\_sat\_audit.py}
+\]
+checks that this SAT-side projection matches the CP-SAT source projection and
+that the relative-permutation orientation is correct over all \(24\times24\)
+block pairs.  The recorded run has:
+\[
+\texttt{ok=true},\quad
+\texttt{intersecting\_pairs=105},\quad
+\texttt{allowed\_coset\_rows=182},\quad
+\texttt{relative\_orientation\_failures=[]}.
+\]
+
+\section{SAT certificate}
+
+Each of the 24 fixed representatives is encoded as a CNF using the
+\texttt{seqcounter} cardinality encoding plus the R229 intersecting-coset cuts.
+The original checked run used CaDiCaL 3.0.0 with ASCII DRAT output:
+\[
+\texttt{cadical.exe --no-binary <cnf> <drat>}.
+\]
+Every DRAT proof was then checked independently with \texttt{drat-trim}.  The
+primary summary file is:
+\[
+\texttt{artifacts/audit\_json/r229\_all24\_ascii\_drat\_checked\_summary.json}.
+\]
+It records:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Field & Value \\
+\midrule
+\texttt{ok} & \texttt{true} \\
+\texttt{reps} & 24 \\
+\texttt{unsatCount} & 24 \\
+\texttt{verifiedCount} & 24 \\
+solver & \texttt{cadical.exe 3.0.0 --no-binary} \\
+checker & \texttt{drat-trim.exe} \\
+total CNF bytes & 273647640 \\
+total ASCII DRAT bytes & 986182510 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The pushed Git bundle includes the solver and checker logs, summary JSON, and
+hash manifest.  The full CNF and DRAT bodies are not committed because several
+DRAT files exceed GitHub's normal 100 MB file limit.  Their SHA-256 hashes and
+sizes are recorded in \texttt{artifacts/large\_artifacts\_manifest.csv}.
+
+\section{Why the conclusion follows}
+
+Suppose a graph \(G\) with the stated parameters exists.  Rooting at any vertex
+puts \(G\) into the R204 rooted \(S_4\)-block framework.  Choosing the rooted
+triangle used by R220 places the corresponding block triple into one of the 24
+verified orbit representatives.  R229's extra clauses are exact consequences of
+the intersecting-fiber common-neighbor table, so they do not remove any genuine
+graph.  Therefore \(G\) would satisfy the CNF for one of the 24 representatives.
+
+But every one of those 24 CNFs has an independently verified UNSAT certificate.
+This contradiction proves that no such \(G\) exists, subject to the correctness
+of the audited reductions and proof-checking toolchain.
+
+\section{Replay checklist}
+
+\begin{enumerate}
+\item Re-run the R204, R220, and R229 audits from the source scripts.
+\item Rebuild the 24 CNFs using
+\texttt{scripts/rebuild\_all24\_cnf.ps1}.
+\item Compare CNF hashes with
+\texttt{artifacts/large\_artifacts\_manifest.csv}.
+\item Generate ASCII DRAT proofs with CaDiCaL using \texttt{--no-binary}.
+\item Check every proof with \texttt{drat-trim}.
+\item Run \texttt{source/root\_cell\_r229\_certificate\_audit.py} against the
+replayed artifacts and confirm \texttt{ok=true}.
+\end{enumerate}
+
+\section{Limitations}
+
+This writeup is a review note, not a polished journal proof.  It is intentionally
+concrete: file names, commands, hashes, and checker outputs are part of the
+argument.  A publication-grade version should archive the exact source tree,
+tool builds, CNFs, DRATs, hashes, and a clean-machine independent replay.
+
+\end{document}

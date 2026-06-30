@@ -1,0 +1,446 @@
+{
+  "card_encoding": "direct",
+  "ok": true,
+  "records": [
+    {
+      "assigned": 2976,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 0,
+      "propagation_steps": 2976,
+      "rep": [
+        0,
+        0,
+        0
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 111,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6694,
+        6695
+      ],
+      "conflict_clause_index": 27197,
+      "index": 1,
+      "propagation_steps": 111,
+      "rep": [
+        0,
+        0,
+        1
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 2904,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 2,
+      "propagation_steps": 2904,
+      "rep": [
+        0,
+        0,
+        2
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 111,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6694,
+        6695
+      ],
+      "conflict_clause_index": 27197,
+      "index": 3,
+      "propagation_steps": 111,
+      "rep": [
+        0,
+        0,
+        3
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 95,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 4,
+      "propagation_steps": 95,
+      "rep": [
+        0,
+        0,
+        7
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 95,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 5,
+      "propagation_steps": 95,
+      "rep": [
+        0,
+        0,
+        9
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 95,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 6,
+      "propagation_steps": 95,
+      "rep": [
+        0,
+        0,
+        10
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 2832,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 7,
+      "propagation_steps": 2832,
+      "rep": [
+        0,
+        0,
+        23
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 2880,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 8,
+      "propagation_steps": 2880,
+      "rep": [
+        0,
+        1,
+        1
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 89,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6678,
+        6680
+      ],
+      "conflict_clause_index": 27081,
+      "index": 9,
+      "propagation_steps": 89,
+      "rep": [
+        0,
+        1,
+        3
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 2856,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 10,
+      "propagation_steps": 2856,
+      "rep": [
+        0,
+        1,
+        4
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 93,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6693,
+        6695
+      ],
+      "conflict_clause_index": 27196,
+      "index": 11,
+      "propagation_steps": 93,
+      "rep": [
+        0,
+        1,
+        5
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 83,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 12,
+      "propagation_steps": 83,
+      "rep": [
+        0,
+        1,
+        6
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 83,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 13,
+      "propagation_steps": 83,
+      "rep": [
+        0,
+        1,
+        8
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 83,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 14,
+      "propagation_steps": 83,
+      "rep": [
+        0,
+        1,
+        11
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 2832,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 15,
+      "propagation_steps": 2832,
+      "rep": [
+        0,
+        1,
+        17
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 83,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6604,
+        6605
+      ],
+      "conflict_clause_index": 26507,
+      "index": 16,
+      "propagation_steps": 83,
+      "rep": [
+        0,
+        1,
+        22
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 87,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6634,
+        6635
+      ],
+      "conflict_clause_index": 26737,
+      "index": 17,
+      "propagation_steps": 87,
+      "rep": [
+        1,
+        1,
+        1
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 87,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6634,
+        6635
+      ],
+      "conflict_clause_index": 26737,
+      "index": 18,
+      "propagation_steps": 87,
+      "rep": [
+        1,
+        1,
+        3
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 91,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -62237,
+        62240
+      ],
+      "conflict_clause_index": 331488,
+      "index": 19,
+      "propagation_steps": 91,
+      "rep": [
+        1,
+        1,
+        5
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 71,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -6542,
+        6545
+      ],
+      "conflict_clause_index": 26045,
+      "index": 20,
+      "propagation_steps": 71,
+      "rep": [
+        1,
+        1,
+        9
+      ],
+      "unit_conflict": true
+    },
+    {
+      "assigned": 2832,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 21,
+      "propagation_steps": 2832,
+      "rep": [
+        1,
+        1,
+        17
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 2832,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": null,
+      "conflict_clause_index": null,
+      "index": 22,
+      "propagation_steps": 2832,
+      "rep": [
+        1,
+        4,
+        5
+      ],
+      "unit_conflict": false
+    },
+    {
+      "assigned": 72,
+      "cnf_clauses": 405732,
+      "cnf_vars": 77280,
+      "conflict_clause": [
+        -8176,
+        8180
+      ],
+      "conflict_clause_index": 38579,
+      "index": 23,
+      "propagation_steps": 72,
+      "rep": [
+        1,
+        4,
+        9
+      ],
+      "unit_conflict": true
+    }
+  ],
+  "representatives": 24,
+  "survivor_count": 8,
+  "survivor_indices": [
+    0,
+    2,
+    7,
+    8,
+    10,
+    15,
+    21,
+    22
+  ],
+  "type": "root_cell_triangle_rep_unit_audit_v1",
+  "unit_conflict_count": 16,
+  "unit_conflict_indices": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    9,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    23
+  ]
+}

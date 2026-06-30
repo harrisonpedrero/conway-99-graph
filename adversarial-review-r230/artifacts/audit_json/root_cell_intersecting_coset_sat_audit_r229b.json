@@ -1,0 +1,59 @@
+{
+  "allowed_coset_rows_range": [
+    182,
+    182
+  ],
+  "coset_bucket_sizes": [
+    8,
+    8,
+    8
+  ],
+  "coset_partition_ok": true,
+  "failures": [],
+  "forbidden_coset_rows_range": [
+    547,
+    547
+  ],
+  "formula_stats": {
+    "and_terms": 60480,
+    "block_rep": "none",
+    "block_rep_unit_clauses": 0,
+    "block_vars": 1680,
+    "card_encoding": "direct",
+    "cnf_clauses": 558297,
+    "cnf_vars": 94290,
+    "equality_terms": 15120,
+    "intersecting_coset_allowed_rows": 19110,
+    "intersecting_coset_cut_clauses": 57435,
+    "intersecting_coset_cuts": true,
+    "intersecting_coset_def_clauses": 17010,
+    "intersecting_coset_exactly_one_clauses": 2520,
+    "intersecting_coset_forbidden_rows": 57435,
+    "intersecting_coset_tables": 105,
+    "intersecting_coset_vars": 1890,
+    "intersecting_rel_perm_def_clauses": 75600,
+    "intersecting_rel_perm_vars": 15120,
+    "matching_triangle_allowed_triples": 0,
+    "matching_triangle_cut_clauses": 0,
+    "matching_triangle_cuts": false,
+    "matching_triangle_forbidden_triples": 0,
+    "pair_equations": 3360,
+    "row_col_exactly_one": 840,
+    "triangle_rep_ids": [
+      0,
+      0,
+      0
+    ],
+    "triangle_rep_index": 0,
+    "triangle_rep_unit_clauses": 12
+  },
+  "full_rows_range": [
+    35280,
+    35280
+  ],
+  "intersecting_pairs": 105,
+  "ok": true,
+  "relative_orientation_failures": [],
+  "type": "root_cell_intersecting_coset_sat_audit_v1",
+  "unique_target_count": 3
+}
