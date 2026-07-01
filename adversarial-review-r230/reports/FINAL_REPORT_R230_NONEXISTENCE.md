@@ -14,7 +14,7 @@ every fixed case is independently proof-checked UNSAT.
 Primary summary:
 
 ```powershell
-scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset\r229_all24_ascii_drat_checked_summary.json
+artifacts\audit_json\r229_all24_ascii_drat_checked_summary.json
 ```
 
 Recorded result:
@@ -41,7 +41,7 @@ Every representative `0..23` has:
 Use this one-command local audit to recheck the bundle:
 
 ```powershell
-python root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
+python source\root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
 ```
 
 ## Reduction Chain
