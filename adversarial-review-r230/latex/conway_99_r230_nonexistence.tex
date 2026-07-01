@@ -141,10 +141,12 @@ total ASCII DRAT bytes & 986182510 \\
 \end{tabular}
 \end{center}
 
-The pushed Git bundle includes the solver and checker logs, summary JSON, and
-hash manifest.  The full CNF and DRAT bodies are not committed because several
-DRAT files exceed GitHub's normal 100 MB file limit.  Their SHA-256 hashes and
-sizes are recorded in \texttt{artifacts/large\_artifacts\_manifest.csv}.
+The pushed Git bundle includes the solver and checker logs, summary JSON, hash
+manifest, and the full CNF/DRAT bodies via Git LFS under
+\texttt{scratchpad/root\_cell\_triangle\_rep\_cloud\_r229\_seq\_intercoset/}.
+Several DRAT files exceed GitHub's normal 100 MB file limit, so LFS is required
+for a complete checkout.  Their SHA-256 hashes and sizes are recorded in
+\texttt{artifacts/large\_artifacts\_manifest.csv}.
 
 \section{Why the conclusion follows}
 

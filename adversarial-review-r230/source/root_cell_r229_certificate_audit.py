@@ -14,17 +14,14 @@ import json
 from pathlib import Path
 
 
-DEFAULT_SUMMARY = Path(
-    "scratchpad/root_cell_triangle_rep_cloud_r229_seq_intercoset/"
-    "r229_all24_ascii_drat_checked_summary.json"
-)
+DEFAULT_SUMMARY = Path("artifacts/audit_json/r229_all24_ascii_drat_checked_summary.json")
 
 DEFAULT_AUDITS = [
-    Path("scratchpad/root_cell_permutation_formula_audit_r229.json"),
-    Path("scratchpad/root_cell_triangle_orbit_audit_r229.json"),
-    Path("scratchpad/root_cell_triangle_rep_unit_audit_r229.json"),
-    Path("scratchpad/root_cell_block_rep_audit_r229.json"),
-    Path("scratchpad/root_cell_intersecting_coset_sat_audit_r229b.json"),
+    Path("artifacts/audit_json/root_cell_permutation_formula_audit_r229.json"),
+    Path("artifacts/audit_json/root_cell_triangle_orbit_audit_r229.json"),
+    Path("artifacts/audit_json/root_cell_triangle_rep_unit_audit_r229.json"),
+    Path("artifacts/audit_json/root_cell_block_rep_audit_r229.json"),
+    Path("artifacts/audit_json/root_cell_intersecting_coset_sat_audit_r229b.json"),
 ]
 
 

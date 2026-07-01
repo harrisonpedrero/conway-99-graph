@@ -21,6 +21,8 @@ large artifacts that must be regenerated or supplied outside normal Git history.
 - `artifacts/proof_logs/` - copied CaDiCaL and `drat-trim` logs for all 24
   representatives.
 - `artifacts/large_artifacts_manifest.csv` - CNF/DRAT paths, sizes, and hashes.
+- `scratchpad/root_cell_triangle_rep_cloud_r229_seq_intercoset/` - the 24 CNF
+  bodies and 24 ASCII DRAT proof bodies, stored via Git LFS.
 - `scripts/` - lightweight bundle checks and full replay helpers.
 
 ## Fast Bundle Check
@@ -38,8 +40,9 @@ expected markers.
 
 ## Full Adversarial Replay
 
-Normal Git history does not include the large CNF and DRAT files.  To replay the
-certificate fully:
+The large CNF and DRAT files are included via Git LFS.  After cloning, run
+`git lfs pull` if the files are present only as small pointer files.  To replay
+the certificate fully:
 
 1. Install Python dependencies:
 
@@ -47,7 +50,7 @@ certificate fully:
    python -m pip install -r requirements.txt
    ```
 
-2. Rebuild all 24 R229 CNFs:
+2. Optional independent rebuild of all 24 R229 CNFs:
 
    ```powershell
    powershell -ExecutionPolicy Bypass -File scripts/rebuild_all24_cnf.ps1
@@ -69,7 +72,6 @@ certificate fully:
 
    ```powershell
    python source/root_cell_r229_certificate_audit.py `
-     --summary artifacts/audit_json/r229_all24_ascii_drat_checked_summary.json `
      --json-out scratchpad/root_cell_r229_certificate_audit_replay.json
    ```
 
@@ -85,7 +87,7 @@ The final command should report `ok=true`, `unsatCount=24`,
 3. Confirm the R220 orbit split covers all `24^3=13824` triangle assignments.
 4. Confirm the R229 D8-coset projection audit has no orientation failures and
    matches the CP-SAT source projection.
-5. Rebuild CNFs and compare their SHA-256 hashes against
+5. Pull or rebuild CNFs and compare their SHA-256 hashes against
    `artifacts/large_artifacts_manifest.csv`.
 6. Re-run CaDiCaL with ASCII DRAT output and independently check every proof
    with `drat-trim`.
