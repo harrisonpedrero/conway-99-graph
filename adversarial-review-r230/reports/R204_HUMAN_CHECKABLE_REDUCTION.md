@@ -35,9 +35,19 @@ one matched pair.  Thus the far labels are
 (a,b), 0 <= a < b < 14, b != a^1.
 ```
 
-There are `C(14,2)-7 = 84` such labels.  Group them into fibers by the two
-matched-pair indices appearing in the label.  There are `C(7,2)=21` fibers, and
-each fiber has four vertices.
+Here is the bijection, explicitly.  If `x` is far from `r`, then `r,x` are a
+nonedge, so `x` has exactly `mu=2` neighbors in `N(r)`.  Those two local
+neighbors cannot be a matched pair: otherwise that local edge would have both
+`r` and `x` as common neighbors, contradicting `lambda=1`.  Conversely, any
+non-matched local pair `{a,b}` is a nonedge with common neighbor `r`.  Since
+`N(r)` is a matching, no local vertex is adjacent to both `a` and `b`; `mu=2`
+therefore gives a unique second common neighbor, and it is a far vertex with
+label `(a,b)`.
+Thus the 84 far vertices are in bijection with the `C(14,2)-7 = 84` allowed
+labels.
+
+Group labels into fibers by the two matched-pair indices appearing in the
+label.  There are `C(7,2)=21` fibers, and each fiber has four vertices.
 
 ## Forced Edges Inside and Between Fibers
 
@@ -52,6 +62,16 @@ For two far labels `x,y`, let `ov=|label(x) cap label(y)|`.
 - Two disjoint fibers: the edge is a genuine free variable.
 
 These are the only free edges in the rooted far graph.
+
+Equivalently, for a fiber on matched pairs `{P,Q}`, with endpoints
+`P={p0,p1}` and `Q={q0,q1}`, the four labels are `(pi,qj)`.  The forced
+same-fiber graph is the square on these four labels, joining labels with one
+equal endpoint and not joining opposite corners.  If two fibers share exactly
+one matched-pair index, every cross-pair between them is a forced nonedge.  If
+the two fiber indices are disjoint, the rooted equations leave the cross-edge
+unfixed.  This is exactly the table used by the clean-room audit's
+`forced_far_edge`: same fiber returns `1` for `ov=1` and `0` for `ov=0`;
+disjoint fibers return `None`; all other distinct-fiber pairs return `0`.
 
 ## Why Disjoint Fiber Blocks Are Permutation Matrices
 
