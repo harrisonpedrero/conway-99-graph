@@ -54,12 +54,21 @@ The R204 reduction uses this rooted structure to replace the far-cell free-edge
 surface by a finite permutation system.  In each disjoint rooted fiber block,
 the common-neighbor equations force a \(4\times4\) permutation matrix.  Thus the
 unknown rooted surface is represented by 105 blocks, each taking values in
-\(S_4\).  The audit
+\(S_4\).  The human-checkable reduction note is
 \[
-\texttt{root\_cell\_permutation\_formula\_audit.py}
+\texttt{reports/R204\_HUMAN\_CHECKABLE\_REDUCTION.md}.
 \]
-checks the formula against direct common-neighbor counts; the recorded run has
-\(\texttt{ok=true}\) and \(\texttt{pairs\_checked=69720}\).
+It gives the \(40=40\) covering argument that forces the permutation blocks and
+records the exact symbolic equation being used.  The clean-room audit
+\[
+\texttt{root\_cell\_r204\_cleanroom\_symbolic\_audit.py}
+\]
+does not import the proof generator.  It independently rebuilds the rooted
+labels and checks the symbolic reduction for every distinct-fiber far pair.  The
+recorded run has \(\texttt{ok=true}\),
+\(\texttt{symbolicPairEquationsChecked=3360}\), and
+\(\texttt{symbolicMismatches=[]}\).  The older sampled formula audit is retained
+only as a regression check.
 
 \section{Triangle representative split}
 
@@ -164,6 +173,9 @@ of the audited reductions and proof-checking toolchain.
 \section{Replay checklist}
 
 \begin{enumerate}
+\item Run \texttt{python scripts/clean\_room\_replay.py}; this executes the
+clean-room R204 symbolic audit, the metadata/log audit, and the hash/log
+certificate audit against the included CNF/DRAT bodies.
 \item Re-run the R204, R220, and R229 audits from the source scripts.
 \item Rebuild the 24 CNFs using
 \texttt{scripts/rebuild\_all24\_cnf.ps1}.

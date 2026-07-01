@@ -49,9 +49,11 @@ python root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_
 1. Root any hypothetical `srg(99,14,1,2)` at a vertex.  Its neighborhood is
    `7K2`; the 84 far vertices split into the standard rooted fibers.
 2. R204 proves the far-cell free-edge surface reduces exactly to a 105-block
-   `S4` permutation CSP.  Audit:
-   `scratchpad\root_cell_permutation_formula_audit_r229.json`, with `ok=true`
-   and `pairs_checked=69720`.
+   `S4` permutation CSP.  The primary R204 audit is now the clean-room symbolic
+   audit `artifacts\audit_json\root_cell_r204_cleanroom_symbolic_audit.json`,
+   with `ok=true`, `symbolicPairEquationsChecked=3360`, and
+   `symbolicMismatches=[]`.  The older sampled formula audit is retained as a
+   regression check, not as the load-bearing proof artifact.
 3. R220 fixes a triangle representative under the rooted symmetry action.
    `root_cell_triangle_orbit_audit.py` verifies 24 orbits covering all
    `24^3=13824` triples, and `root_cell_triangle_rep_unit_audit.py` verifies
@@ -72,23 +74,24 @@ and each representative's exact CNF is independently verified UNSAT, no
 Core reduction audits:
 
 ```powershell
-python root_cell_permutation_formula_audit.py --json-out scratchpad\root_cell_permutation_formula_audit_r229.json
-python root_cell_triangle_orbit_audit.py --json-out scratchpad\root_cell_triangle_orbit_audit_r229.json
-python root_cell_triangle_rep_unit_audit.py --json-out scratchpad\root_cell_triangle_rep_unit_audit_r229.json
-python root_cell_block_rep_audit.py --json-out scratchpad\root_cell_block_rep_audit_r229.json
-python root_cell_intersecting_coset_sat_audit.py --build-formula --json-out scratchpad\root_cell_intersecting_coset_sat_audit_r229b.json
+python source\root_cell_r204_cleanroom_symbolic_audit.py --json-out artifacts\audit_json\root_cell_r204_cleanroom_symbolic_audit.json
+python source\root_cell_permutation_formula_audit.py --json-out scratchpad\root_cell_permutation_formula_audit_r229.json
+python source\root_cell_triangle_orbit_audit.py --json-out scratchpad\root_cell_triangle_orbit_audit_r229.json
+python source\root_cell_triangle_rep_unit_audit.py --json-out scratchpad\root_cell_triangle_rep_unit_audit_r229.json
+python source\root_cell_block_rep_audit.py --json-out scratchpad\root_cell_block_rep_audit_r229.json
+python source\root_cell_intersecting_coset_sat_audit.py --build-formula --json-out scratchpad\root_cell_intersecting_coset_sat_audit_r229b.json
 ```
 
 Export the R229 suite:
 
 ```powershell
-python root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset --card-encoding seqcounter --intersecting-coset-cuts
+python source\root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset --card-encoding seqcounter --intersecting-coset-cuts
 ```
 
 Check the already generated certificate bundle:
 
 ```powershell
-python root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
+python source\root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
 ```
 
 ## R43/r=3 Cloud Route Status

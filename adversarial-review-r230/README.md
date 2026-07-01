@@ -25,6 +25,11 @@ large artifacts that must be regenerated or supplied outside normal Git history.
   bodies and 24 ASCII DRAT proof bodies, stored via Git LFS.
 - `scripts/` - lightweight bundle checks and full replay helpers.
 
+The most important human entry point is
+`reports/R204_HUMAN_CHECKABLE_REDUCTION.md`.  It spells out the rooted
+fiber/permutation reduction and points to the clean-room symbolic audit that
+checks it exactly.
+
 ## Fast Bundle Check
 
 From this folder:
@@ -37,6 +42,19 @@ This does not re-run SAT or DRAT verification.  It checks that the pushed bundle
 is internally consistent: 24 representatives, 24 UNSAT records, 24 verified
 records, all reduction audits green, and all copied solve/check logs contain the
 expected markers.
+
+## Clean-Room Replay
+
+From this folder:
+
+```powershell
+python scripts/clean_room_replay.py
+```
+
+This runs the clean-room R204 symbolic audit, the compact metadata/log check,
+and the full hash/log certificate audit against the included CNF/DRAT bodies.
+It does not need CaDiCaL, `drat-trim`, PySAT, or OR-Tools because it rechecks
+the already included certificate and the R204 symbolic reduction.
 
 ## Full Adversarial Replay
 
@@ -80,16 +98,18 @@ The final command should report `ok=true`, `unsatCount=24`,
 
 ## Review Checklist
 
-1. Inspect the R204 root-cell reduction in `source/root_cell_permutation_sat.py`
+1. Read `reports/R204_HUMAN_CHECKABLE_REDUCTION.md`.
+2. Run `python scripts/clean_room_replay.py`.
+3. Inspect the R204 root-cell reduction in `source/root_cell_permutation_sat.py`
    and `source/root_cell_cpsat.py`.
-2. Re-run the reduction-chain audits listed in
+4. Re-run the reduction-chain audits listed in
    `reports/FINAL_REPORT_R230_NONEXISTENCE.md`.
-3. Confirm the R220 orbit split covers all `24^3=13824` triangle assignments.
-4. Confirm the R229 D8-coset projection audit has no orientation failures and
+5. Confirm the R220 orbit split covers all `24^3=13824` triangle assignments.
+6. Confirm the R229 D8-coset projection audit has no orientation failures and
    matches the CP-SAT source projection.
-5. Pull or rebuild CNFs and compare their SHA-256 hashes against
+7. Pull or rebuild CNFs and compare their SHA-256 hashes against
    `artifacts/large_artifacts_manifest.csv`.
-6. Re-run CaDiCaL with ASCII DRAT output and independently check every proof
+8. Re-run CaDiCaL with ASCII DRAT output and independently check every proof
    with `drat-trim`.
 
 ## Caveat

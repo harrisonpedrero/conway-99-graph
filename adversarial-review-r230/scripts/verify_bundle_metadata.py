@@ -38,6 +38,7 @@ def main() -> int:
         failures.append(f"verifiedCount is {summary.get('verifiedCount')}, expected 24")
 
     audit_names = [
+        "root_cell_r204_cleanroom_symbolic_audit.json",
         "root_cell_permutation_formula_audit_r229.json",
         "root_cell_triangle_orbit_audit_r229.json",
         "root_cell_triangle_rep_unit_audit_r229.json",

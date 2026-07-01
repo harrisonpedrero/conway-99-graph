@@ -1,0 +1,39 @@
+{
+  "disjointBlocks": 105,
+  "farVertices": 84,
+  "fibers": 21,
+  "k": 14,
+  "ok": true,
+  "pairTypeHistogram": {
+    "disjoint_fibers": 1680,
+    "intersecting_fibers": 1680
+  },
+  "permutationBlockCertificate": {
+    "candidateVerticesPerFiber": 40,
+    "conclusion": "each disjoint 4x4 fiber block has every row and every column equal to one",
+    "coveredByFourDisjointFreeNeighbourSets": 40,
+    "disjointFibersPerFiber": [
+      10
+    ],
+    "forcedDegreeInsideFiber": [
+      2
+    ],
+    "freeDegreePerVertex": 10,
+    "ok": true
+  },
+  "rhsHistogram": {
+    "1": 840,
+    "2": 2520
+  },
+  "sameFiberFreeDisjointness": {
+    "checkedPairs": 126,
+    "failures": [],
+    "ok": true
+  },
+  "symbolicMismatches": [],
+  "symbolicPairEquationsChecked": 3360,
+  "type": "root_cell_r204_cleanroom_symbolic_audit_v1",
+  "verticesPerFiber": [
+    4
+  ]
+}

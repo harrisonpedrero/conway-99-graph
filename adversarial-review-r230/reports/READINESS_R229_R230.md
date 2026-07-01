@@ -13,7 +13,11 @@ ASCII DRAT proofs, and independent `drat-trim` verification logs.
 
 Reduction-chain audits passed:
 
-- R204 formula audit: `ok=true`, `pairs_checked=69720`.
+- R204 clean-room symbolic audit: `ok=true`,
+  `symbolicPairEquationsChecked=3360`, `symbolicMismatches=[]`, and the
+  permutation-block 40=40 certificate has `ok=true`.
+- R204 sampled formula audit, retained as regression evidence: `ok=true`,
+  `pairs_checked=69720`.
 - R220 triangle-orbit audit: `ok=true`, 24 orbits over `24^3=13824` triples.
 - R220 unit audit: `ok=true`, 16 unit-dead reps and 8 survivor reps.
 - R229 coset-SAT audit: `ok=true`, 105 intersecting pairs, 35280 full rows per

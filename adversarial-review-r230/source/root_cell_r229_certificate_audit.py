@@ -17,6 +17,7 @@ from pathlib import Path
 DEFAULT_SUMMARY = Path("artifacts/audit_json/r229_all24_ascii_drat_checked_summary.json")
 
 DEFAULT_AUDITS = [
+    Path("artifacts/audit_json/root_cell_r204_cleanroom_symbolic_audit.json"),
     Path("artifacts/audit_json/root_cell_permutation_formula_audit_r229.json"),
     Path("artifacts/audit_json/root_cell_triangle_orbit_audit_r229.json"),
     Path("artifacts/audit_json/root_cell_triangle_rep_unit_audit_r229.json"),
