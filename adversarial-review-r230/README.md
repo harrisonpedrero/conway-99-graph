@@ -13,7 +13,7 @@ large artifacts that must be regenerated or supplied outside normal Git history.
 ## Contents
 
 - `latex/` - LaTeX writeup of the reduction and certificate.
-- `reports/` - consolidated result reports and the historical superseded notes.
+- `reports/` - current result reports and human-checkable reduction notes.
 - `source/` - the Python scripts needed for the R204/R220/R229/R230 audits and
   CNF generation.
 - `artifacts/audit_json/` - audit summaries, the all-24 proof summary, and the

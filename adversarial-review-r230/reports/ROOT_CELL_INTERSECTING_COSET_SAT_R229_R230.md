@@ -36,7 +36,7 @@ representatives by SAT solving; R230 completed the proof stack by exporting all
 Command:
 
 ```powershell
-python root_cell_intersecting_coset_sat_audit.py --build-formula --json-out scratchpad\root_cell_intersecting_coset_sat_audit_r229b.json
+python source\root_cell_intersecting_coset_sat_audit.py --build-formula --json-out scratchpad\root_cell_intersecting_coset_sat_audit_r229b.json
 ```
 
 Result:
@@ -57,10 +57,10 @@ Result:
 Reduction-chain audits rerun:
 
 ```powershell
-python root_cell_permutation_formula_audit.py --json-out scratchpad\root_cell_permutation_formula_audit_r229.json
-python root_cell_triangle_orbit_audit.py --json-out scratchpad\root_cell_triangle_orbit_audit_r229.json
-python root_cell_triangle_rep_unit_audit.py --json-out scratchpad\root_cell_triangle_rep_unit_audit_r229.json
-python root_cell_block_rep_audit.py --json-out scratchpad\root_cell_block_rep_audit_r229.json
+python source\root_cell_permutation_formula_audit.py --json-out scratchpad\root_cell_permutation_formula_audit_r229.json
+python source\root_cell_triangle_orbit_audit.py --json-out scratchpad\root_cell_triangle_orbit_audit_r229.json
+python source\root_cell_triangle_rep_unit_audit.py --json-out scratchpad\root_cell_triangle_rep_unit_audit_r229.json
+python source\root_cell_block_rep_audit.py --json-out scratchpad\root_cell_block_rep_audit_r229.json
 ```
 
 All returned `ok=true`.  The R220 split remains exactly:
@@ -75,7 +75,7 @@ All returned `ok=true`.  The R220 split remains exactly:
 One-command survivor suite:
 
 ```powershell
-python root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_unsat_suite --card-encoding seqcounter --intersecting-coset-cuts --smoke-solve --solver cadical153 --time-cap 120 --no-export
+python source\root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_unsat_suite --card-encoding seqcounter --intersecting-coset-cuts --smoke-solve --solver cadical153 --time-cap 120 --no-export
 ```
 
 Elapsed `516.6051s`.  All eight R220 survivors solved `UNSAT`:
@@ -94,7 +94,7 @@ Elapsed `516.6051s`.  All eight R220 survivors solved `UNSAT`:
 Exported CNF suite:
 
 ```powershell
-python root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset --card-encoding seqcounter --intersecting-coset-cuts
+python source\root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset --card-encoding seqcounter --intersecting-coset-cuts
 ```
 
 This writes the eight current survivor CNFs plus a manifest.  For the final
@@ -109,7 +109,7 @@ were built under `scratchpad\tools`, and binary DRAT was rejected in favor of
 ASCII DRAT after direct checker testing.  The checked bundle is:
 
 ```powershell
-scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset\r229_all24_ascii_drat_checked_summary.json
+artifacts\audit_json\r229_all24_ascii_drat_checked_summary.json
 ```
 
 It reports:
@@ -132,7 +132,7 @@ Every representative `0..23` has:
 The local all-in-one certificate audit is:
 
 ```powershell
-python root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
+python source\root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
 ```
 
 ## Verdict

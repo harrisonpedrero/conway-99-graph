@@ -26,7 +26,7 @@ Reduction-chain audits passed:
 Proof certificate summary:
 
 ```powershell
-scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset\r229_all24_ascii_drat_checked_summary.json
+artifacts\audit_json\r229_all24_ascii_drat_checked_summary.json
 ```
 
 Summary fields:
@@ -49,7 +49,7 @@ checker log with `s VERIFIED`.  The eight previously live R220 reps
 Run:
 
 ```powershell
-python root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
+python source\root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
 ```
 
 This rechecks the certificate summary, all CNF/DRAT hashes, the solve/check log
