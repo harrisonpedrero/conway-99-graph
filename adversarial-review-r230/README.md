@@ -1,10 +1,16 @@
 # R230 Adversarial Review Bundle
 
-## Claim Under Review
+## Claim Under Review (corrected 2026-07-01)
 
-The repository-local R230 certificate proves, computationally, that no strongly
-regular graph `srg(99,14,1,2)` exists within the exact rooted proof-SAT reduction
-implemented here.
+The R230 certificate proves, computationally: **no `srg(99,14,1,2)` contains a
+Paley-perfect vertex** (a vertex at which all 21 rooted fibers induce a C4,
+i.e. at which the R204 forced-edge table holds). The forced-edge table is the
+*hypothesis* of this theorem, not a proved fact: its global version was refuted
+by Makhnev (1988) and Keramatipour (2023), the single-Paley(9) question is open
+(Cesarz–Woldar, Remark 5.6), and proving the table itself is equivalent to
+resolving Conway's problem. An earlier revision of this bundle overclaimed
+unconditional nonexistence; see `reports/FINAL_REPORT_R230_NONEXISTENCE.md` and
+`scratchpad/ADVERSARIAL_REVIEW_FINDINGS.md` for the correction trail.
 
 This bundle is organized for adversarial review: it separates the mathematical
 reduction, the SAT encoding, the independent proof-check evidence, and the

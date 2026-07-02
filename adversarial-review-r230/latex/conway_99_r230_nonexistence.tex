@@ -10,188 +10,232 @@
 \newtheorem{lemma}{Lemma}
 \newtheorem{claim}{Claim}
 \newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
 
-\title{A Computational Nonexistence Certificate for the Conway 99-Graph}
-\author{R230 review bundle}
-\date{June 30, 2026}
+\title{A Machine-Verified Certificate That No Conway 99-Graph\\Contains a Paley-Perfect Vertex}
+\author{R230 review bundle (claim corrected after adversarial review)}
+\date{July 1, 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This note documents the repository-local R230 certificate for the
-nonexistence of a strongly regular graph with parameters
-\(\operatorname{srg}(99,14,1,2)\).  The proof is computational: every
-hypothetical graph is reduced to one of 24 rooted triangle representatives,
-each representative is encoded as an exact SAT instance, and every resulting
-CNF is independently checked UNSAT by DRAT proof verification.  The certificate
-summary records 24 representatives, 24 UNSAT solver outputs, and 24 independent
-\texttt{drat-trim} verifications.
+This note documents the R230 computational certificate for the following
+statement: no strongly regular graph with parameters
+\(\operatorname{srg}(99,14,1,2)\) contains a \emph{Paley-perfect} vertex ---
+a vertex all 21 of whose rooted far-cell fibers induce a 4-cycle
+(equivalently, a vertex at which the R204 forced-edge table holds; equivalently,
+a vertex all of whose 21 rooted quadrilateral closures induce the Paley graph of
+order 9).  The proof is computational: any such rooted configuration reduces
+exactly to a 105-block \(S_4\) permutation system, which splits into 24
+symmetry representatives, each of which is refuted by a CNF with an
+independently checked DRAT proof of unsatisfiability.
+
+This strengthens the closest published results: Makhnev (1988) and, independently,
+Keramatipour (2023) proved that no \(\operatorname{srg}(99,14,1,2)\) satisfies
+the corresponding \emph{global} hypothesis (every vertex Paley-perfect;
+Makhnev's condition~(*), Keramatipour's ``Paley(9) pattern'').  The present
+certificate refutes a single Paley-perfect vertex.  It does \emph{not} resolve
+Conway's 99-graph problem: a hypothetical graph in which every vertex has at
+least one non-\(C_4\) fiber remains unexcluded, and the conjectured direction
+in the literature (Keramatipour, Conjecture~3.4.4) is that no Paley(9) subgraph
+occurs at all.  An earlier version of this bundle overclaimed unconditional
+nonexistence; the adversarial review that led to this correction is included in
+the repository.
 \end{abstract}
 
 \section{Statement}
 
-\begin{theorem}[R230 certificate]
-There is no strongly regular graph with parameters
-\(\operatorname{srg}(99,14,1,2)\), assuming the correctness of the explicit
-rooted reduction and the checked DRAT certificates included in this bundle.
+\begin{definition}[Rooted fibers]
+Let \(\Gamma\) be a hypothetical \(\operatorname{srg}(99,14,1,2)\) and let
+\(v\) be a vertex.  Since \(\lambda=1\), the neighborhood \(N(v)\) induces a
+perfect matching \(7K_2\); write its 7 matched pairs as
+\(\{p_0^i,p_1^i\}\), \(i=0,\dots,6\).  Every vertex at distance two from
+\(v\) (a \emph{far} vertex) is adjacent to exactly \(\mu=2\) vertices of
+\(N(v)\), never to both ends of one matched pair; hence far vertices are in
+bijection with the \(\binom{14}{2}-7=84\) non-matched local pairs.  Group the
+84 labels by the (unordered) pair of matched-pair indices they meet: this
+yields \(\binom{7}{2}=21\) \emph{fibers} of four far vertices each.
+\end{definition}
+
+\begin{definition}[Paley-perfect vertex]\label{def:pp}
+The vertex \(v\) is \emph{Paley-perfect} if every one of its 21 fibers induces
+a 4-cycle in which two far vertices are adjacent exactly when their labels
+share one local vertex.  Equivalently (Lemma~\ref{lem:equiv}), the full R204
+forced-edge table holds at \(v\): fibers are such \(C_4\)'s \emph{and} far
+vertices in fibers sharing exactly one matched-pair index are non-adjacent.
+Equivalently, for each fiber the nine vertices consisting of \(v\), the four
+local vertices met by the fiber, and the four fiber vertices induce
+\(\operatorname{srg}(9,4,1,2)\), the Paley graph of order~9.
+\end{definition}
+
+\begin{theorem}[R230 certificate, corrected claim]\label{thm:main}
+No \(\operatorname{srg}(99,14,1,2)\) contains a Paley-perfect vertex.
 \end{theorem}
 
-The qualification is the standard one for a computational proof: the
-mathematical reduction and the software artifacts are part of the certificate.
-The goal of this bundle is to make those artifacts compact enough for
-adversarial review and explicit enough for independent replay.
+The proof is a checked computation whose artifacts (CNFs, DRAT proofs, audit
+scripts, hashes, and logs) constitute the certificate; every artifact-level
+claim below was independently re-verified during an adversarial review
+(byte-identical CNF rebuilds; all 24 DRAT proofs re-checked with an
+independently compiled \texttt{drat-trim}).
 
-\section{Rooted setup}
+\begin{lemma}[Equivalences in Definition~\ref{def:pp}]\label{lem:equiv}
+At a fixed root \(v\): all 21 fibers being \(C_4\)'s (adjacent exactly on
+one shared label vertex) is equivalent to the full forced-edge table at
+\(v\), and to all 21 nine-vertex fiber closures inducing Paley(9).
+\end{lemma}
 
-Let \(G\) be a hypothetical \(\operatorname{srg}(99,14,1,2)\).  Root at a
-vertex \(v\).  Since \(\lambda=1\), the neighborhood \(N(v)\) is a perfect
-matching on 14 vertices, i.e. \(7K_2\).  The remaining 84 vertices split into
-rooted far-cell fibers according to their adjacency to the matched pairs in
-\(N(v)\).
+\begin{proof}[Proof sketch]
+\(\lambda=1\) makes every neighborhood a perfect matching, so for each local
+vertex \(\ell\) and far \(x\ni\ell\), the edge \(\{\ell,x\}\) lies in a unique
+triangle whose third vertex is the unique neighbor of \(x\) whose label
+contains \(\ell\).  If fibers are \(C_4\)'s, that slot is filled inside
+\(x\)'s own fiber, so no neighbor of \(x\) in a fiber sharing one index can
+contain \(\ell\); the \(\mu\)-count for the mate of \(\ell\) closes the
+remaining (label-disjoint) intersecting case.  Conversely, given the
+intersecting-fiber rule, the matching partner of \((\ell,w)\) within the
+\(\ell\)-family must be \((\ell,\operatorname{mate}(w))\) --- the only
+candidate not in an intersecting fiber --- which yields the \(C_4\); the
+opposite-corner non-edge follows from \(\lambda=1\) since both shared
+corners are already common neighbors.  The nine-vertex closure of a
+\(C_4\)-fiber is 4-regular on 9 vertices with \(\lambda=1,\mu=2\), which is
+uniquely Paley(9).
+\end{proof}
 
-The R204 reduction uses this rooted structure to replace the far-cell free-edge
-surface by a finite permutation system.  In each disjoint rooted fiber block,
-the common-neighbor equations force a \(4\times4\) permutation matrix.  Thus the
-unknown rooted surface is represented by 105 blocks, each taking values in
-\(S_4\).  The human-checkable reduction note is
+\section{Reduction, given a Paley-perfect root}
+
+Fix a hypothetical \(\Gamma\) with a Paley-perfect vertex \(v\) and root at
+\(v\).  The forced-edge table now holds \emph{by hypothesis}.  The R204
+reduction then shows the remaining free far-edge surface is exactly a
+105-block \(S_4\) permutation system: each far vertex has far-degree 12, two
+forced \(C_4\)-neighbors, and no neighbors in intersecting fibers, hence 10
+free neighbors in the 10 disjoint fibers; the same-fiber
+\(\lambda/\mu\)-equations force the four free-neighbor sets of a fiber to be
+pairwise disjoint, and \(4\times 10 = 40 = 10\times 4\) forces every disjoint
+\(4\times4\) fiber block to be a permutation matrix.  The compact R204
+far-pair equations are exactly the rooted SRG equations: the clean-room
+symbolic audit
 \[
-\texttt{reports/R204\_HUMAN\_CHECKABLE\_REDUCTION.md}.
+\texttt{source/root\_cell\_r204\_cleanroom\_symbolic\_audit.py}
 \]
-It gives the \(40=40\) covering argument that forces the permutation blocks and
-records the exact symbolic equation being used.  The clean-room audit
-\[
-\texttt{root\_cell\_r204\_cleanroom\_symbolic\_audit.py}
-\]
-does not import the proof generator.  It independently rebuilds the rooted
-labels and checks the symbolic reduction for every distinct-fiber far pair.  The
-recorded run has \(\texttt{ok=true}\),
-\(\texttt{symbolicPairEquationsChecked=3360}\), and
-\(\texttt{symbolicMismatches=[]}\).  The older sampled formula audit is retained
-only as a regression check.
+verifies the symbolic identity of the compact and full equations for all 3360
+distinct-fiber far pairs (\texttt{ok=true},
+\texttt{symbolicPairEquationsChecked=3360}, \texttt{symbolicMismatches=[]}).
+Note what this audit does and does not do: it verifies the algebra
+\emph{downstream} of the forced-edge table; the table itself enters
+Theorem~\ref{thm:main} as the Paley-perfect hypothesis, not as a proved fact.
 
-\section{Triangle representative split}
+\section{Triangle representative split and coset cuts}
 
-The R220 split fixes a triangle of rooted fibers and quotients by the relevant
-rooted symmetry action.  The ambient assignment space has \(24^3=13824\)
-triples of \(S_4\) permutations.  The audit
-\[
-\texttt{root\_cell\_triangle\_orbit\_audit.py}
-\]
-verifies that these triples fall into exactly 24 representatives under the
-\(D_8^3 \rtimes S_3\) action.  A second audit,
-\[
-\texttt{root\_cell\_triangle\_rep\_unit\_audit.py},
-\]
-checks Boolean unit propagation for the 24 fixed representatives.  It records
-16 unit-dead representatives and 8 survivors:
-\[
-\{0,2,7,8,10,15,21,22\}.
-\]
+The R220 split fixes a matching triple of disjoint fibers and quotients the
+\(24^3=13824\) triples of \(S_4\) blocks by the rooted symmetry action.  The
+audit \texttt{root\_cell\_triangle\_orbit\_audit.py} verifies 24 orbits whose
+sizes sum to exactly 13824 and that the abstract
+\(D_8^3\rtimes S_3\) action coincides with genuine rooted relabelings.  The
+adversarial review additionally re-ran the quotient on a second, disjoint
+matching triple \(((0,2),(1,4),(3,6))\) and obtained the identical orbit
+structure, and verified that the wreath group \(S_2\wr S_7\) acts transitively
+on each far-pair class (evidence in
+\texttt{scratchpad/second\_triangle/} and
+\texttt{scratchpad/pair\_orbit\_check/}).
 
-For the final certificate, all 24 representatives were nevertheless exported
-and proof-checked, giving a uniform all-case certificate rather than a split
-between unit and non-unit cases.
-
-\section{Intersecting D8-coset cuts}
-
-R229 moves the strongest compact shadow of the intersecting-fiber table into
-the SAT proof surface.  For each of the 105 intersecting rooted fiber pairs,
-there are six common disjoint fibers.  The exact R210 table has 35280 rows per
-target.  Projecting the corresponding relative permutations to right
-\(D_8\)-cosets gives 182 allowed coset rows out of \(3^6=729\), hence 547
-forbidden coset patterns per intersecting pair.
-
-The SAT encoding introduces relative-permutation literals tied back to the
-original \(S_4\) block-entry variables, then introduces right-\(D_8\)-coset
-literals and forbids the 547 impossible coset rows.  The audit
-\[
-\texttt{root\_cell\_intersecting\_coset\_sat\_audit.py}
-\]
-checks that this SAT-side projection matches the CP-SAT source projection and
-that the relative-permutation orientation is correct over all \(24\times24\)
-block pairs.  The recorded run has:
-\[
-\texttt{ok=true},\quad
-\texttt{intersecting\_pairs=105},\quad
-\texttt{allowed\_coset\_rows=182},\quad
-\texttt{relative\_orientation\_failures=[]}.
-\]
+R229 adds, for each of the 105 intersecting fiber pairs, the exact
+right-\(D_8\)-coset projection of the residual relative-permutation table (182
+allowed rows of \(3^6=729\)); the audit
+\texttt{root\_cell\_intersecting\_coset\_sat\_audit.py} checks the projection
+against the source relation and the relative-permutation orientation over all
+\(24\times24\) block pairs.  These cuts are exact consequences of the
+hypothesis-plus-permutation structure.
 
 \section{SAT certificate}
 
-Each of the 24 fixed representatives is encoded as a CNF using the
-\texttt{seqcounter} cardinality encoding plus the R229 intersecting-coset cuts.
-The original checked run used CaDiCaL 3.0.0 with ASCII DRAT output:
-\[
-\texttt{cadical.exe --no-binary <cnf> <drat>}.
-\]
-Every DRAT proof was then checked independently with \texttt{drat-trim}.  The
-primary summary file is:
-\[
-\texttt{artifacts/audit\_json/r229\_all24\_ascii\_drat\_checked\_summary.json}.
-\]
-It records:
+Each of the 24 representatives is encoded (seqcounter cardinality plus R229
+cuts) and refuted: CaDiCaL 3.0.0 with \texttt{--no-binary} produced ASCII DRAT
+proofs, each checked by \texttt{drat-trim}.  The summary
+\texttt{artifacts/audit\_json/r229\_all24\_ascii\_drat\_checked\_summary.json}
+records \texttt{reps=24}, \texttt{unsatCount=24}, \texttt{verifiedCount=24}
+with SHA-256 hashes; CNF and DRAT bodies ship via Git LFS.  The adversarial
+review independently rebuilt all 24 CNFs byte-identically from
+\texttt{source/root\_cell\_permutation\_sat.py} (all manifest hashes match)
+and re-verified all 24 DRAT proofs with an independently compiled
+\texttt{drat-trim}.
 
-\begin{center}
-\begin{tabular}{ll}
-\toprule
-Field & Value \\
-\midrule
-\texttt{ok} & \texttt{true} \\
-\texttt{reps} & 24 \\
-\texttt{unsatCount} & 24 \\
-\texttt{verifiedCount} & 24 \\
-solver & \texttt{cadical.exe 3.0.0 --no-binary} \\
-checker & \texttt{drat-trim.exe} \\
-total CNF bytes & 273647640 \\
-total ASCII DRAT bytes & 986182510 \\
-\bottomrule
-\end{tabular}
-\end{center}
+\medskip
+\noindent\textbf{Why Theorem~\ref{thm:main} follows.}  A graph with a
+Paley-perfect vertex yields, after rooting there, a 105-block \(S_4\)
+assignment satisfying all rooted equations; the R220 action moves its fixed
+triangle triple into one of the 24 verified representatives; the R229 clauses
+are implied, so the assignment would satisfy one of the 24 CNFs --- all of
+which are UNSAT with independently verified proofs. \qed
 
-The pushed Git bundle includes the solver and checker logs, summary JSON, hash
-manifest, and the full CNF/DRAT bodies via Git LFS under
-\texttt{scratchpad/root\_cell\_triangle\_rep\_cloud\_r229\_seq\_intercoset/}.
-Several DRAT files exceed GitHub's normal 100 MB file limit, so LFS is required
-for a complete checkout.  Their SHA-256 hashes and sizes are recorded in
-\texttt{artifacts/large\_artifacts\_manifest.csv}.
+\section{Relation to the literature}
 
-\section{Why the conclusion follows}
+The global version of the hypothesis is not new, and its refutation is not
+new either:
 
-Suppose a graph \(G\) with the stated parameters exists.  Rooting at any vertex
-puts \(G\) into the R204 rooted \(S_4\)-block framework.  Choosing the rooted
-triangle used by R220 places the corresponding block triple into one of the 24
-verified orbit representatives.  R229's extra clauses are exact consequences of
-the intersecting-fiber common-neighbor table, so they do not remove any genuine
-graph.  Therefore \(G\) would satisfy the CNF for one of the 24 representatives.
+\begin{itemize}
+\item A.~A.~Makhnev, \emph{On strongly regular graphs with \(\lambda=1\)}
+(Mat.\ Zametki \textbf{44}:5 (1988) 667--672; Math.\ Notes \textbf{44} (1988)
+847--850), defines condition~(*) and proves (Theorem~2) that no
+\(\operatorname{srg}(99,14,1,2)\) satisfying~(*) exists.  Under~(*), every
+quadrilateral generates an induced \(\operatorname{srg}(9,4,1,2)\); (*) is
+the ``every vertex Paley-perfect'' hypothesis.
+\item A.~Keramatipour, \emph{Approaching the Conway-99 problem using SAT
+solvers} (MPhil thesis, Cambridge, 2023; arXiv:2604.23037), Definition~12
+(``Paley(9) pattern'') is precisely the fiber-\(C_4\) table at every vertex;
+his Theorem~3.4.2 independently re-proves Makhnev's Theorem~2.  His
+Conjecture~3.4.4 asserts that \emph{no} Paley(9) subgraph occurs in a
+99-graph at all.
+\item P.~G.~Cesarz and A.~J.~Woldar, \emph{On the automorphism group of a
+putative Conway 99-graph} (Algebraic Combinatorics; arXiv:2308.02978), use
+the same rooted labeling; their unconditional Lemma~4.8 is the coordinate
+balance underlying the fiber analysis, and their Remark~5.6 records that even
+the existence of a single Paley(9) inside a 99-graph is unresolved.
+\item S.~Lou and M.~Murin (MIT PRIMES 2014) prove the closure lemma that
+Paley(9)-minus-an-edge forces the missing edge; R.~Reimbayev
+(arXiv:2508.03377) gives a six-vertex census whose free parameter \(n_3\)
+vanishes exactly under the global hypothesis, citing Makhnev for the fatal
+consequence.
+\end{itemize}
 
-But every one of those 24 CNFs has an independently verified UNSAT certificate.
-This contradiction proves that no such \(G\) exists, subject to the correctness
-of the audited reductions and proof-checking toolchain.
+Theorem~\ref{thm:main} strengthens Makhnev/Keramatipour from ``every vertex''
+to ``some vertex'', and machine-certifies the result.  To our knowledge the
+single-vertex statement is new; it is also an unconditional step toward
+Keramatipour's Conjecture~3.4.4, which would imply it.
 
-\section{Replay checklist}
+\section{What remains open}
+
+Conway's problem itself.  A hypothetical
+\(\operatorname{srg}(99,14,1,2)\) in which every vertex has at least one
+non-\(C_4\) fiber is untouched by this certificate.  Deciding the
+corresponding ``flip'' SAT instances in either direction would resolve the
+problem outright (UNSAT for the intersecting-fiber flips would prove the
+forced table, contradicting Theorem~\ref{thm:main}'s hypothesis class being
+empty \emph{via} Makhnev's route; SAT would exhibit the graph), which is why
+no such certificate should be expected cheaply.
+
+\section{Replay}
 
 \begin{enumerate}
-\item Run \texttt{python scripts/clean\_room\_replay.py}; this executes the
-clean-room R204 symbolic audit, the metadata/log audit, and the hash/log
-certificate audit against the included CNF/DRAT bodies.
-\item Re-run the R204, R220, and R229 audits from the source scripts.
-\item Rebuild the 24 CNFs using
-\texttt{scripts/rebuild\_all24\_cnf.ps1}.
-\item Compare CNF hashes with
+\item \texttt{python scripts/clean\_room\_replay.py} --- R204 symbolic audit,
+metadata audit, hash/log certificate audit.
+\item Re-run the R204/R220/R229 audits from \texttt{source/}.
+\item Rebuild the 24 CNFs (\texttt{scripts/rebuild\_all24\_cnf.ps1}) and
+compare SHA-256 hashes against
 \texttt{artifacts/large\_artifacts\_manifest.csv}.
-\item Generate ASCII DRAT proofs with CaDiCaL using \texttt{--no-binary}.
-\item Check every proof with \texttt{drat-trim}.
-\item Run \texttt{source/root\_cell\_r229\_certificate\_audit.py} against the
-replayed artifacts and confirm \texttt{ok=true}.
+\item Re-check every DRAT proof with an independently built
+\texttt{drat-trim}.
 \end{enumerate}
 
-\section{Limitations}
+\section{Provenance of the correction}
 
-This writeup is a review note, not a polished journal proof.  It is intentionally
-concrete: file names, commands, hashes, and checker outputs are part of the
-argument.  A publication-grade version should archive the exact source tree,
-tool builds, CNFs, DRATs, hashes, and a clean-machine independent replay.
-
+An earlier revision of this document claimed unconditional nonexistence,
+treating the forced-edge table as established.  An adversarial review
+(2026-07-01, included in the repository) identified the table as an unproven
+load-bearing assumption, reduced it to the single intersecting-fiber kernel
+lemma, and a subsequent literature search located Makhnev's and
+Keramatipour's refutations of the global hypothesis --- establishing both
+that the table cannot be ``certified'' short of resolving Conway's problem,
+and that the correct scope of the present certificate is
+Theorem~\ref{thm:main}.
 \end{document}

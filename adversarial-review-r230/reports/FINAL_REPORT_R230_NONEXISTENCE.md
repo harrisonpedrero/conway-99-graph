@@ -1,13 +1,40 @@
-# Conway 99-Graph: R230 Computational Nonexistence Certificate
+# Conway 99-Graph: R230 Certificate — Corrected Claim
 
-## Verdict
+## Verdict (corrected 2026-07-01)
 
-Within the exact rooted proof-SAT framework in this repository, there is no
-strongly regular graph `srg(99,14,1,2)`.
+**Theorem (what R230 actually proves).** No strongly regular graph
+`srg(99,14,1,2)` contains a *Paley-perfect* vertex — a vertex at which all 21
+rooted far-cell fibers induce a C4 (equivalently: at which the R204 forced-edge
+table holds; equivalently: whose 21 rooted 9-vertex fiber closures all induce
+the Paley graph of order 9).
 
-This is a checked computational nonexistence certificate, not a timeout or a
-heuristic search result.  The case split covers all rooted configurations, and
-every fixed case is independently proof-checked UNSAT.
+This is a checked computational certificate of that statement: the case split
+covers all rooted configurations under the stated hypothesis, and every fixed
+case is independently proof-checked UNSAT.
+
+**What R230 does NOT prove:** unconditional nonexistence of `srg(99,14,1,2)`.
+An earlier revision of this report overclaimed that. The forced-edge table is a
+*hypothesis*, not a theorem: an adversarial review (see
+`ADVERSARIAL_REVIEW_FINDINGS.md`) showed it is unproven, and a literature
+search then showed (a) its global version was already refuted by Makhnev in
+1988 and independently by Keramatipour in 2023, and (b) the conjectured truth
+(Keramatipour, Conjecture 3.4.4) is that *no* fiber is ever a C4 — the
+opposite direction. Proving the table (the "kernel lemma") in either direction
+is equivalent to resolving Conway's problem itself.
+
+## Relation to published work
+
+- **Makhnev 1988** (Mat. Zametki 44:5, Theorem 2): no `srg(99,14,1,2)`
+  satisfies condition (\*) — the *every-vertex* Paley-perfect hypothesis.
+- **Keramatipour 2023** (Cambridge MPhil / arXiv:2604.23037, Theorem 3.4.2):
+  independent modern re-proof ("Paley(9) pattern").
+- **Cesarz–Woldar** (Algebraic Combinatorics, arXiv:2308.02978, Remark 5.6):
+  even a single Paley(9) inside a 99-graph is unresolved.
+- **R230 (this bundle)**: no *single* Paley-perfect vertex — strictly stronger
+  than the published every-vertex results, machine-certified with DRAT proofs.
+  To our knowledge the single-vertex statement is new.
+
+Source PDFs are cached under `../../literature/`.
 
 ## Certificate Bundle
 
@@ -28,46 +55,37 @@ Recorded result:
 - total CNF bytes: `273647640`
 - total ASCII DRAT bytes: `986182510`
 
-Every representative `0..23` has:
+Every representative `0..23` has an exact R229 CNF, an ASCII DRAT proof, a
+CaDiCaL log containing `s UNSATISFIABLE`, a `drat-trim` log containing
+`s VERIFIED`, and SHA-256 hashes recorded in the summary.
 
-- an exact R229 CNF:
-  `scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset\root_cell_triangle_rep_XX_seqcounter_intercoset.cnf`
-- an ASCII DRAT proof:
-  `scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset\root_cell_triangle_rep_XX_seqcounter_intercoset_ascii.drat`
-- a CaDiCaL log containing `s UNSATISFIABLE`
-- a `drat-trim` log containing `s VERIFIED`
-- CNF and DRAT SHA-256 hashes recorded in the summary.
+Independent re-verification (adversarial review, 2026-07-01):
 
-Use this one-command local audit to recheck the bundle:
+- all 24 CNFs rebuild **byte-identical** from
+  `source/root_cell_permutation_sat.py` (manifest SHA-256 match, 24 distinct);
+- all 24 DRAT proofs re-checked `s VERIFIED` with an independently compiled
+  `drat-trim`;
+- R220 orbit split re-verified (24 orbits, sizes sum exactly 13824), and
+  reproduced on a second disjoint fiber triple `((0,2),(1,4),(3,6))`;
+- `S2 wr S7` verified transitive on each far-pair class
+  (`scratchpad/pair_orbit_check/`).
 
-```powershell
-python source\root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
-```
+## Reduction Chain (hypothesis-first)
 
-## Reduction Chain
+1. Assume a hypothetical `srg(99,14,1,2)` has a Paley-perfect vertex; root
+   there. The neighborhood is `7K2`; the 84 far vertices split into 21 rooted
+   fibers, and the forced-edge table holds **by hypothesis**.
+2. R204: the free far-edge surface reduces exactly to a 105-block `S4`
+   permutation CSP. The clean-room symbolic audit
+   (`root_cell_r204_cleanroom_symbolic_audit.json`, `ok=true`,
+   `symbolicPairEquationsChecked=3360`, `symbolicMismatches=[]`) verifies the
+   algebra downstream of the hypothesis.
+3. R220: 24 orbit representatives cover all `24^3=13824` triangle assignments.
+4. R229: exact intersecting-fiber D8-coset cuts
+   (`root_cell_intersecting_coset_sat_audit_r229b.json`, `ok=true`).
+5. R230: all 24 CNFs UNSAT with independent DRAT verification.
 
-1. Root any hypothetical `srg(99,14,1,2)` at a vertex.  Its neighborhood is
-   `7K2`; the 84 far vertices split into the standard rooted fibers.
-2. R204 proves the far-cell free-edge surface reduces exactly to a 105-block
-   `S4` permutation CSP.  The primary R204 audit is now the clean-room symbolic
-   audit `artifacts\audit_json\root_cell_r204_cleanroom_symbolic_audit.json`,
-   with `ok=true`, `symbolicPairEquationsChecked=3360`, and
-   `symbolicMismatches=[]`.  The older sampled formula audit is retained as a
-   regression check, not as the load-bearing proof artifact.
-3. R220 fixes a triangle representative under the rooted symmetry action.
-   `root_cell_triangle_orbit_audit.py` verifies 24 orbits covering all
-   `24^3=13824` triples, and `root_cell_triangle_rep_unit_audit.py` verifies
-   the 16 unit-dead / 8 live split.
-4. R229 adds the exact intersecting-fiber D8-coset shadow in CNF.  Audit:
-   `scratchpad\root_cell_intersecting_coset_sat_audit_r229b.json`, with
-   `ok=true`, 105 intersecting pairs, 35280 full rows per target, 182 allowed
-   coset rows out of 729, and no relative-orientation failures.
-5. R230 solves and checks all 24 fixed-representative CNFs as UNSAT with
-   independent DRAT verification.
-
-Since every hypothetical graph must appear in one of the 24 R220 representatives,
-and each representative's exact CNF is independently verified UNSAT, no
-`srg(99,14,1,2)` exists within this reduction.
+Hence no graph with a Paley-perfect vertex exists.
 
 ## Reproduction Commands
 
@@ -88,21 +106,23 @@ Export the R229 suite:
 python source\root_cell_triangle_rep_cloud_suite.py --out-dir scratchpad\root_cell_triangle_rep_cloud_r229_seq_intercoset --card-encoding seqcounter --intersecting-coset-cuts
 ```
 
-Check the already generated certificate bundle:
+Check the certificate bundle:
 
 ```powershell
 python source\root_cell_r229_certificate_audit.py --json-out scratchpad\root_cell_r229_certificate_audit_current.json
 ```
 
-## R43/r=3 Cloud Route Status
+## What Remains Open
 
-The r=3 / 45-vertex star-complement route remains validated and one-command
-runnable through `s3_cloud_r3_stagea.py`.  It is now a fallback and independent
-cost cross-check, not the decisive line.  The decisive certificate is R230.
+Conway's problem. A hypothetical graph in which **every** vertex has at least
+one non-C4 fiber is untouched by this certificate. The corresponding "flip"
+SAT instances are each equivalent to the open problem: UNSAT would prove the
+forced table (and hence, with this certificate, nonexistence); SAT would
+construct the graph. Treat any such computation as a moonshot, not a gap-fill.
 
 ## Caveat
 
-This is a repository-local computational proof.  For publication-grade use,
-archive the source tree, exact CNFs, exact DRATs, SHA-256 hashes, CaDiCaL and
-`drat-trim` binaries/build instructions, and replay the full certificate on a
-clean independent machine.
+This is a repository-local computational proof of the corrected claim. For
+publication-grade use, archive the source tree, exact CNFs/DRATs, hashes,
+solver/checker builds, and replay on a clean independent machine
+(see `../../CLEAN_MACHINE_PLAN.md`).

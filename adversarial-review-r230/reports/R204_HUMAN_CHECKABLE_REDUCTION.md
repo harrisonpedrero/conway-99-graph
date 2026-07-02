@@ -1,5 +1,14 @@
 # R204 Human-Checkable Reduction Note
 
+> **Scope correction (2026-07-01).** The forced-edge table described below is a
+> *hypothesis* (the "Paley-perfect vertex" hypothesis), not a proved consequence
+> of the SRG axioms. Its every-vertex version was refuted by Makhnev (1988,
+> Thm 2) and Keramatipour (2023, Thm 3.4.2); proving or refuting the table
+> itself is equivalent to resolving Conway's problem. R230 therefore certifies:
+> *no `srg(99,14,1,2)` has a Paley-perfect vertex.* Everything below is the
+> (verified) reduction downstream of that hypothesis. See
+> `FINAL_REPORT_R230_NONEXISTENCE.md` and `../../literature/`.
+
 ## Purpose
 
 This note isolates the load-bearing R204 step in the R230 certificate:
