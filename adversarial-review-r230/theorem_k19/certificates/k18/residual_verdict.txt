@@ -1,0 +1,6 @@
+residual (index-triangle {0,1},{0,2},{1,2}): base+72good+3 nonC4-clauses
+s UNSATISFIABLE
+c total real time since initialization:           16.73    seconds
+drat-trim: s VERIFIED (backward mode, 12.73s, 205MB proof, 5219/3109167 clauses in core, 1268 lemmas in core, 0 RAT lemmas)
+CMS+XOR independent: s UNSATISFIABLE
+vacuity control base+72good-only: UNKNOWN(timeout 900s) => non-vacuous

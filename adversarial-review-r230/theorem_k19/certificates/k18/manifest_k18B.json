@@ -1,0 +1,1476 @@
+{
+  "base": {
+    "base_body_sha256": "46220eba308b70fa448bada3a1a7f7939c197d85a99db71e62e3fda061dc6602",
+    "base_clause_count": 3109092,
+    "builder": "scratchpad.honest_flip_cnf.build_base_cnf()",
+    "edge_var_count": 3486,
+    "extra_clause_count": 75,
+    "labels": "source.root_cell_cpsat.make_labels(14)",
+    "total_clause_count": 3109167,
+    "vars": 1375458
+  },
+  "exceptional_triple": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "file": "k18B_residual_triangle.cnf",
+  "good_unit_count": 72,
+  "good_units": [
+    {
+      "edge": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "literal": 327,
+      "polarity": "positive",
+      "var": 327
+    },
+    {
+      "edge": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "literal": 338,
+      "polarity": "positive",
+      "var": 338
+    },
+    {
+      "edge": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "literal": 417,
+      "polarity": "positive",
+      "var": 417
+    },
+    {
+      "edge": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "literal": 1209,
+      "polarity": "positive",
+      "var": 1209
+    },
+    {
+      "edge": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ]
+      ],
+      "literal": 484,
+      "polarity": "positive",
+      "var": 484
+    },
+    {
+      "edge": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "literal": 495,
+      "polarity": "positive",
+      "var": 495
+    },
+    {
+      "edge": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "literal": 572,
+      "polarity": "positive",
+      "var": 572
+    },
+    {
+      "edge": [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "literal": 1342,
+      "polarity": "positive",
+      "var": 1342
+    },
+    {
+      "edge": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "literal": 637,
+      "polarity": "positive",
+      "var": 637
+    },
+    {
+      "edge": [
+        [
+          0,
+          10
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "literal": 648,
+      "polarity": "positive",
+      "var": 648
+    },
+    {
+      "edge": [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "literal": 723,
+      "polarity": "positive",
+      "var": 723
+    },
+    {
+      "edge": [
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "literal": 1471,
+      "polarity": "positive",
+      "var": 1471
+    },
+    {
+      "edge": [
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          13
+        ]
+      ],
+      "literal": 786,
+      "polarity": "positive",
+      "var": 786
+    },
+    {
+      "edge": [
+        [
+          0,
+          12
+        ],
+        [
+          1,
+          12
+        ]
+      ],
+      "literal": 797,
+      "polarity": "positive",
+      "var": 797
+    },
+    {
+      "edge": [
+        [
+          0,
+          13
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "literal": 870,
+      "polarity": "positive",
+      "var": 870
+    },
+    {
+      "edge": [
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "literal": 1596,
+      "polarity": "positive",
+      "var": 1596
+    },
+    {
+      "edge": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "literal": 1834,
+      "polarity": "positive",
+      "var": 1834
+    },
+    {
+      "edge": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "literal": 1843,
+      "polarity": "positive",
+      "var": 1843
+    },
+    {
+      "edge": [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "literal": 1900,
+      "polarity": "positive",
+      "var": 1900
+    },
+    {
+      "edge": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "literal": 2359,
+      "polarity": "positive",
+      "var": 2359
+    },
+    {
+      "edge": [
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      "literal": 1947,
+      "polarity": "positive",
+      "var": 1947
+    },
+    {
+      "edge": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "literal": 1956,
+      "polarity": "positive",
+      "var": 1956
+    },
+    {
+      "edge": [
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "literal": 2011,
+      "polarity": "positive",
+      "var": 2011
+    },
+    {
+      "edge": [
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "literal": 2452,
+      "polarity": "positive",
+      "var": 2452
+    },
+    {
+      "edge": [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "literal": 2056,
+      "polarity": "positive",
+      "var": 2056
+    },
+    {
+      "edge": [
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      "literal": 2065,
+      "polarity": "positive",
+      "var": 2065
+    },
+    {
+      "edge": [
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "literal": 2118,
+      "polarity": "positive",
+      "var": 2118
+    },
+    {
+      "edge": [
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "literal": 2541,
+      "polarity": "positive",
+      "var": 2541
+    },
+    {
+      "edge": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          13
+        ]
+      ],
+      "literal": 2161,
+      "polarity": "positive",
+      "var": 2161
+    },
+    {
+      "edge": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ]
+      ],
+      "literal": 2170,
+      "polarity": "positive",
+      "var": 2170
+    },
+    {
+      "edge": [
+        [
+          2,
+          13
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "literal": 2221,
+      "polarity": "positive",
+      "var": 2221
+    },
+    {
+      "edge": [
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "literal": 2626,
+      "polarity": "positive",
+      "var": 2626
+    },
+    {
+      "edge": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "literal": 2707,
+      "polarity": "positive",
+      "var": 2707
+    },
+    {
+      "edge": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "literal": 2714,
+      "polarity": "positive",
+      "var": 2714
+    },
+    {
+      "edge": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "literal": 2753,
+      "polarity": "positive",
+      "var": 2753
+    },
+    {
+      "edge": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "literal": 2991,
+      "polarity": "positive",
+      "var": 2991
+    },
+    {
+      "edge": [
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "literal": 2784,
+      "polarity": "positive",
+      "var": 2784
+    },
+    {
+      "edge": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "literal": 2791,
+      "polarity": "positive",
+      "var": 2791
+    },
+    {
+      "edge": [
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "literal": 2828,
+      "polarity": "positive",
+      "var": 2828
+    },
+    {
+      "edge": [
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "literal": 3052,
+      "polarity": "positive",
+      "var": 3052
+    },
+    {
+      "edge": [
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      "literal": 2857,
+      "polarity": "positive",
+      "var": 2857
+    },
+    {
+      "edge": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "literal": 2864,
+      "polarity": "positive",
+      "var": 2864
+    },
+    {
+      "edge": [
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "literal": 2899,
+      "polarity": "positive",
+      "var": 2899
+    },
+    {
+      "edge": [
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "literal": 3109,
+      "polarity": "positive",
+      "var": 3109
+    },
+    {
+      "edge": [
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ]
+      ],
+      "literal": 2926,
+      "polarity": "positive",
+      "var": 2926
+    },
+    {
+      "edge": [
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      "literal": 2933,
+      "polarity": "positive",
+      "var": 2933
+    },
+    {
+      "edge": [
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          13
+        ]
+      ],
+      "literal": 2966,
+      "polarity": "positive",
+      "var": 2966
+    },
+    {
+      "edge": [
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ]
+      ],
+      "literal": 3162,
+      "polarity": "positive",
+      "var": 3162
+    },
+    {
+      "edge": [
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "literal": 3211,
+      "polarity": "positive",
+      "var": 3211
+    },
+    {
+      "edge": [
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "literal": 3216,
+      "polarity": "positive",
+      "var": 3216
+    },
+    {
+      "edge": [
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "literal": 3239,
+      "polarity": "positive",
+      "var": 3239
+    },
+    {
+      "edge": [
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "literal": 3334,
+      "polarity": "positive",
+      "var": 3334
+    },
+    {
+      "edge": [
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "literal": 3256,
+      "polarity": "positive",
+      "var": 3256
+    },
+    {
+      "edge": [
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "literal": 3261,
+      "polarity": "positive",
+      "var": 3261
+    },
+    {
+      "edge": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "literal": 3282,
+      "polarity": "positive",
+      "var": 3282
+    },
+    {
+      "edge": [
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "literal": 3367,
+      "polarity": "positive",
+      "var": 3367
+    },
+    {
+      "edge": [
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "literal": 3297,
+      "polarity": "positive",
+      "var": 3297
+    },
+    {
+      "edge": [
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ]
+      ],
+      "literal": 3302,
+      "polarity": "positive",
+      "var": 3302
+    },
+    {
+      "edge": [
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "literal": 3321,
+      "polarity": "positive",
+      "var": 3321
+    },
+    {
+      "edge": [
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "literal": 3396,
+      "polarity": "positive",
+      "var": 3396
+    },
+    {
+      "edge": [
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ]
+      ],
+      "literal": 3421,
+      "polarity": "positive",
+      "var": 3421
+    },
+    {
+      "edge": [
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "literal": 3424,
+      "polarity": "positive",
+      "var": 3424
+    },
+    {
+      "edge": [
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "literal": 3435,
+      "polarity": "positive",
+      "var": 3435
+    },
+    {
+      "edge": [
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "literal": 3459,
+      "polarity": "positive",
+      "var": 3459
+    },
+    {
+      "edge": [
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "literal": 3442,
+      "polarity": "positive",
+      "var": 3442
+    },
+    {
+      "edge": [
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ]
+      ],
+      "literal": 3445,
+      "polarity": "positive",
+      "var": 3445
+    },
+    {
+      "edge": [
+        [
+          8,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "literal": 3454,
+      "polarity": "positive",
+      "var": 3454
+    },
+    {
+      "edge": [
+        [
+          9,
+          12
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "literal": 3472,
+      "polarity": "positive",
+      "var": 3472
+    },
+    {
+      "edge": [
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "literal": 3481,
+      "polarity": "positive",
+      "var": 3481
+    },
+    {
+      "edge": [
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "literal": 3482,
+      "polarity": "positive",
+      "var": 3482
+    },
+    {
+      "edge": [
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "literal": 3485,
+      "polarity": "positive",
+      "var": 3485
+    },
+    {
+      "edge": [
+        [
+          11,
+          12
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "literal": 3486,
+      "polarity": "positive",
+      "var": 3486
+    }
+  ],
+  "nonC4_clauses": [
+    {
+      "annotations": [
+        {
+          "edge": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -1,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 1
+        },
+        {
+          "edge": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -12,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 12
+        },
+        {
+          "edge": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -95,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 95
+        },
+        {
+          "edge": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -931,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 931
+        },
+        {
+          "edge": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "fiber_literal_role": "diagonal",
+          "literal": 13,
+          "meaning": "diagonal present",
+          "polarity": "positive",
+          "var": 13
+        },
+        {
+          "edge": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "fiber_literal_role": "diagonal",
+          "literal": 94,
+          "meaning": "diagonal present",
+          "polarity": "positive",
+          "var": 94
+        }
+      ],
+      "clause": [
+        -1,
+        -12,
+        -95,
+        -931,
+        13,
+        94
+      ],
+      "fiber": [
+        0,
+        1
+      ],
+      "polarity_verification": "PASS: 4 negative C4-edge-absent literals and 2 positive diagonal-present literals"
+    },
+    {
+      "annotations": [
+        {
+          "edge": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -166,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 166
+        },
+        {
+          "edge": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -177,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 177
+        },
+        {
+          "edge": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -258,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 258
+        },
+        {
+          "edge": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -1072,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 1072
+        },
+        {
+          "edge": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "fiber_literal_role": "diagonal",
+          "literal": 178,
+          "meaning": "diagonal present",
+          "polarity": "positive",
+          "var": 178
+        },
+        {
+          "edge": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "fiber_literal_role": "diagonal",
+          "literal": 257,
+          "meaning": "diagonal present",
+          "polarity": "positive",
+          "var": 257
+        }
+      ],
+      "clause": [
+        -166,
+        -177,
+        -258,
+        -1072,
+        178,
+        257
+      ],
+      "fiber": [
+        0,
+        2
+      ],
+      "polarity_verification": "PASS: 4 negative C4-edge-absent literals and 2 positive diagonal-present literals"
+    },
+    {
+      "annotations": [
+        {
+          "edge": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -1717,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 1717
+        },
+        {
+          "edge": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -1726,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 1726
+        },
+        {
+          "edge": [
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -1785,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 1785
+        },
+        {
+          "edge": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "fiber_literal_role": "not_c4_edge",
+          "literal": -2262,
+          "meaning": "C4-edge absent",
+          "polarity": "negative",
+          "var": 2262
+        },
+        {
+          "edge": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "fiber_literal_role": "diagonal",
+          "literal": 1727,
+          "meaning": "diagonal present",
+          "polarity": "positive",
+          "var": 1727
+        },
+        {
+          "edge": [
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "fiber_literal_role": "diagonal",
+          "literal": 1784,
+          "meaning": "diagonal present",
+          "polarity": "positive",
+          "var": 1784
+        }
+      ],
+      "clause": [
+        -1717,
+        -1726,
+        -1785,
+        -2262,
+        1727,
+        1784
+      ],
+      "fiber": [
+        1,
+        2
+      ],
+      "polarity_verification": "PASS: 4 negative C4-edge-absent literals and 2 positive diagonal-present literals"
+    }
+  ],
+  "note": "SAT question - UNSAT means k=18 residual CLOSED, SAT means a vertex CAN have 18 C4 fibers with bad triple on index-triangle",
+  "orbit": "triangle_K3",
+  "round_trip_var_label_check": "passed",
+  "sha256": "07cdef93ebfd042f629974df8d0fac05a6feaf962cbcf93e622ca9c1bc7e0392",
+  "source_table": "scratchpad/ladder/g2prime/k18/rep_table_k18.json",
+  "table_ambiguity": "none observed",
+  "type": "k18_partB_manifest_v1"
+}

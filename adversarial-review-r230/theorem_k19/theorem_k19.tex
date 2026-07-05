@@ -14,7 +14,7 @@
 \newcommand{\hash}[2]{\texttt{#1}\newline\texttt{#2}}
 \newcommand{\codepath}[1]{\texttt{\detokenize{#1}}}
 
-\title{No vertex of a Conway 99-graph has 19 or more Paley-perfect fibers}
+\title{No vertex of a Conway 99-graph has 18 or more Paley-perfect fibers}
 \author{Machine-certified theorem note from the R230/g2prime artifacts}
 \date{July 5, 2026}
 
@@ -24,34 +24,37 @@
 \begin{abstract}
 This note records the certificate chain proving that, subject to the standard
 faithfulness of the honest rooted CNF base, no strongly regular graph
-\(\srg(99,14,1,2)\) has a vertex at which at least \(19\) of its \(21\)
+\(\srg(99,14,1,2)\) has a vertex at which at least \(18\) of its \(21\)
 rooted fibers induce the Paley/C4 pattern.  The new machine-certified content
 is local to one root: six \(k=20\) completion certificates and twenty-four
-\(k=19\) two-exceptional-fiber certificates, all solved UNSAT by CaDiCaL and
-independently checked by \codepath{drat-trim}.  The use of R230 is the already
-certified statement that no single vertex has all \(21\) Paley-perfect fibers.
-This is not an unconditional nonexistence proof for Conway's
-\(\srg(99,14,1,2)\) problem.
+\(k=19\) two-exceptional-fiber certificates, plus the \(k=18\) triple
+completion layer: seventy-two per-fiber defect certificates and one joint
+residual certificate.  All \(103\) listed local certificate instances are
+UNSAT by CaDiCaL and independently checked by \codepath{drat-trim}, with the
+triangle residual also independently UNSAT by CMS+XOR.  The use of R230 is the
+already certified statement that no single vertex has all \(21\)
+Paley-perfect fibers.  This is not an unconditional nonexistence proof for
+Conway's \(\srg(99,14,1,2)\) problem.
 \end{abstract}
 
 \section{The statement}
 
-\begin{theorem}[rooted \(k \geq 19\) exclusion]
-\label{thm:k19}
+\begin{theorem}[rooted \(k \geq 18\) exclusion]
+\label{thm:k18}
 Assuming the honest rooted CNF base faithfully encodes the rooted
 \(\srg(99,14,1,2)\) equations stated in Section~\ref{sec:base}, no strongly
-regular graph \(\srg(99,14,1,2)\) has a vertex at which at least \(19\) of its
+regular graph \(\srg(99,14,1,2)\) has a vertex at which \(\geq 18\) of its
 \(21\) rooted fibers induce a \(C_4\).
 \end{theorem}
 
-Equivalently, no vertex is ``\(19\)-of-\(21\) Paley-perfect''.  This strictly
+Equivalently, no vertex is ``\(18\)-of-\(21\) Paley-perfect''.  This strictly
 strengthens the published every-vertex Paley-pattern obstruction of Makhnev
 1988, condition \((*)\), and the repository-local R230 certificate excluding a
 single fully Paley-perfect vertex with all \(21\) fibers.
 
 The theorem is claim-bearing but deliberately scoped.  It proves neither
 unconditional nonexistence of \(\srg(99,14,1,2)\) nor the absence of vertices
-with at most \(18\) Paley-perfect fibers.
+with at most \(17\) Paley-perfect fibers.
 
 \section{Rooted setup and fibers}
 \label{sec:setup}
@@ -160,20 +163,80 @@ intersecting pairs.  Representatives are
 \]
 For each representative, the \(19\) good fibers contribute \(76\) C4-edge unit
 premises.  The certificate table
-\codepath{scratchpad/ladder/g2prime/k19/rep_table_k19.json} lists every single
+\codepath{certificates/rep_table_k19.json} lists every single
 defect on either exceptional fiber: absence of one of the four C4 edges, or
 presence of one of the two diagonals.  Each such defect plus the \(76\) good
 units is UNSAT and DRAT-verified; the manifest lists \(24\) explicit
 certificates, \(12\) for each orbit.  Since a non-\(C_4\) fiber must have one
 of these defects, no defect is possible.
 
-\section{Proof of Theorem~\ref{thm:k19}}
+\begin{proposition}[Triple-exceptional completion, \(k=18\)]
+\label{prop:k18}
+In the honest rooted system, if \(18\) fibers are asserted to be \(C_4\),
+then the three remaining fibers cannot all be non-\(C_4\).
+\end{proposition}
 
-Suppose a rooted graph has at least \(19\) \(C_4\) fibers.  Choose \(19\) such
-fibers.  By Proposition~\ref{prop:k19}, the two remaining fibers are also
-forced to be \(C_4\) in the honest rooted system.  Thus the root is
-Paley-perfect: all \(21\) fibers are \(C_4\).  This contradicts R230, which
-certifies that no \(\srg(99,14,1,2)\) has a single Paley-perfect vertex.
+The \(1330=\binom{21}{3}\) triples of exceptional fibers are the \(3\)-edge
+graphs on the seven matched-pair indices.  Under the rooted \(S_7\) action
+they split into five orbit-types:
+\begin{center}
+\codepath{star_K1_3}, \codepath{path_P4}, \codepath{P3_plus_edge},
+\codepath{three_matching}, \codepath{triangle_K3}.
+\end{center}
+The first four orbit-types are closed by per-fiber defect certificates.  In
+each representative, the \(18\) good fibers contribute \(72\) C4-edge unit
+premises.  For each exceptional fiber, each of the six possible defects
+-- absence of one of its four C4 edges, or presence of one of its two
+diagonals -- is refuted by the base plus those \(72\) units.  The manifest
+\codepath{certificates/k18/manifest_k18A.json} records \(72\) such
+certificates in total:
+\[
+4\text{ orbit-types}\times 3\text{ fibers}\times 6\text{ defects}=72.
+\]
+The solve log \codepath{certificates/k18/solve_k18A_results.txt} records every
+one as \(\texttt{s UNSATISFIABLE}\) by CaDiCaL and
+\(\texttt{s VERIFIED}\) by \codepath{drat-trim}.
+
+The fifth orbit-type is the index triangle
+\[
+\{\{0,1\},\{0,2\},\{1,2\}\}.
+\]
+Here the per-fiber mechanism does not apply: with only the \(72\) good-fiber
+units asserted, BCP does not force any one of the three triangle fibers to be
+\(C_4\).  The residual is therefore posed jointly.  It is the honest base plus
+the \(72\) good-fiber unit clauses for the triangle representative, plus one
+six-literal ``non-\(C_4\)'' disjunction for each of the three triangle fibers.
+Each such disjunction says: at least one of the four C4 edges is absent, or at
+least one of the two diagonals is present.  The exact clauses are recorded in
+\codepath{certificates/k18/manifest_k18B.json}.
+
+This joint residual instance,
+\[
+\text{base}+72\text{ good units}+3\text{ non-}C_4\text{ clauses},
+\]
+is UNSAT: \codepath{certificates/k18/residual_verdict.txt} records CaDiCaL
+UNSAT in \(16.7\) seconds, \codepath{drat-trim} VERIFIED with a \(205\) MB
+proof, and an independent CMS+XOR UNSAT verdict.  Its meaning is narrower than
+per-fiber forcing.  It says that, once the other \(18\) fibers are \(C_4\), the
+three index-triangle fibers cannot all be non-\(C_4\).  Therefore at least one
+index-triangle fiber is \(C_4\), giving at least \(19\) \(C_4\) fibers and
+reducing the case to Proposition~\ref{prop:k19}.  The vacuity control
+\[
+\text{base}+72\text{ good units only}
+\]
+returned \(\texttt{UNKNOWN(timeout)}\) at \(900\) seconds, so the three
+non-\(C_4\) clauses carry the residual content.
+
+\section{Proof of Theorem~\ref{thm:k18}}
+
+Suppose a rooted graph has at least \(18\) \(C_4\) fibers.  If it has at least
+\(19\), Proposition~\ref{prop:k19} forces all \(21\) fibers to be \(C_4\).
+If it has exactly \(18\), choose those \(18\) fibers.  Proposition~\ref{prop:k18}
+shows that the three remaining fibers cannot all be non-\(C_4\), so the root
+has at least \(19\) \(C_4\) fibers after all.  Proposition~\ref{prop:k19} again
+forces all \(21\) fibers to be \(C_4\).  In either case the root is
+Paley-perfect, contradicting R230, which certifies that no
+\(\srg(99,14,1,2)\) has a single Paley-perfect vertex.
 
 The \(k=20\) Fiber Completion Lemma is the one-exceptional special case and is
 included because it supplies both the analytic mechanism and the independently
@@ -201,12 +264,42 @@ bytes.  The two vacuity controls, one for each exceptional-pair orbit, remove
 the \(76\) good units and keep only a diagonal-presence defect; both return
 \(\texttt{UNKNOWN(timeout)}\) at \(600\) seconds.
 
+The \(k=18\) forcing certificates use the same base plus \(72\) good-fiber
+units and one defect unit on one of three exceptional fibers.  There are \(72\)
+explicit certificates for the four non-triangle triple orbits, all solved by
+CaDiCaL as \(\texttt{s UNSATISFIABLE}\) and checked by
+\codepath{drat-trim2.exe} as \(\texttt{s VERIFIED}\).  The residual
+\codepath{k18B_residual_triangle.cnf} is a single joint instance for the
+triangle orbit: base, \(72\) good units, and the three six-literal non-\(C_4\)
+clauses.  It is CaDiCaL UNSAT in \(16.7\) seconds and DRAT-verified with a
+\(205\) MB proof; CMS+XOR independently reports UNSAT.  Its vacuity control
+removes the three non-\(C_4\) clauses and leaves base plus \(72\) good units;
+that control returns \(\texttt{UNKNOWN(timeout)}\) at \(900\) seconds.
+
 The symmetry wrappers are also explicit.  The final transitivity report records
 one orbit on the \(21\) fibers, one orbit on the four C4-edge slots inside
 \(F_0\), and one orbit on the two diagonals inside \(F_0\).  The \(k=19\) rep
 table records the two pair-position orbits, disjoint and intersecting, of
-sizes \(105\) and \(105\).  These are the only WLOG reductions used in this
-note.
+sizes \(105\) and \(105\).  The \(k=18\) rep table records the five
+triple-position orbits, of sizes \(140,420,630,105,35\).  These are the only
+WLOG reductions used in this note.
+
+\subsection*{Certificate count table}
+
+\begin{center}
+\begin{tabular}{>{\small}p{0.25\linewidth}>{\centering\arraybackslash}p{0.12\linewidth}p{0.38\linewidth}p{0.15\linewidth}}
+\toprule
+Rung & Instances & Recipe & Status\\
+\midrule
+\(k=20\) completion & 6 & base \(+80\) good units \(+1\) defect unit & UNSAT; DRAT VERIFIED\\
+\(k=19\) two-exceptional & 24 & base \(+76\) good units \(+1\) defect unit & UNSAT; DRAT VERIFIED\\
+\(k=18\) four forcing triple orbits & 72 & base \(+72\) good units \(+1\) defect unit & UNSAT; DRAT VERIFIED\\
+\(k=18\) triangle residual & 1 & base \(+72\) good units \(+3\) non-\(C_4\) clauses & UNSAT; DRAT VERIFIED\\
+\midrule
+Total local instances in the reproducer & 103 & \multicolumn{2}{l}{All SHA-checked from the committed recipe.}\\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \subsection*{\(k=20\) certificate table}
 
@@ -282,8 +375,14 @@ Machine-certified in this repository:
 \item The \(k=19\) two-exceptional extension: \(76\) good-fiber units force
   both remaining fibers, with \(24\) explicit defect certificates and two
   \(600\)-second vacuity controls.
+\item The \(k=18\) triple-exceptional extension: four triple orbits are closed
+  by \(72\) per-fiber defect certificates, and the triangle orbit is closed by
+  one joint residual certificate plus a \(900\)-second vacuity control.
 \item The symmetry reductions used here: the \(21\) fibers form one orbit; the
-  two exceptional-fiber-pair types are exactly disjoint and intersecting.
+  two exceptional-fiber-pair types are exactly disjoint and intersecting; the
+  five exceptional-fiber-triple types are exactly
+  \codepath{star_K1_3}, \codepath{path_P4}, \codepath{P3_plus_edge},
+  \codepath{three_matching}, and \codepath{triangle_K3}.
 \end{itemize}
 
 Cited, not reproved here:
@@ -299,11 +398,8 @@ Cited, not reproved here:
 Open or not claimed:
 \begin{itemize}
 \item Conway's problem remains open.  This note does not rule out an
-  \(\srg(99,14,1,2)\) in which every vertex has at most \(18\) \(C_4\) fibers.
-\item The \(k\leq 18\) range is open.  The descent note
-  \codepath{scratchpad/.work/descent_k19.md} records a partial \(k=18\) result:
-  four of the five exceptional-fiber-triple orbits are forced, while the
-  triangle orbit leaves \(35\) of \(1330\) triples as the residual open set.
+  \(\srg(99,14,1,2)\) in which every vertex has at most \(17\) \(C_4\) fibers.
+\item The \(k\leq 17\) range is open.
 \item The base-encoding faithfulness remains the standing assumption.  The
   DRAT proofs check the emitted CNFs; the mathematical link from a hypothetical
   graph to those CNFs rests on the rooted label model and the \(P2/P3\)
@@ -317,15 +413,19 @@ The load-bearing artifacts read for this note are:
 \begin{tabular}{>{\small}p{0.58\linewidth}p{0.34\linewidth}}
 \codepath{scratchpad/.work/g2prime_audit_v2.md} & Fiber Completion Lemma and audit\\
 \codepath{scratchpad/.work/makhnev_k20_report.md} & Makhnev context and corrected \(k=20\) history\\
-\codepath{scratchpad/ladder/g2prime/final/manifest_certfull.json} & \(k=20\) hashes and units\\
-\codepath{scratchpad/ladder/g2prime/final/solve_all_results.txt} & \(k=20\) solve/check status\\
-\codepath{scratchpad/ladder/g2prime/final/transitivity_report.json} & Fiber and slot transitivity\\
-\codepath{scratchpad/ladder/g2prime/k19/rep_table_k19.json} & \(k=19\) orbit and defect table\\
-\codepath{scratchpad/ladder/g2prime/k19/cnf/manifest_k19.json} & \(k=19\) hashes\\
-\codepath{scratchpad/ladder/g2prime/k19/cnf/solve_k19_results.txt} & \(k=19\) solve/check status\\
+\codepath{certificates/manifest_certfull.json} & \(k=20\) hashes and units\\
+\codepath{certificates/solve_all_results.txt} & \(k=20\) solve/check status\\
+\codepath{certificates/transitivity_report.json} & Fiber and slot transitivity\\
+\codepath{certificates/rep_table_k19.json} & \(k=19\) orbit and defect table\\
+\codepath{certificates/manifest_k19.json} & \(k=19\) hashes\\
+\codepath{certificates/solve_k19_results.txt} & \(k=19\) solve/check status\\
+\codepath{certificates/k18/rep_table_k18.json} & \(k=18\) triple-orbit table and residual encoding\\
+\codepath{certificates/k18/manifest_k18A.json} & \(k=18\) forcing certificate hashes\\
+\codepath{certificates/k18/solve_k18A_results.txt} & \(k=18\) forcing solve/check status\\
+\codepath{certificates/k18/manifest_k18B.json} & \(k=18\) triangle residual hash and clauses\\
+\codepath{certificates/k18/residual_verdict.txt} & \(k=18\) residual solve/check status\\
 \codepath{reports/FINAL_REPORT_R230_NONEXISTENCE.md} & R230 theorem and limitation\\
-\codepath{../literature/README.md} & Published-literature index\\
-\codepath{scratchpad/.work/descent_k19.md} & \(k=18\) limitation note
+\codepath{../literature/README.md} & Published-literature index
 \end{tabular}
 \end{center}
 

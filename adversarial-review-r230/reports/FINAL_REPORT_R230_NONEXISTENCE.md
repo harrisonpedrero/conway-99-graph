@@ -1,19 +1,22 @@
 # Conway 99-Graph: R230 Certificate — Corrected Claim
 
-## Strengthening (2026-07-05): no vertex with ≥19 Paley fibers
+## Strengthening (2026-07-05): no vertex with ≥18 Paley fibers
 
 The R230 result below excludes a *fully* Paley-perfect vertex (all 21 fibers
 C4). A subsequent certificate campaign strengthens this to: **no
-`srg(99,14,1,2)` has a vertex at which 19 or more of its 21 rooted fibers
+`srg(99,14,1,2)` has a vertex at which 18 or more of its 21 rooted fibers
 induce a C4** (conditional on the same honest rooted-base encoding). The
-mechanism is a *fiber completion lemma* — 19 or 20 good C4 fibers force the
-remaining one or two — reduced by symmetry to 30 tiny defect certificates
-(6 for the 20-fiber rung, 24 for the 19-fiber rung), each independently
-`drat-trim`-verified, with vacuity controls confirming the premises carry the
-content. See `../theorem_k19/` (theorem note, certificate manifests, and a
-reproducer that rebuilds all 30 CNFs byte-identically). This is still **not**
-unconditional nonexistence: vertices with ≤18 C4 fibers remain unexcluded and
-Conway's problem stays open.
+mechanism is a *fiber completion lemma* — enough good C4 fibers force the
+remaining ones — reduced by symmetry to 103 tiny defect certificates:
+6 for the 20-fiber rung, 24 for the 19-fiber rung, 72 forcing certificates
+for the four 18-fiber triple orbits, and 1 index-triangle residual. Each is
+independently `drat-trim`-verified, with vacuity controls (`base + good-fiber
+units only` times out at 900 s) confirming the premises carry the content; the
+residual is additionally dual-confirmed by an independent CryptoMiniSat + XOR
+UNSAT. See `../theorem_k19/` (theorem note, certificate manifests, and a
+reproducer that rebuilds all 103 CNFs byte-identically — `MATCH=103
+MISMATCH=0`). This is still **not** unconditional nonexistence: vertices with
+≤17 C4 fibers remain unexcluded and Conway's problem stays open.
 
 ## Verdict (corrected 2026-07-01)
 
