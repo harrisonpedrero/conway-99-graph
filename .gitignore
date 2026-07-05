@@ -1,0 +1,5 @@
+
+# campaign scratch — ephemeral solver working dirs, large CNF/DRAT bodies
+adversarial-review-r230/scratchpad/
+.work/
+theorem_k19/**/__pycache__/

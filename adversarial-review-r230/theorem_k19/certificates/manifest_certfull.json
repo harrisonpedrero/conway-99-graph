@@ -1,0 +1,3844 @@
+{
+  "base": {
+    "base_clauses": 3109092,
+    "canonical_edge_order_verified": true,
+    "canonical_labels_source": "source/root_cell_cpsat.py:make_labels(14)",
+    "cnf_vars": 1375458,
+    "edge_var_count": 3486,
+    "far_vertices": 84,
+    "k": 14,
+    "product_var_count": 285852,
+    "source_builder": "scratchpad/honest_flip_cnf.py:build_base_cnf",
+    "source_cnf_for_base_clause_stream": "scratchpad/ladder/g2prime/v2/g2v2_M5_mate_loss_probe.cnf"
+  },
+  "certificates": {
+    "cd1": {
+      "base_clause_count": 3109092,
+      "bytes": 59853741,
+      "cnf_clause_count": 3109173,
+      "cnf_vars": 1375458,
+      "defect_unit": {
+        "canonical_edge_key": [
+          0,
+          13
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "edge_kind": "fiber_diagonal",
+        "expected_edge_kind": "fiber_diagonal",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 13,
+        "polarity": "edge",
+        "role": "certfull_cd1_defect",
+        "shared_local_labels": [],
+        "var": 13
+      },
+      "defect_unit_count": 1,
+      "description": "Diagonal present: (0,2)-(1,3)",
+      "expected_result": "UNSAT",
+      "filename": "certfull_cd1.cnf",
+      "good_fiber_unit_count": 80,
+      "label_check": {
+        "canonical_edge_key_matches_labels": true,
+        "canonical_label_pair_matches_key": true,
+        "fiber_pair_classes_from_labels": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "labels_from_key": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "literal_matches_var_and_polarity": true,
+        "var_from_honest_edge_order": 13,
+        "var_matches_manifest": true
+      },
+      "sha256": "c2f4e89d0c1462e48fcb7deade1e6e98564d97758684543652170273a3090408",
+      "total_unit_count": 81
+    },
+    "cd2": {
+      "base_clause_count": 3109092,
+      "bytes": 59853741,
+      "cnf_clause_count": 3109173,
+      "cnf_vars": 1375458,
+      "defect_unit": {
+        "canonical_edge_key": [
+          1,
+          12
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "edge_kind": "fiber_diagonal",
+        "expected_edge_kind": "fiber_diagonal",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 94,
+        "polarity": "edge",
+        "role": "certfull_cd2_defect",
+        "shared_local_labels": [],
+        "var": 94
+      },
+      "defect_unit_count": 1,
+      "description": "Diagonal present: (0,3)-(1,2)",
+      "expected_result": "UNSAT",
+      "filename": "certfull_cd2.cnf",
+      "good_fiber_unit_count": 80,
+      "label_check": {
+        "canonical_edge_key_matches_labels": true,
+        "canonical_label_pair_matches_key": true,
+        "fiber_pair_classes_from_labels": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "labels_from_key": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "literal_matches_var_and_polarity": true,
+        "var_from_honest_edge_order": 94,
+        "var_matches_manifest": true
+      },
+      "sha256": "99bd47880036988066003e193ae749ead6414faf6c5ae8164c014f2e0e8e1fb7",
+      "total_unit_count": 81
+    },
+    "ce1": {
+      "base_clause_count": 3109092,
+      "bytes": 59853741,
+      "cnf_clause_count": 3109173,
+      "cnf_vars": 1375458,
+      "defect_unit": {
+        "canonical_edge_key": [
+          0,
+          1
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "expected_edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": -1,
+        "polarity": "nonedge",
+        "role": "certfull_ce1_defect",
+        "shared_local_labels": [
+          0
+        ],
+        "var": 1
+      },
+      "defect_unit_count": 1,
+      "description": "C4 share edge absent: (0,2)-(0,3)",
+      "expected_result": "UNSAT",
+      "filename": "certfull_ce1.cnf",
+      "good_fiber_unit_count": 80,
+      "label_check": {
+        "canonical_edge_key_matches_labels": true,
+        "canonical_label_pair_matches_key": true,
+        "fiber_pair_classes_from_labels": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "labels_from_key": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "literal_matches_var_and_polarity": true,
+        "var_from_honest_edge_order": 1,
+        "var_matches_manifest": true
+      },
+      "sha256": "132e2b3746dbd5491b66b7b30f3d04ad12ac8d727b49b66d2c6ec9a618d86057",
+      "total_unit_count": 81
+    },
+    "ce2": {
+      "base_clause_count": 3109092,
+      "bytes": 59853743,
+      "cnf_clause_count": 3109173,
+      "cnf_vars": 1375458,
+      "defect_unit": {
+        "canonical_edge_key": [
+          12,
+          13
+        ],
+        "canonical_label_pair": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "expected_edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": -931,
+        "polarity": "nonedge",
+        "role": "certfull_ce2_defect",
+        "shared_local_labels": [
+          1
+        ],
+        "var": 931
+      },
+      "defect_unit_count": 1,
+      "description": "C4 share edge absent: (1,2)-(1,3)",
+      "expected_result": "UNSAT",
+      "filename": "certfull_ce2.cnf",
+      "good_fiber_unit_count": 80,
+      "label_check": {
+        "canonical_edge_key_matches_labels": true,
+        "canonical_label_pair_matches_key": true,
+        "fiber_pair_classes_from_labels": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "labels_from_key": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "literal_matches_var_and_polarity": true,
+        "var_from_honest_edge_order": 931,
+        "var_matches_manifest": true
+      },
+      "sha256": "e74fc7ca3f9c4b848f05d057592f24ec69044bf6b38f885ae2965b3af7735591",
+      "total_unit_count": 81
+    },
+    "ce3": {
+      "base_clause_count": 3109092,
+      "bytes": 59853742,
+      "cnf_clause_count": 3109173,
+      "cnf_vars": 1375458,
+      "defect_unit": {
+        "canonical_edge_key": [
+          0,
+          12
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "expected_edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": -12,
+        "polarity": "nonedge",
+        "role": "certfull_ce3_defect",
+        "shared_local_labels": [
+          2
+        ],
+        "var": 12
+      },
+      "defect_unit_count": 1,
+      "description": "C4 share edge absent: (0,2)-(1,2)",
+      "expected_result": "UNSAT",
+      "filename": "certfull_ce3.cnf",
+      "good_fiber_unit_count": 80,
+      "label_check": {
+        "canonical_edge_key_matches_labels": true,
+        "canonical_label_pair_matches_key": true,
+        "fiber_pair_classes_from_labels": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "labels_from_key": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "literal_matches_var_and_polarity": true,
+        "var_from_honest_edge_order": 12,
+        "var_matches_manifest": true
+      },
+      "sha256": "d269f00feddbd633d3ffc54a7b402fa38e21ae56607f3d09c159cca02636e10c",
+      "total_unit_count": 81
+    },
+    "ce4": {
+      "base_clause_count": 3109092,
+      "bytes": 59853742,
+      "cnf_clause_count": 3109173,
+      "cnf_vars": 1375458,
+      "defect_unit": {
+        "canonical_edge_key": [
+          1,
+          13
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "expected_edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": -95,
+        "polarity": "nonedge",
+        "role": "certfull_ce4_defect",
+        "shared_local_labels": [
+          3
+        ],
+        "var": 95
+      },
+      "defect_unit_count": 1,
+      "description": "C4 share edge absent: (0,3)-(1,3)",
+      "expected_result": "UNSAT",
+      "filename": "certfull_ce4.cnf",
+      "good_fiber_unit_count": 80,
+      "label_check": {
+        "canonical_edge_key_matches_labels": true,
+        "canonical_label_pair_matches_key": true,
+        "fiber_pair_classes_from_labels": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "labels_from_key": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "literal_matches_var_and_polarity": true,
+        "var_from_honest_edge_order": 95,
+        "var_matches_manifest": true
+      },
+      "sha256": "723491e312f3f16ac274d2dd61973faa16596e8a3a359e3d5f520cd7fcb362bc",
+      "total_unit_count": 81
+    }
+  },
+  "common_good_fiber_unit_count": 80,
+  "common_good_fiber_unit_literals_sha256": "c225d3be33c8c1698278f77f110b18e9a39b9a6d06460d20db637231e243ca20",
+  "common_good_fiber_units": [
+    {
+      "canonical_edge_key": [
+        2,
+        3
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        2
+      ],
+      "literal": 166,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        0
+      ],
+      "var": 166
+    },
+    {
+      "canonical_edge_key": [
+        2,
+        14
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        2
+      ],
+      "literal": 177,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        4
+      ],
+      "var": 177
+    },
+    {
+      "canonical_edge_key": [
+        3,
+        15
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        2
+      ],
+      "literal": 258,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        5
+      ],
+      "var": 258
+    },
+    {
+      "canonical_edge_key": [
+        14,
+        15
+      ],
+      "canonical_label_pair": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        2
+      ],
+      "literal": 1072,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        1
+      ],
+      "var": 1072
+    },
+    {
+      "canonical_edge_key": [
+        4,
+        5
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        3
+      ],
+      "literal": 327,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        0
+      ],
+      "var": 327
+    },
+    {
+      "canonical_edge_key": [
+        4,
+        16
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        3
+      ],
+      "literal": 338,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        6
+      ],
+      "var": 338
+    },
+    {
+      "canonical_edge_key": [
+        5,
+        17
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        3
+      ],
+      "literal": 417,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        7
+      ],
+      "var": 417
+    },
+    {
+      "canonical_edge_key": [
+        16,
+        17
+      ],
+      "canonical_label_pair": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        3
+      ],
+      "literal": 1209,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        1
+      ],
+      "var": 1209
+    },
+    {
+      "canonical_edge_key": [
+        6,
+        7
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        4
+      ],
+      "literal": 484,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        0
+      ],
+      "var": 484
+    },
+    {
+      "canonical_edge_key": [
+        6,
+        18
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        4
+      ],
+      "literal": 495,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        8
+      ],
+      "var": 495
+    },
+    {
+      "canonical_edge_key": [
+        7,
+        19
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        4
+      ],
+      "literal": 572,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        9
+      ],
+      "var": 572
+    },
+    {
+      "canonical_edge_key": [
+        18,
+        19
+      ],
+      "canonical_label_pair": [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        4
+      ],
+      "literal": 1342,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        1
+      ],
+      "var": 1342
+    },
+    {
+      "canonical_edge_key": [
+        8,
+        9
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        5
+      ],
+      "literal": 637,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        0
+      ],
+      "var": 637
+    },
+    {
+      "canonical_edge_key": [
+        8,
+        20
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          10
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        5
+      ],
+      "literal": 648,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        10
+      ],
+      "var": 648
+    },
+    {
+      "canonical_edge_key": [
+        9,
+        21
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        5
+      ],
+      "literal": 723,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        11
+      ],
+      "var": 723
+    },
+    {
+      "canonical_edge_key": [
+        20,
+        21
+      ],
+      "canonical_label_pair": [
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        5
+      ],
+      "literal": 1471,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        1
+      ],
+      "var": 1471
+    },
+    {
+      "canonical_edge_key": [
+        10,
+        11
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        6
+      ],
+      "literal": 786,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        0
+      ],
+      "var": 786
+    },
+    {
+      "canonical_edge_key": [
+        10,
+        22
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          12
+        ],
+        [
+          1,
+          12
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        6
+      ],
+      "literal": 797,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        12
+      ],
+      "var": 797
+    },
+    {
+      "canonical_edge_key": [
+        11,
+        23
+      ],
+      "canonical_label_pair": [
+        [
+          0,
+          13
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        6
+      ],
+      "literal": 870,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        13
+      ],
+      "var": 870
+    },
+    {
+      "canonical_edge_key": [
+        22,
+        23
+      ],
+      "canonical_label_pair": [
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        0,
+        6
+      ],
+      "literal": 1596,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        1
+      ],
+      "var": 1596
+    },
+    {
+      "canonical_edge_key": [
+        24,
+        25
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        2
+      ],
+      "literal": 1717,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        2
+      ],
+      "var": 1717
+    },
+    {
+      "canonical_edge_key": [
+        24,
+        34
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        2
+      ],
+      "literal": 1726,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        4
+      ],
+      "var": 1726
+    },
+    {
+      "canonical_edge_key": [
+        25,
+        35
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        2
+      ],
+      "literal": 1785,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        5
+      ],
+      "var": 1785
+    },
+    {
+      "canonical_edge_key": [
+        34,
+        35
+      ],
+      "canonical_label_pair": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        2
+      ],
+      "literal": 2262,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        3
+      ],
+      "var": 2262
+    },
+    {
+      "canonical_edge_key": [
+        26,
+        27
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        3
+      ],
+      "literal": 1834,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        2
+      ],
+      "var": 1834
+    },
+    {
+      "canonical_edge_key": [
+        26,
+        36
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        3
+      ],
+      "literal": 1843,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        6
+      ],
+      "var": 1843
+    },
+    {
+      "canonical_edge_key": [
+        27,
+        37
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        3
+      ],
+      "literal": 1900,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        7
+      ],
+      "var": 1900
+    },
+    {
+      "canonical_edge_key": [
+        36,
+        37
+      ],
+      "canonical_label_pair": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        3
+      ],
+      "literal": 2359,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        3
+      ],
+      "var": 2359
+    },
+    {
+      "canonical_edge_key": [
+        28,
+        29
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        4
+      ],
+      "literal": 1947,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        2
+      ],
+      "var": 1947
+    },
+    {
+      "canonical_edge_key": [
+        28,
+        38
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        4
+      ],
+      "literal": 1956,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        8
+      ],
+      "var": 1956
+    },
+    {
+      "canonical_edge_key": [
+        29,
+        39
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        4
+      ],
+      "literal": 2011,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        9
+      ],
+      "var": 2011
+    },
+    {
+      "canonical_edge_key": [
+        38,
+        39
+      ],
+      "canonical_label_pair": [
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        4
+      ],
+      "literal": 2452,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        3
+      ],
+      "var": 2452
+    },
+    {
+      "canonical_edge_key": [
+        30,
+        31
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        5
+      ],
+      "literal": 2056,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        2
+      ],
+      "var": 2056
+    },
+    {
+      "canonical_edge_key": [
+        30,
+        40
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        5
+      ],
+      "literal": 2065,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        10
+      ],
+      "var": 2065
+    },
+    {
+      "canonical_edge_key": [
+        31,
+        41
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        5
+      ],
+      "literal": 2118,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        11
+      ],
+      "var": 2118
+    },
+    {
+      "canonical_edge_key": [
+        40,
+        41
+      ],
+      "canonical_label_pair": [
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        5
+      ],
+      "literal": 2541,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        3
+      ],
+      "var": 2541
+    },
+    {
+      "canonical_edge_key": [
+        32,
+        33
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        6
+      ],
+      "literal": 2161,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        2
+      ],
+      "var": 2161
+    },
+    {
+      "canonical_edge_key": [
+        32,
+        42
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        6
+      ],
+      "literal": 2170,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        12
+      ],
+      "var": 2170
+    },
+    {
+      "canonical_edge_key": [
+        33,
+        43
+      ],
+      "canonical_label_pair": [
+        [
+          2,
+          13
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        6
+      ],
+      "literal": 2221,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        13
+      ],
+      "var": 2221
+    },
+    {
+      "canonical_edge_key": [
+        42,
+        43
+      ],
+      "canonical_label_pair": [
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        1,
+        6
+      ],
+      "literal": 2626,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        3
+      ],
+      "var": 2626
+    },
+    {
+      "canonical_edge_key": [
+        44,
+        45
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        3
+      ],
+      "literal": 2707,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        4
+      ],
+      "var": 2707
+    },
+    {
+      "canonical_edge_key": [
+        44,
+        52
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        3
+      ],
+      "literal": 2714,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        6
+      ],
+      "var": 2714
+    },
+    {
+      "canonical_edge_key": [
+        45,
+        53
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        3
+      ],
+      "literal": 2753,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        7
+      ],
+      "var": 2753
+    },
+    {
+      "canonical_edge_key": [
+        52,
+        53
+      ],
+      "canonical_label_pair": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        3
+      ],
+      "literal": 2991,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        5
+      ],
+      "var": 2991
+    },
+    {
+      "canonical_edge_key": [
+        46,
+        47
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        4
+      ],
+      "literal": 2784,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        4
+      ],
+      "var": 2784
+    },
+    {
+      "canonical_edge_key": [
+        46,
+        54
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        4
+      ],
+      "literal": 2791,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        8
+      ],
+      "var": 2791
+    },
+    {
+      "canonical_edge_key": [
+        47,
+        55
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        4
+      ],
+      "literal": 2828,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        9
+      ],
+      "var": 2828
+    },
+    {
+      "canonical_edge_key": [
+        54,
+        55
+      ],
+      "canonical_label_pair": [
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        4
+      ],
+      "literal": 3052,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        5
+      ],
+      "var": 3052
+    },
+    {
+      "canonical_edge_key": [
+        48,
+        49
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        5
+      ],
+      "literal": 2857,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        4
+      ],
+      "var": 2857
+    },
+    {
+      "canonical_edge_key": [
+        48,
+        56
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        5
+      ],
+      "literal": 2864,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        10
+      ],
+      "var": 2864
+    },
+    {
+      "canonical_edge_key": [
+        49,
+        57
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        5
+      ],
+      "literal": 2899,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        11
+      ],
+      "var": 2899
+    },
+    {
+      "canonical_edge_key": [
+        56,
+        57
+      ],
+      "canonical_label_pair": [
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        5
+      ],
+      "literal": 3109,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        5
+      ],
+      "var": 3109
+    },
+    {
+      "canonical_edge_key": [
+        50,
+        51
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        6
+      ],
+      "literal": 2926,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        4
+      ],
+      "var": 2926
+    },
+    {
+      "canonical_edge_key": [
+        50,
+        58
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        6
+      ],
+      "literal": 2933,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        12
+      ],
+      "var": 2933
+    },
+    {
+      "canonical_edge_key": [
+        51,
+        59
+      ],
+      "canonical_label_pair": [
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        6
+      ],
+      "literal": 2966,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        13
+      ],
+      "var": 2966
+    },
+    {
+      "canonical_edge_key": [
+        58,
+        59
+      ],
+      "canonical_label_pair": [
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          4,
+          5
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        2,
+        6
+      ],
+      "literal": 3162,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        5
+      ],
+      "var": 3162
+    },
+    {
+      "canonical_edge_key": [
+        60,
+        61
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        4
+      ],
+      "literal": 3211,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        6
+      ],
+      "var": 3211
+    },
+    {
+      "canonical_edge_key": [
+        60,
+        66
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        4
+      ],
+      "literal": 3216,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        8
+      ],
+      "var": 3216
+    },
+    {
+      "canonical_edge_key": [
+        61,
+        67
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        4
+      ],
+      "literal": 3239,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        9
+      ],
+      "var": 3239
+    },
+    {
+      "canonical_edge_key": [
+        66,
+        67
+      ],
+      "canonical_label_pair": [
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        4
+      ],
+      "literal": 3334,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        7
+      ],
+      "var": 3334
+    },
+    {
+      "canonical_edge_key": [
+        62,
+        63
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        5
+      ],
+      "literal": 3256,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        6
+      ],
+      "var": 3256
+    },
+    {
+      "canonical_edge_key": [
+        62,
+        68
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        5
+      ],
+      "literal": 3261,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        10
+      ],
+      "var": 3261
+    },
+    {
+      "canonical_edge_key": [
+        63,
+        69
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        5
+      ],
+      "literal": 3282,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        11
+      ],
+      "var": 3282
+    },
+    {
+      "canonical_edge_key": [
+        68,
+        69
+      ],
+      "canonical_label_pair": [
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        5
+      ],
+      "literal": 3367,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        7
+      ],
+      "var": 3367
+    },
+    {
+      "canonical_edge_key": [
+        64,
+        65
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        6
+      ],
+      "literal": 3297,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        6
+      ],
+      "var": 3297
+    },
+    {
+      "canonical_edge_key": [
+        64,
+        70
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        6
+      ],
+      "literal": 3302,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        12
+      ],
+      "var": 3302
+    },
+    {
+      "canonical_edge_key": [
+        65,
+        71
+      ],
+      "canonical_label_pair": [
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        6
+      ],
+      "literal": 3321,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        13
+      ],
+      "var": 3321
+    },
+    {
+      "canonical_edge_key": [
+        70,
+        71
+      ],
+      "canonical_label_pair": [
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        3,
+        6
+      ],
+      "literal": 3396,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        7
+      ],
+      "var": 3396
+    },
+    {
+      "canonical_edge_key": [
+        72,
+        73
+      ],
+      "canonical_label_pair": [
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        5
+      ],
+      "literal": 3421,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        8
+      ],
+      "var": 3421
+    },
+    {
+      "canonical_edge_key": [
+        72,
+        76
+      ],
+      "canonical_label_pair": [
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        5
+      ],
+      "literal": 3424,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        10
+      ],
+      "var": 3424
+    },
+    {
+      "canonical_edge_key": [
+        73,
+        77
+      ],
+      "canonical_label_pair": [
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        5
+      ],
+      "literal": 3435,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        11
+      ],
+      "var": 3435
+    },
+    {
+      "canonical_edge_key": [
+        76,
+        77
+      ],
+      "canonical_label_pair": [
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        5
+      ],
+      "literal": 3459,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        9
+      ],
+      "var": 3459
+    },
+    {
+      "canonical_edge_key": [
+        74,
+        75
+      ],
+      "canonical_label_pair": [
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        6
+      ],
+      "literal": 3442,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        8
+      ],
+      "var": 3442
+    },
+    {
+      "canonical_edge_key": [
+        74,
+        78
+      ],
+      "canonical_label_pair": [
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        6
+      ],
+      "literal": 3445,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        12
+      ],
+      "var": 3445
+    },
+    {
+      "canonical_edge_key": [
+        75,
+        79
+      ],
+      "canonical_label_pair": [
+        [
+          8,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        6
+      ],
+      "literal": 3454,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        13
+      ],
+      "var": 3454
+    },
+    {
+      "canonical_edge_key": [
+        78,
+        79
+      ],
+      "canonical_label_pair": [
+        [
+          9,
+          12
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          8,
+          9
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        4,
+        6
+      ],
+      "literal": 3472,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        9
+      ],
+      "var": 3472
+    },
+    {
+      "canonical_edge_key": [
+        80,
+        81
+      ],
+      "canonical_label_pair": [
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        5,
+        6
+      ],
+      "literal": 3481,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        10
+      ],
+      "var": 3481
+    },
+    {
+      "canonical_edge_key": [
+        80,
+        82
+      ],
+      "canonical_label_pair": [
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        5,
+        6
+      ],
+      "literal": 3482,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        12
+      ],
+      "var": 3482
+    },
+    {
+      "canonical_edge_key": [
+        81,
+        83
+      ],
+      "canonical_label_pair": [
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        5,
+        6
+      ],
+      "literal": 3485,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        13
+      ],
+      "var": 3485
+    },
+    {
+      "canonical_edge_key": [
+        82,
+        83
+      ],
+      "canonical_label_pair": [
+        [
+          11,
+          12
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "edge_kind": "c4_share_edge",
+      "fiber_matched_pairs": [
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "fiber_pair_classes": [
+        5,
+        6
+      ],
+      "literal": 3486,
+      "polarity": "edge",
+      "role": "good_fiber_c4_edge",
+      "shared_local_labels": [
+        11
+      ],
+      "var": 3486
+    }
+  ],
+  "common_unit_verification": {
+    "base_clause_stream_source": "scratchpad\\ladder\\g2prime\\final\\certA.cnf",
+    "certA_and_certB_tail_units_match_manifest_final_common_units": true,
+    "source_cnfs_checked": [
+      {
+        "cnf_clauses": 3109173,
+        "cnf_vars": 1375458,
+        "path": "scratchpad\\ladder\\g2prime\\final\\certA.cnf"
+      },
+      {
+        "cnf_clauses": 3109173,
+        "cnf_vars": 1375458,
+        "path": "scratchpad\\ladder\\g2prime\\final\\certB.cnf"
+      }
+    ]
+  },
+  "f0": {
+    "c4_share_edges": [
+      {
+        "canonical_edge_key": [
+          0,
+          1
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 1,
+        "polarity": "edge",
+        "role": "good_fiber_c4_edge",
+        "shared_local_labels": [
+          0
+        ],
+        "var": 1
+      },
+      {
+        "canonical_edge_key": [
+          0,
+          12
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 12,
+        "polarity": "edge",
+        "role": "good_fiber_c4_edge",
+        "shared_local_labels": [
+          2
+        ],
+        "var": 12
+      },
+      {
+        "canonical_edge_key": [
+          1,
+          13
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 95,
+        "polarity": "edge",
+        "role": "good_fiber_c4_edge",
+        "shared_local_labels": [
+          3
+        ],
+        "var": 95
+      },
+      {
+        "canonical_edge_key": [
+          12,
+          13
+        ],
+        "canonical_label_pair": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "edge_kind": "c4_share_edge",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 931,
+        "polarity": "edge",
+        "role": "good_fiber_c4_edge",
+        "shared_local_labels": [
+          1
+        ],
+        "var": 931
+      }
+    ],
+    "diagonals": [
+      {
+        "canonical_edge_key": [
+          0,
+          13
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "edge_kind": "fiber_diagonal",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 13,
+        "polarity": "edge",
+        "role": "F0_diagonal",
+        "shared_local_labels": [],
+        "var": 13
+      },
+      {
+        "canonical_edge_key": [
+          1,
+          12
+        ],
+        "canonical_label_pair": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "edge_kind": "fiber_diagonal",
+        "fiber_matched_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "fiber_pair_classes": [
+          0,
+          1
+        ],
+        "literal": 94,
+        "polarity": "edge",
+        "role": "F0_diagonal",
+        "shared_local_labels": [],
+        "var": 94
+      }
+    ],
+    "label_indices": [
+      0,
+      1,
+      12,
+      13
+    ],
+    "labels": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "matched_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "pair_classes": [
+      0,
+      1
+    ]
+  },
+  "purpose": "Explicit F0-defect certificate set for the k>=20 symmetry wrapper; files-only build, no solving.",
+  "sha256s": {
+    "certfull_cd1.cnf": "c2f4e89d0c1462e48fcb7deade1e6e98564d97758684543652170273a3090408",
+    "certfull_cd2.cnf": "99bd47880036988066003e193ae749ead6414faf6c5ae8164c014f2e0e8e1fb7",
+    "certfull_ce1.cnf": "132e2b3746dbd5491b66b7b30f3d04ad12ac8d727b49b66d2c6ec9a618d86057",
+    "certfull_ce2.cnf": "e74fc7ca3f9c4b848f05d057592f24ec69044bf6b38f885ae2965b3af7735591",
+    "certfull_ce3.cnf": "d269f00feddbd633d3ffc54a7b402fa38e21ae56607f3d09c159cca02636e10c",
+    "certfull_ce4.cnf": "723491e312f3f16ac274d2dd61973faa16596e8a3a359e3d5f520cd7fcb362bc"
+  },
+  "source_inputs_sha256": {
+    "scratchpad/.work/g2prime_audit_v2.md": "da38dbc1298279edb203d599d06d3c55d24cdae21822d3612c00cb34b78907b9",
+    "scratchpad/honest_flip_cnf.py": "076a6745c3774ce348307ca9ee6b937687eaaf7908b7cd13d361eea199780411",
+    "scratchpad/ladder/g2prime/final/manifest_final.json": "8c2f8d1acc84bb33d539b1702731f19da333e1592a7cf747e9b776219f7c2624",
+    "source/root_cell_cpsat.py": "ca6ecd40b211a9cb39868afb5752f678cbe4a409acc231f674cff82916380f1a",
+    "source/root_cell_triangle_orbit_audit.py": "7b77e49a7d5ec19080488a668fd72829066a3840a6dde5e8a6f2bf253e478f1c"
+  },
+  "type": "g2prime_full_f0_defect_certificates_manifest_v1",
+  "validation": {
+    "cnf_files_written": [
+      "certfull_ce1.cnf",
+      "certfull_ce2.cnf",
+      "certfull_ce3.cnf",
+      "certfull_ce4.cnf",
+      "certfull_cd1.cnf",
+      "certfull_cd2.cnf"
+    ],
+    "expected_result_for_all_certificates": "UNSAT",
+    "manifest_written": "manifest_certfull.json",
+    "no_solving_performed": true
+  }
+}

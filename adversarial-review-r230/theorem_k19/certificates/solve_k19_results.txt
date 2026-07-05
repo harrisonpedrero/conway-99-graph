@@ -1,0 +1,30 @@
+=== 24 k19 certs (expect UNSAT+VERIFIED, genuine MB proofs) ===
+k19_disjoint_01: s UNSATISFIABLE | s VERIFIED | 2.22s | 3486477B
+k19_disjoint_02: s UNSATISFIABLE | s VERIFIED | 2.19s | 3486478B
+k19_disjoint_03: s UNSATISFIABLE | s VERIFIED | 2.33s | 3486478B
+k19_disjoint_04: s UNSATISFIABLE | s VERIFIED | 2.22s | 3486479B
+k19_disjoint_05: s UNSATISFIABLE | s VERIFIED | 2.20s | 3486477B
+k19_disjoint_06: s UNSATISFIABLE | s VERIFIED | 2.12s | 3486477B
+k19_disjoint_07: s UNSATISFIABLE | s VERIFIED | 2.27s | 3486480B
+k19_disjoint_08: s UNSATISFIABLE | s VERIFIED | 2.18s | 3486480B
+k19_disjoint_09: s UNSATISFIABLE | s VERIFIED | 2.19s | 3486480B
+k19_disjoint_10: s UNSATISFIABLE | s VERIFIED | 2.20s | 3486480B
+k19_disjoint_11: s UNSATISFIABLE | s VERIFIED | 2.33s | 3486479B
+k19_disjoint_12: s UNSATISFIABLE | s VERIFIED | 2.23s | 3486479B
+k19_intersect_01: s UNSATISFIABLE | s VERIFIED | 2.17s | 3486474B
+k19_intersect_02: s UNSATISFIABLE | s VERIFIED | 2.23s | 3486475B
+k19_intersect_03: s UNSATISFIABLE | s VERIFIED | 2.38s | 3486475B
+k19_intersect_04: s UNSATISFIABLE | s VERIFIED | 2.21s | 3486476B
+k19_intersect_05: s UNSATISFIABLE | s VERIFIED | 2.24s | 3486474B
+k19_intersect_06: s UNSATISFIABLE | s VERIFIED | 2.23s | 3486474B
+k19_intersect_07: s UNSATISFIABLE | s VERIFIED | 2.16s | 3486476B
+k19_intersect_08: s UNSATISFIABLE | s VERIFIED | 2.10s | 3486476B
+k19_intersect_09: s UNSATISFIABLE | s VERIFIED | 2.18s | 3486476B
+k19_intersect_10: s UNSATISFIABLE | s VERIFIED | 2.13s | 3486477B
+k19_intersect_11: s UNSATISFIABLE | s VERIFIED | 2.22s | 3486475B
+k19_intersect_12: s UNSATISFIABLE | s VERIFIED | 2.15s | 3486475B
+certs: PASS=24 FAIL=0
+=== 2 vacuity controls (base + 1 diagonal-presence only; expect NOT fast-UNSAT) ===
+control_disjoint: UNKNOWN(timeout)
+control_intersect: UNKNOWN(timeout)
+DONE

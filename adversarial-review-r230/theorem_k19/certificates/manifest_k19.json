@@ -1,0 +1,859 @@
+{
+  "base": {
+    "base_clauses": 3109092,
+    "builder": "scratchpad/honest_flip_cnf.py:build_base_cnf",
+    "cnf_vars": 1375458,
+    "edge_var_count": 3486,
+    "far_vertex_count": 84,
+    "k": 14,
+    "label_order": "source/root_cell_cpsat.py:make_labels(14)",
+    "product_var_count": 285852
+  },
+  "certs": [
+    {
+      "cert_index": 1,
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "defect_literal": -1,
+      "defect_polarity": "negative",
+      "defect_var_id": 1,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_01.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "c47f831b066e637d6a9cf05903c3b12c27499d35abf8c560b4755b866fd1c082"
+    },
+    {
+      "cert_index": 2,
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_literal": -12,
+      "defect_polarity": "negative",
+      "defect_var_id": 12,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_02.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "6b417f909944f75233b7961505a5fe8eafea45bb009ce8c1ed68de9255835eb4"
+    },
+    {
+      "cert_index": 3,
+      "defect_canonical_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": -95,
+      "defect_polarity": "negative",
+      "defect_var_id": 95,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_03.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "8dc4f908f0758a929090d68899c341987527b1e2396300613bca70e72f932cb3"
+    },
+    {
+      "cert_index": 4,
+      "defect_canonical_labels": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": -931,
+      "defect_polarity": "negative",
+      "defect_var_id": 931,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_04.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "9fd5674f15950869933142b4eb5e0baf2e4ba6c90c7a9c28da416198dd1a593c"
+    },
+    {
+      "cert_index": 5,
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": 13,
+      "defect_polarity": "positive",
+      "defect_var_id": 13,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_05.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "75f6b8c15783fca140b85551c21fa731be413b05a696a71871f1046f4e7799d3"
+    },
+    {
+      "cert_index": 6,
+      "defect_canonical_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_literal": 94,
+      "defect_polarity": "positive",
+      "defect_var_id": 94,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_06.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "a74ae8f2c497227a26c38790e578251ce86f92101791c76667a25ae15c52139a"
+    },
+    {
+      "cert_index": 7,
+      "defect_canonical_labels": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "defect_literal": -2707,
+      "defect_polarity": "negative",
+      "defect_var_id": 2707,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_07.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "84cfdc1ec7d199dc1379109f37165dbef07e82a509ad6044c901e173866f6110"
+    },
+    {
+      "cert_index": 8,
+      "defect_canonical_labels": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "defect_literal": -2714,
+      "defect_polarity": "negative",
+      "defect_var_id": 2714,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_08.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "5a4fe45fad08bf644a9f4da14fe7cc457c1b07a5895c1def7abb6b216433c462"
+    },
+    {
+      "cert_index": 9,
+      "defect_canonical_labels": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "defect_literal": -2753,
+      "defect_polarity": "negative",
+      "defect_var_id": 2753,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_09.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "0bd5710781f79b7bd3cde3f234714057cb2a49b52c3dd19c7f01bb35402fe4f2"
+    },
+    {
+      "cert_index": 10,
+      "defect_canonical_labels": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "defect_literal": -2991,
+      "defect_polarity": "negative",
+      "defect_var_id": 2991,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_10.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "02f663ee10d314d5d70ab83a2913f9e89b79b61d706079b476cfbb0e6f9c7e2e"
+    },
+    {
+      "cert_index": 11,
+      "defect_canonical_labels": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "defect_literal": 2715,
+      "defect_polarity": "positive",
+      "defect_var_id": 2715,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_11.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "ed165fd310a9bc2e99dab3f2479cb58a3d4098c3c2cd18bd09d72063a8e5a77a"
+    },
+    {
+      "cert_index": 12,
+      "defect_canonical_labels": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "defect_literal": 2752,
+      "defect_polarity": "positive",
+      "defect_var_id": 2752,
+      "expected": "UNSAT",
+      "filename": "k19_disjoint_12.cnf",
+      "good_unit_count": 76,
+      "orbit": "disjoint",
+      "sha256": "617cb9bf99a3b48683123ca08cc68293fc2a6db9bc6f0fb41d34c156c8d3aa0e"
+    },
+    {
+      "cert_index": 1,
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "defect_literal": -1,
+      "defect_polarity": "negative",
+      "defect_var_id": 1,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_01.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "286e3acff2c5e105e429bcba91b7efc3cdcfa27d9b13164807d5809734511ac8"
+    },
+    {
+      "cert_index": 2,
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_literal": -12,
+      "defect_polarity": "negative",
+      "defect_var_id": 12,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_02.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "ab4e4f5a9025b8f0095ff3dda66db2542b85d8f22a57ff88421b137ad1cc7d99"
+    },
+    {
+      "cert_index": 3,
+      "defect_canonical_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": -95,
+      "defect_polarity": "negative",
+      "defect_var_id": 95,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_03.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "f72d6f3212461e010b742f19a2d4b044e74894caa747befbe81be2ae8d60fd98"
+    },
+    {
+      "cert_index": 4,
+      "defect_canonical_labels": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": -931,
+      "defect_polarity": "negative",
+      "defect_var_id": 931,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_04.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "7e1a344b7216678d7e5a886565acf376be8f4f1aae76bd1a743b575a83208a6d"
+    },
+    {
+      "cert_index": 5,
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": 13,
+      "defect_polarity": "positive",
+      "defect_var_id": 13,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_05.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "3e8a594895b20348b5717a687af04cd406fd564025e253d4764289b9199bbf4e"
+    },
+    {
+      "cert_index": 6,
+      "defect_canonical_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "defect_literal": 94,
+      "defect_polarity": "positive",
+      "defect_var_id": 94,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_06.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "c04025fb0675628651052676975ee35fcf4d55fec45681d883fc8960c47d3eb3"
+    },
+    {
+      "cert_index": 7,
+      "defect_canonical_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "defect_literal": -166,
+      "defect_polarity": "negative",
+      "defect_var_id": 166,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_07.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "ed7dfb5b2c9272f1b360eac996a061730288dfd395dcd32619c393fafedc809d"
+    },
+    {
+      "cert_index": 8,
+      "defect_canonical_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "defect_literal": -177,
+      "defect_polarity": "negative",
+      "defect_var_id": 177,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_08.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "4e1114e057b5d8c3343e05954c86c09c1bc8f622d9ac6192ec3b5fc4de544edd"
+    },
+    {
+      "cert_index": 9,
+      "defect_canonical_labels": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "defect_literal": -258,
+      "defect_polarity": "negative",
+      "defect_var_id": 258,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_09.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "a77215ec2ee4e1ee0cda21ae89f0441455ce4c9faa8a3a4202d1af57416db127"
+    },
+    {
+      "cert_index": 10,
+      "defect_canonical_labels": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "defect_kind": "c4_edge_absent",
+      "defect_labels": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "defect_literal": -1072,
+      "defect_polarity": "negative",
+      "defect_var_id": 1072,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_10.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "5eedfcc0503492ad62ae051f3580a6c80f663b2f39393d0f46480e00a7bba1ca"
+    },
+    {
+      "cert_index": 11,
+      "defect_canonical_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "defect_literal": 178,
+      "defect_polarity": "positive",
+      "defect_var_id": 178,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_11.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "82aeebf1f592a64544db2f1e6e9ed8af19e9ea34e03968b11e0800048a3bcf8a"
+    },
+    {
+      "cert_index": 12,
+      "defect_canonical_labels": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "defect_literal": 257,
+      "defect_polarity": "positive",
+      "defect_var_id": 257,
+      "expected": "UNSAT",
+      "filename": "k19_intersect_12.cnf",
+      "good_unit_count": 76,
+      "orbit": "intersect",
+      "sha256": "aa04a2351d7481cdb9a1ed669d42b5a6880b232b0067eb111b21f30c7717ee6d"
+    }
+  ],
+  "controls": [
+    {
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": 13,
+      "defect_polarity": "positive",
+      "defect_var_id": 13,
+      "expected": "NOT fast-UNSAT (SAT or timeout)",
+      "filename": "k19_disjoint_control_diag.cnf",
+      "good_unit_count": 0,
+      "orbit": "disjoint",
+      "sha256": "a7bc52a7d80fb3c3d6abd114733a2446469829fc3b153a73c0257243b798c210",
+      "source_cert_index": 5
+    },
+    {
+      "defect_canonical_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_kind": "diagonal_present",
+      "defect_labels": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "defect_literal": 13,
+      "defect_polarity": "positive",
+      "defect_var_id": 13,
+      "expected": "NOT fast-UNSAT (SAT or timeout)",
+      "filename": "k19_intersect_control_diag.cnf",
+      "good_unit_count": 0,
+      "orbit": "intersect",
+      "sha256": "a7bc52a7d80fb3c3d6abd114733a2446469829fc3b153a73c0257243b798c210",
+      "source_cert_index": 5
+    }
+  ],
+  "notes": [
+    "Control CNF for each orbit uses the first essential positive diagonal_present defect in table order; no good-fiber units are included."
+  ],
+  "roundtrip": {
+    "checked_label_edges": 176,
+    "status": "passed",
+    "unique_edge_vars_touched": 90
+  },
+  "source_table": "scratchpad/ladder/g2prime/k19/rep_table_k19.json",
+  "source_table_sha256": "a52cc486420c81c97820f9e58f54f00b4d4ff8d42d057ffc9e5b9f771135eff7",
+  "type": "k19_cnf_manifest_v1"
+}

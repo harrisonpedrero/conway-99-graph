@@ -1,0 +1,10 @@
+=== 6 F0-defect certs (expect UNSAT, genuine ~3.5MB proofs) ===
+ce1: solve=s UNSATISFIABLE verify=s VERIFIED time=1.88s drat=3486513B
+ce2: solve=s UNSATISFIABLE verify=s VERIFIED time=1.93s drat=3486515B
+ce3: solve=s UNSATISFIABLE verify=s VERIFIED time=2.01s drat=3486514B
+ce4: solve=s UNSATISFIABLE verify=s VERIFIED time=1.88s drat=3486514B
+cd1: solve=s UNSATISFIABLE verify=s VERIFIED time=1.88s drat=3486513B
+cd2: solve=s UNSATISFIABLE verify=s VERIFIED time=1.86s drat=3486513B
+=== VACUITY CONTROL: base + ce1-defect ONLY, no 80 units (expect NOT fast-UNSAT) ===
+control: UNKNOWN(timeout) time=s (SAT/UNKNOWN => 80 units essential => certs GENUINE)
+DONE
