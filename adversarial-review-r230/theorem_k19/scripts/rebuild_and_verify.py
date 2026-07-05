@@ -120,6 +120,28 @@ def collect_cert_recipes(labels, edge_vars):
     residual_clauses = unit_clauses(good18b) + residual_non_c4_clauses(k18b)
     certs.append((k18b["file"], residual_clauses, k18b.get("sha256")))
 
+    # --- k=17 Part A: nine forcing orbits x forcing fiber x 6 defects ---
+    k17_dir = os.path.join(CERT_DIR, "k17")
+    rep17 = load_json(os.path.join(k17_dir, "rep_table_k17.json"))
+    good17 = {}
+    for orb in rep17["forcing_orbits"]:
+        lits = edge_lits(edge_vars, labels, orb["good_fiber_units"])
+        if len(lits) != 68:
+            raise ValueError(f"k17 orbit {orb['orbit_type']} has {len(lits)} good units")
+        good17[orb["orbit_type"]] = lits
+    k17a = load_json(os.path.join(k17_dir, "manifest_k17A.json"))
+    for rec in k17a["certs"]:
+        units = unit_clauses(good17[rec["orbit"]] + [rec["defect_literal"]])
+        certs.append((rec["file"], units, rec.get("sha256")))
+
+    # --- k=17 Part B: C4-cycle residual, four non-C4 clauses ---
+    k17b = load_json(os.path.join(k17_dir, "manifest_k17B.json"))
+    good17b = edge_lits(edge_vars, labels, k17b["good_fiber_units"])
+    if len(good17b) != 68:
+        raise ValueError(f"k17 residual has {len(good17b)} good units")
+    residual17 = unit_clauses(good17b) + residual_non_c4_clauses(k17b)
+    certs.append((k17b["file"], residual17, k17b.get("sha256")))
+
     return certs
 
 
@@ -127,8 +149,8 @@ def main():
     base, labels, edge_vars, _ = build_base_cnf()
     base_body = clause_body(base.clauses)
     certs = collect_cert_recipes(labels, edge_vars)
-    if len(certs) != 103:
-        raise RuntimeError(f"expected 103 certificate recipes, got {len(certs)}")
+    if len(certs) != 158:
+        raise RuntimeError(f"expected 158 certificate recipes, got {len(certs)}")
 
     print(f"rebuilding {len(certs)} certificate CNFs; checking SHA-256")
     ok = bad = skip = 0
@@ -143,7 +165,7 @@ def main():
             bad += 1
             print(f"  MISMATCH {name}: {actual[:16]} != {expected[:16]}")
     print(f"MATCH={ok} MISMATCH={bad} SKIPPED={skip}")
-    passed = bad == 0 and skip == 0 and ok >= 103
+    passed = bad == 0 and skip == 0 and ok >= 158
     print("PASS" if passed else "FAIL")
     raise SystemExit(0 if passed else 1)
 

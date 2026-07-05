@@ -1,0 +1,18 @@
+k=17 residual (C4_cycle orbit, exceptional fibers {0,1},{0,2},{1,3},{2,3} = 4-cycle 0-1-3-2-0)
+instance: base(honest) + 68 good-fiber C4-edge units + 4 six-literal nonC4 disjunction clauses
+CNF: k17_C4cycle_residual.cnf (59853782 B), SHA recipe==disk VERIFIED (manifest_k17B.json)
+
+CaDiCaL: s UNSATISFIABLE (exit 20), 700.47s, 913MB RAM, 524MB DRAT proof
+drat-trim: s VERIFIED, 803.6s, 139977/3109164 clauses in core, 404332/3451057 lemmas in core,
+           30790494 resolution steps, 12532 RAT lemmas in core (GENUINE DEEP proof, 25x k18 core)
+cadical --lrat (independent re-solve): s UNSATISFIABLE (exit 20), 367.2s, 996MB LRAT proof
+lrat-check (independent format+checker): c VERIFIED, 26.88s, 6560238 added / 5534875 deleted clauses
+CMS+XOR forced-Gauss (independent solver + GF(2) layer, 734x1745 matrix): s UNSATISFIABLE, 268s
+
+vacuity control base+68good-only: cadical exit 124 = TIMEOUT@900s, 1378095 conflicts (NOT fast-UNSAT)
+  => the 4 nonC4 clauses carry the residual content; premises non-vacuous.
+
+MEANING: once the other 17 fibers are C4, the four 4-cycle fibers cannot all be non-C4.
+Therefore at least one is C4 => >=18 C4 fibers => reduces to k>=18 (locked). Combined with the
+9 per-fiber forcing orbits (54 Part-A certs, all UNSAT+VERIFIED), no vertex has exactly 17 C4
+fibers, hence no vertex has >=17 C4 fibers (conditional on honest base encoding).
