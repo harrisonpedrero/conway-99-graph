@@ -1,0 +1,32 @@
+k=16 residuals: 2 of the 21 five-exceptional-fiber orbits are joint residuals
+(the 2-connected cores with no free fiber): C5 (5-cycle) and K4minusE (K4 minus
+an edge). The other 19 orbits are closed by per-fiber forcing (114 Part-A certs,
+solve_k16A_results.txt: k16A certs PASS=114 FAIL=0). Good units per config = 64.
+
+Each residual = base(honest) + 64 good-fiber C4-edge units + 5 six-literal nonC4
+disjunction clauses (one per exceptional fiber). SHA recipe==disk VERIFIED
+(manifest_k16B.json, sha_match true for both).
+
+C5 (exceptional fibers {0,1},{0,2},{1,3},{2,4},{3,4}):
+  CaDiCaL: s UNSATISFIABLE (exit 20), 28.25s, 913MB RAM, 256MB DRAT proof
+  drat-trim: s VERIFIED, 123.4s, 46790/3109161 clauses in core, 3036 RAT lemmas (genuine)
+  CMS+XOR forced-Gauss (independent): s UNSATISFIABLE
+  vacuity control base+64good-only: ran to ~938s / 1397693 conflicts, never UNSAT
+    => timeout, NON-VACUOUS.
+
+K4minusE (exceptional fibers {0,1},{0,2},{0,3},{1,2},{1,3}):
+  CaDiCaL: s UNSATISFIABLE (exit 20), 27.0s, 915MB RAM, 280MB DRAT proof
+  drat-trim: s VERIFIED, 59.5s, 29778/3109161 clauses in core, 1129 RAT lemmas (genuine)
+  CMS+XOR forced-Gauss (independent): s UNSATISFIABLE
+  vacuity control base+64good-only: ran to ~942s / 1122971 conflicts, never UNSAT
+    => timeout, NON-VACUOUS.
+
+MEANING: once the other 16 fibers are C4, the 5 exceptional fibers of a C5 or
+K4minusE orbit cannot all be non-C4. Therefore at least one is C4 => >=17 C4
+fibers => reduces to the k>=17 rung (locked). Combined with the 19 per-fiber
+forcing orbits, no vertex has exactly 16 C4 fibers, hence no vertex has >=16 C4
+fibers (conditional on honest base encoding).
+
+NOTE (difficulty non-monotonic): k16 residuals solve in ~28s vs k17's 700s -
+more exceptional fibers => more nonC4 clauses => more constrained => faster UNSAT.
+The 900s+ non-vacuity of the controls confirms the nonC4 clauses carry the content.
