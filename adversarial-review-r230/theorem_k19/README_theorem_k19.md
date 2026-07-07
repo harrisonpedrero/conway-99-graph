@@ -1,4 +1,4 @@
-# The k>=15 theorem note
+# The k>=14 theorem note
 
 This directory contains a paper-grade theorem note:
 
@@ -8,7 +8,7 @@ This directory contains a paper-grade theorem note:
 ## Plain-English statement
 
 Assuming the repository's honest rooted CNF base faithfully encodes the rooted
-`srg(99,14,1,2)` equations, no vertex of a Conway 99-graph can have 15 or more
+`srg(99,14,1,2)` equations, no vertex of a Conway 99-graph can have 14 or more
 of its 21 rooted fibers inducing the Paley/C4 pattern.
 
 The key mechanism is fiber completion. If 20 fibers at a root are C4, the last
@@ -52,6 +52,17 @@ disjoint triangles, and one further K4-ish graph — which are not per-fiber for
 by BCP; instead, each is a joint residual instance proving its six exceptional
 fibers cannot all be non-C4. Hence 15 C4 fibers force at least 16 C4 fibers, and
 the k=16 result applies.
+
+The k=14 extension splits on the 65 orbit-types of the seven exceptional fibers
+(the C(21,7)=116280 seven-edge subgraphs on the seven matched-pair indices, whose
+S7 orbit sizes sum to 116280). Fifty-five orbit-types are per-fiber forced: in
+each, one exceptional fiber has all six of its defects refuted by the base plus
+the 56 good-fiber units (14 good fibers x 4 = 56). The other ten are joint
+residuals — the dense 7-edge 2-connected cores with no free fiber — which are not
+per-fiber forced by BCP; instead, each is a joint residual instance proving its
+seven exceptional fibers cannot all be non-C4. All ten are UNSAT (no residual is
+SAT, so no floor is reached), reducing to the k=15 rung. Hence 14 C4 fibers force
+at least 15 C4 fibers, and the k=15 result applies.
 
 ## What is machine-certified
 
@@ -114,7 +125,20 @@ the k=16 result applies.
     "no-conflict ⇒ FAILED" guard is commented out). All earlier `lrat-check`
     corroboration claims were retracted; the K_{2,3} residual is certified only
     by the formally-verified `cake_lpr` (`tools/cake_lpr/PROVENANCE.md`).
-- Total local completion instances in `scripts/rebuild_and_verify.py`: 490
+- k=14 Part A: 330 forcing certificates for the fifty-five forcing seven-subset
+  orbit-types (55 orbits x 1 forcing fiber x 6 defects), all `s UNSATISFIABLE`
+  by CaDiCaL and `s VERIFIED` by `drat-trim`; solve log line
+  `k14A certs: PASS=330 FAIL=0`.
+- k=14 Part B: ten joint residual CNFs, each base + 56 good-fiber units + seven
+  six-literal non-C4 clauses, for the ten dense 7-edge 2-connected core orbits.
+  All ten are `s UNSATISFIABLE` by CaDiCaL (`cadical --chrono=0 --unsat
+  --restartint=50`), with solve times ranging from about 30 seconds to 6.5 hours;
+  the densest, res1, took 23516 seconds and produced a 28GB LRAT proof. No
+  residual is SAT, so no floor is reached at k=14. Because independent `drat-trim`
+  checking of proofs up to 28GB would be infeasible, all ten are certified via
+  LRAT with `cake_lpr`, the formally-verified (HOL4/CakeML) LRAT proof checker
+  (`s VERIFIED UNSAT` each; see `tools/cake_lpr/PROVENANCE.md`).
+- Total local completion instances in `scripts/rebuild_and_verify.py`: 830
   SHA-checked recipes.
 - Vacuity controls: removing the good-fiber units gives `UNKNOWN(timeout)` at
   600 seconds for the k=20 control and both k=19 controls, so the good-fiber
@@ -129,19 +153,23 @@ the k=16 result applies.
   those clauses carry the residual content. For the six k=15 residuals, base + 60
   good units without the six non-C4 clauses gives `UNKNOWN(timeout)` at 900
   seconds (500K-900K conflicts, never UNSAT), so those clauses carry the residual
-  content.
+  content. For the ten k=14 residuals, base + 56 good units without the seven
+  non-C4 clauses each ran the full ~900 seconds with hundreds of thousands of
+  conflicts and never reached UNSAT (`UNKNOWN(timeout)`), so those clauses carry
+  the residual content.
 - Symmetry: 21 fibers form one orbit; pairs of exceptional fibers form exactly
   two orbits, disjoint and intersecting; triples of exceptional fibers form
   exactly five orbits; quadruples of exceptional fibers form exactly ten orbits
   (sizes summing to C(21,4)=5985); quintuples of exceptional fibers form exactly
   21 orbits (sizes summing to C(21,5)=20349); 6-subsets of exceptional fibers
-  form exactly 41 orbits (sizes summing to C(21,6)=54264).
+  form exactly 41 orbits (sizes summing to C(21,6)=54264); 7-subsets of
+  exceptional fibers form exactly 65 orbits (sizes summing to C(21,7)=116280).
 
 ## What is not claimed
 
 This is not an unconditional proof that `srg(99,14,1,2)` does not exist.
-Conway's problem remains open. Vertices with 14 or fewer C4 fibers are not
-excluded. The k<=14 range remains open.
+Conway's problem remains open. Vertices with 13 or fewer C4 fibers are not
+excluded. The k<=13 range remains open.
 
 The CNF proof checking verifies the emitted CNFs. The mathematical bridge from
 a hypothetical graph to those CNFs rests on the honest rooted base equations:
@@ -179,7 +207,12 @@ Primary sources used by the note:
 - `theorem_k19/certificates/k15/solve_k15A_results.txt`
 - `theorem_k19/certificates/k15/manifest_k15B.json`
 - `theorem_k19/certificates/k15/residual_verdict.txt` (K_{2,3} via `cake_lpr`)
-- `theorem_k19/tools/cake_lpr/PROVENANCE.md` (formally-verified LRAT checker for the K_{2,3} residual; note on the unsound bundled `lrat-check`)
+- `theorem_k19/certificates/k14/rep_table_k14.json`
+- `theorem_k19/certificates/k14/manifest_k14A.json`
+- `theorem_k19/certificates/k14/solve_k14A_results.txt`
+- `theorem_k19/certificates/k14/manifest_k14B.json`
+- `theorem_k19/certificates/k14/residual_verdict.txt` (all ten residuals via `cake_lpr`)
+- `theorem_k19/tools/cake_lpr/PROVENANCE.md` (formally-verified LRAT checker for the K_{2,3} residual and all ten k=14 residuals; note on the unsound bundled `lrat-check`)
 - `reports/FINAL_REPORT_R230_NONEXISTENCE.md`
 - `../literature/README.md`
 
@@ -194,8 +227,8 @@ bash scratchpad/ladder/g2prime/k19/solve_k19.sh
 bash scratchpad/ladder/g2prime/k18/solve_k18A.sh
 # k=18 residual: replay k18B_residual_triangle.cnf with CaDiCaL + drat-trim;
 # see theorem_k19/certificates/k18/residual_verdict.txt
-# k=17, k=16, and k=15 rungs have no bundled shell script: their certificate CNFs
-# are rebuilt byte-identically by scripts/rebuild_and_verify.py (all 490 instances),
+# k=17, k=16, k=15, and k=14 rungs have no bundled shell script: their certificate CNFs
+# are rebuilt byte-identically by scripts/rebuild_and_verify.py (all 830 instances),
 # and re-verified by running CaDiCaL --no-binary + drat-trim2 on any rebuilt CNF.
 # Recorded per-cert / per-residual verdicts (s UNSATISFIABLE / s VERIFIED):
 #   certificates/k17/solve_k17A_results.txt   (k17A certs: PASS=54 FAIL=0)
@@ -206,6 +239,9 @@ bash scratchpad/ladder/g2prime/k18/solve_k18A.sh
 #   certificates/k15/residual_verdict.txt     (K4, C6, K_{2,3}, bowtie,
 #                                              two-triangles, K4-ish residuals;
 #                                              K_{2,3} via cake_lpr on LRAT)
+#   certificates/k14/solve_k14A_results.txt   (k14A certs: PASS=330 FAIL=0)
+#   certificates/k14/residual_verdict.txt     (ten dense 7-edge core residuals;
+#                                              all ten via cake_lpr on LRAT)
 ```
 
 Expected summaries:
@@ -223,12 +259,15 @@ k=16 K4minusE residual: s UNSATISFIABLE, s VERIFIED; CMS+XOR-Gauss UNSAT
 210 k=15 Part-A certs: PASS=210 FAIL=0
 k=15 bowtie/K4/res2/two-triangles/C6 residuals: s UNSATISFIABLE, s VERIFIED (drat-trim); CMS+XOR-Gauss UNSAT
 k=15 K_{2,3} residual: s UNSATISFIABLE; cake_lpr s VERIFIED UNSAT (22.4GB LRAT, formally-verified HOL4/CakeML checker; drat-trim could not check 4.88GB DRAT locally); CMS+XOR-Gauss UNSAT
+330 k=14 Part-A certs: PASS=330 FAIL=0
+k=14 ten dense 7-edge core residuals (res0..res9): s UNSATISFIABLE; cake_lpr s VERIFIED UNSAT each (LRAT proofs up to 28GB, formally-verified HOL4/CakeML checker; densest res1 solve=23516s; no residual SAT => no floor)
 k=20 control: UNKNOWN(timeout)
 k=19 controls: UNKNOWN(timeout), UNKNOWN(timeout)
 k=18 residual control base+72good-only: UNKNOWN(timeout 900s)
 k=17 residual control base+68good-only: UNKNOWN(timeout 900s)
 k=16 residual controls base+64good-only: UNKNOWN(timeout 900s), UNKNOWN(timeout 900s)
 k=15 residual controls base+60good-only: UNKNOWN(timeout 900s) x6
+k=14 residual controls base+56good-only: UNKNOWN(timeout 900s) x10
 ```
 
 For a clean rebuild, regenerate the honest base from
@@ -239,6 +278,6 @@ units, defect units, and residual clauses recorded in the manifests, then run:
 python theorem_k19/scripts/rebuild_and_verify.py
 ```
 
-Expected rebuild summary: `MATCH=490 MISMATCH=0 SKIPPED=0` and `PASS`. This
+Expected rebuild summary: `MATCH=830 MISMATCH=0 SKIPPED=0` and `PASS`. This
 does not run a SAT solver or DRAT checker; it verifies that the committed recipe
 rebuilds the exact certified CNF bytes.

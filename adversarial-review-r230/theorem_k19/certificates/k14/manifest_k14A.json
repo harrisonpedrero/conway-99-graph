@@ -1,0 +1,8585 @@
+{
+ "type": "manifest_k14A",
+ "certs": [
+  {
+   "file": "k14A_o0_03_c4a0.cnf",
+   "orbit_index": 0,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "fd0ac68b8025ea9276b7d676db27c2cdd26178936293e8901b8ce6a51b004ba4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o0_03_c4a1.cnf",
+   "orbit_index": 0,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "822f540e746e4b6b49d1c40d4b33acb9b49dc8c8d0e5f82896816f4435cd5cda",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o0_03_c4a2.cnf",
+   "orbit_index": 0,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "8fe41d4e55340f8b604af352d82f156b285e5eb028fedb360d30599825d1bdb6",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o0_03_c4a3.cnf",
+   "orbit_index": 0,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "01913c66499b1375d0e4dcb4c035cdf9a07bb64b20edbf210ccf8db80d607b29",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o0_03_dia0.cnf",
+   "orbit_index": 0,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "156f596fa6c2ace809db4ab0d5af6f62ea830b31f36a9502b1512d3bcd6e86cb",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o0_03_dia1.cnf",
+   "orbit_index": 0,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "ba12ea0b025ebb4ccb41ff456739da383e8d58cb94dfc9e5d4eb612aa68e35a0",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o1_04_c4a0.cnf",
+   "orbit_index": 1,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "8e7505d3a9ddb7a4e8a7628429b8f29f1866e9121c25fbe34e31edd403bde87a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o1_04_c4a1.cnf",
+   "orbit_index": 1,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "00b6fae3d35f858928a1061640a452d5e320857012daf874664d0131567af7b9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o1_04_c4a2.cnf",
+   "orbit_index": 1,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "08806f1f5756fd251ef17dc543642f561689ba376ce235a2d2ce69d6ecdb2757",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o1_04_c4a3.cnf",
+   "orbit_index": 1,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "9b8e2b2f374d11659236370ba4da4b554625e100351f2654fd17a8c120941248",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o1_04_dia0.cnf",
+   "orbit_index": 1,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "b09a426c55a45bf61880f547442b5f5ac67e19c7d6788a092a1bb9f42e8b758e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o1_04_dia1.cnf",
+   "orbit_index": 1,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "37233dc26038b33d383a3808e4272ed2ee8210ea903af59ed8eb19a24a5179c7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o2_03_c4a0.cnf",
+   "orbit_index": 2,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "e79ee53f5607fea6094105c49e8c06c1ee7236a42ac74ccd2493558fdc8666f7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o2_03_c4a1.cnf",
+   "orbit_index": 2,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "dff5116299ab8858824e6c54d81887491c2d85b8ef5067ceec2f9a22bc4e867f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o2_03_c4a2.cnf",
+   "orbit_index": 2,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "1af2138aaebd3ef460b8a75b7291e09d93ad8ba7703a0b502c646699dac19855",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o2_03_c4a3.cnf",
+   "orbit_index": 2,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "069692180dfe7e733f079d2d24807a45eac963541ff1b552204c6b92b57e6459",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o2_03_dia0.cnf",
+   "orbit_index": 2,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "cee13afa6c00617cd04ca50b5c05ee94b1d3dc77c870804e3acde03767ed12ba",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o2_03_dia1.cnf",
+   "orbit_index": 2,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "9dac5f4746ad4992021854d3e9bb83db1ea6975095722eacebc0e00d4df42c87",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o3_05_c4a0.cnf",
+   "orbit_index": 3,
+   "forcing_fiber": [
+    0,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -637,
+   "good_unit_count": 56,
+   "sha256": "0c877dcbcccd41b906a66f7054dedd72e75b0a2eac0395bdea1aa9baa4434dae",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o3_05_c4a1.cnf",
+   "orbit_index": 3,
+   "forcing_fiber": [
+    0,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      10
+     ]
+    ]
+   },
+   "defect_literal": -648,
+   "good_unit_count": 56,
+   "sha256": "975e459a6142d8edc9239ea55004d33f0946ab62a207c5df663d86cc3739ff96",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o3_05_c4a2.cnf",
+   "orbit_index": 3,
+   "forcing_fiber": [
+    0,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      11
+     ],
+     [
+      1,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -723,
+   "good_unit_count": 56,
+   "sha256": "ea90791f05c9adb9b8d0a185391fca035952666f03d7d6aeb7595c2278a6878f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o3_05_c4a3.cnf",
+   "orbit_index": 3,
+   "forcing_fiber": [
+    0,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      10
+     ],
+     [
+      1,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -1471,
+   "good_unit_count": 56,
+   "sha256": "e39bf34be94ac4d7cdbc53e65459a0b1571fb35702280d7189161b3b5ca0a386",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o3_05_dia0.cnf",
+   "orbit_index": 3,
+   "forcing_fiber": [
+    0,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      11
+     ]
+    ]
+   },
+   "defect_literal": 649,
+   "good_unit_count": 56,
+   "sha256": "1051a079a9e657f559ecbff7970eecd7eef24e64c059fcf852868c54f529a06e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o3_05_dia1.cnf",
+   "orbit_index": 3,
+   "forcing_fiber": [
+    0,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      11
+     ],
+     [
+      1,
+      10
+     ]
+    ]
+   },
+   "defect_literal": 722,
+   "good_unit_count": 56,
+   "sha256": "eeb4185921664eecd72f770b752ff467cae03257c8f7e17a3b4295ba77d55fa6",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o4_03_c4a0.cnf",
+   "orbit_index": 4,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "2bcfd21d188c71436b370179536aa47eca0a407672eab70efef5f165691d1e4a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o4_03_c4a1.cnf",
+   "orbit_index": 4,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "68e375267a7e4975feb7723dcd2272c8aae76b365a388b74cf48ffb1e575a5af",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o4_03_c4a2.cnf",
+   "orbit_index": 4,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "149ca70e691c0d2c1957de21e637a3502d785174b0e84046e8be9d409970ae1d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o4_03_c4a3.cnf",
+   "orbit_index": 4,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "b2ca0afd78738946b764127b01c556e0074aabe542e1998a90ec96a8269a7d78",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o4_03_dia0.cnf",
+   "orbit_index": 4,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "7fcbaa31d4924f763cad546b42c82a5fac774577947f55f04a718f86e05f3b6c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o4_03_dia1.cnf",
+   "orbit_index": 4,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "a1d823ec30c9780614a7e0f5b1335b7d7037a51789bc1f9054e0a5b99e0576d1",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o5_03_c4a0.cnf",
+   "orbit_index": 5,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "70a5f61c1041cc4e7d46cbc272e313ddbe6e142a2effb7435918215b31eda6ff",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o5_03_c4a1.cnf",
+   "orbit_index": 5,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "812beb8c855c2bec97b4fb33798ae1024934139f387dac5438e94e79590ac43c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o5_03_c4a2.cnf",
+   "orbit_index": 5,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "f393cc19eefe020085f2553912871839bcd86c066e125240764b9537be41f299",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o5_03_c4a3.cnf",
+   "orbit_index": 5,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "0894bae67d65c3966bb186ddc05147b3a825b4b3b06651afa346a0c8b76fe9c6",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o5_03_dia0.cnf",
+   "orbit_index": 5,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "9835fdca108da3cd125a55fd23d4fe50f817617fc6e03d1f0d78d71652c5883b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o5_03_dia1.cnf",
+   "orbit_index": 5,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "07f27aa512f9e43c4233cbacedf9952f339ea6ab7387103a75d85e38c3fd0ce1",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o6_04_c4a0.cnf",
+   "orbit_index": 6,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "f8982e7c0f9732627279ac8142224164c40e4a05314f7a0ce533947c1930c4d9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o6_04_c4a1.cnf",
+   "orbit_index": 6,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "b8da1f971877765bd3d3b19f4a098185cfddddd540222649a16f366f4ecb98c9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o6_04_c4a2.cnf",
+   "orbit_index": 6,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "42e55eabe14a7561927dec81331d3229736a179bc1ad892ec6fa51b8a6d4d976",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o6_04_c4a3.cnf",
+   "orbit_index": 6,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "a9ea1a26f7e9ff060217f599d2d6a68042bbfc2a3763c6ebb19200640fa73376",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o6_04_dia0.cnf",
+   "orbit_index": 6,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "68a030a5fe95ecf9a895bffa02c7c73c635a7b0a844edf8c4320d44d2be57c17",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o6_04_dia1.cnf",
+   "orbit_index": 6,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "4ce27a870ffd1c371327bf050a08ec4299cbffada8b294e6f9d4f8d4b2acdf5b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o7_04_c4a0.cnf",
+   "orbit_index": 7,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "2abd5efeb4b8a1f5c5d949503d96bad4072f062b0db2288e7561cae43b3a853c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o7_04_c4a1.cnf",
+   "orbit_index": 7,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "cf4137f278038965d4a68d05aa96c4ea7154f61ab24a796fb5781bb195212087",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o7_04_c4a2.cnf",
+   "orbit_index": 7,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "36ed8dc018dc51d5835a5eef7251f3a77872e81e2d526b52a0aedf6d554bee30",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o7_04_c4a3.cnf",
+   "orbit_index": 7,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "184ecf69ef658007e7344cd6a1c53f63fc6d5329d2440c450e0ee05305350cea",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o7_04_dia0.cnf",
+   "orbit_index": 7,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "71d4ca692dbb7f8e91656e1c881062caf41a92ae202709e643daa9f0f3586fce",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o7_04_dia1.cnf",
+   "orbit_index": 7,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "b455f6b733a1af4fa5d95ea790bb09b4c256bd941bbd87ed6332b5c716fc8d8e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o8_04_c4a0.cnf",
+   "orbit_index": 8,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "6bc9e3f12e56af275b2858f641108fe01b64d9a4b844390f4651d626599c5e5b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o8_04_c4a1.cnf",
+   "orbit_index": 8,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "9c5bfe88d80c0950e19d5fe940b42410eea8976454310724b952021e92513964",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o8_04_c4a2.cnf",
+   "orbit_index": 8,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "e52d5fe4f4a1c9936b3a1d14abbbf7c462eeacf2b00e8da90af5c08e7f7ab6f8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o8_04_c4a3.cnf",
+   "orbit_index": 8,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "a93da0ed1fcacdb236f82bdb89e3ee7ccf743d8544e649042e4f69c7d71c104f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o8_04_dia0.cnf",
+   "orbit_index": 8,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "b22174af422ccf168cec978f3e33b05c31578633d81e6710680f66ef7b8dbc8e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o8_04_dia1.cnf",
+   "orbit_index": 8,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "9bfd609d11ecb406ecb9a0285bfb953415f0601bcc9375d2a233bd652b6aa2aa",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o9_04_c4a0.cnf",
+   "orbit_index": 9,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "632dfc367ad3bb8b292ba0c604b66ccc5bd93531e5361a9985de90a75fb206a0",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o9_04_c4a1.cnf",
+   "orbit_index": 9,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "4d466b02e2ba36c634868fa5457da996e83a09eedd397778828472e085567939",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o9_04_c4a2.cnf",
+   "orbit_index": 9,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "9aa3b68b34577bffaa76cf261cb76494e97a65dd193b23ae01c098da49f8536c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o9_04_c4a3.cnf",
+   "orbit_index": 9,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "e7c8a46325fb1477e9991959dfafec6916a34b9eba815ff8231e4e43550557fc",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o9_04_dia0.cnf",
+   "orbit_index": 9,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "6e77e5e663ad91ad590c74afc05d325694f8a0cc37b43ce667a67e86e4ab1074",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o9_04_dia1.cnf",
+   "orbit_index": 9,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "b977b7ee054a95f2afc29e6d92cee384a4b347bdc1336eea7416f40a8f49c7f8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o10_04_c4a0.cnf",
+   "orbit_index": 10,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "a3de73e6f73de7eecb1711d12ffa67acebf5303202272f52ff79372e685e62cd",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o10_04_c4a1.cnf",
+   "orbit_index": 10,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "b0eba3b1275f6343a0801a5429c0b4f682b0e0781f501a5ca4b81f4e7cfb675c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o10_04_c4a2.cnf",
+   "orbit_index": 10,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "83646ddcf526c47dedb7f1cc19d4093baa433858b71ba66868d2fbc51f0017c7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o10_04_c4a3.cnf",
+   "orbit_index": 10,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "871026fd18eb988f46d3e02cd509ab7a32ae5bafb6c48ebd0f7f2ca614f4f4f3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o10_04_dia0.cnf",
+   "orbit_index": 10,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "4c7f9c965360da2e91d604dce2077a461fe6f13ba1b84df88ac802a4f4f23bd0",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o10_04_dia1.cnf",
+   "orbit_index": 10,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "152352c68ccfca5cdef027f22171f056e5e8119ad2cb949527f2650dab8a712d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o11_03_c4a0.cnf",
+   "orbit_index": 11,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "0cf547dce5e17a4671f9860976e2d3bb2de2bdfbfee3de565e113de11e819207",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o11_03_c4a1.cnf",
+   "orbit_index": 11,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "8edc3fbddb9a8090d47e4043676063f26d9d1711fe84ddccbcd6e36e10b074f3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o11_03_c4a2.cnf",
+   "orbit_index": 11,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "c617733a2a01b2f07a49a1b404c912b9c305533f2336dcb89b5fe6c2ff0550f1",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o11_03_c4a3.cnf",
+   "orbit_index": 11,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "9d7da155eec84d476e01d5188d23c4e2aa41787f9d6c6e2cb05020d0a625df85",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o11_03_dia0.cnf",
+   "orbit_index": 11,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "3cee77e26edcd2afad73b544078a028979b5dab99b3d2a0d2dffe361d7dc4688",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o11_03_dia1.cnf",
+   "orbit_index": 11,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "bb98dccd0d31789fd4756471ce72a351b28c7e45f6af64181a12eb9fb8ad86f5",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o12_03_c4a0.cnf",
+   "orbit_index": 12,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "525947fb96d65fa9edf21cffcc409e76e8a873d8a748f5b9f7030277d365030a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o12_03_c4a1.cnf",
+   "orbit_index": 12,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "855c4c50c8861acf5c515487c7c29ecb74ded9112c1ed130dbe5ba6856e8a24c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o12_03_c4a2.cnf",
+   "orbit_index": 12,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "b7df7e574bb49d51d0f8d2cabef12922ced17a62a09148c2086b54c7fe06d130",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o12_03_c4a3.cnf",
+   "orbit_index": 12,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "660f990c9a778676efcfa60ef8c372aa5fa399cd1f0833fe2e656fa251582e12",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o12_03_dia0.cnf",
+   "orbit_index": 12,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "27084b9a2ff3821e5446271e7f94f09aec9ead8d1685c3fa6cbae988c511c985",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o12_03_dia1.cnf",
+   "orbit_index": 12,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "92b122fb1035f93b9a36840b31f99c6f6aa911c9fdd291bd7fffbddc9e20b234",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o13_03_c4a0.cnf",
+   "orbit_index": 13,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "ee7ef9fb2cff0f1d82953847f8176a7e5520309fcef653281bd2b22c812b4ccd",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o13_03_c4a1.cnf",
+   "orbit_index": 13,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "699156f3b04507d9497651d955c17b56d117859ada8d606770c943611968d534",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o13_03_c4a2.cnf",
+   "orbit_index": 13,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "930ba6fa1c1146f47b8d4b4c43e5e407deb737514d7bc7d1526433362fd69655",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o13_03_c4a3.cnf",
+   "orbit_index": 13,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "91fcff60a8decdbe46487c9fad76bd01caa2f37dee8a6cef70fa6517258d05d8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o13_03_dia0.cnf",
+   "orbit_index": 13,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "d1a3c3d397e4e4542209de171bcbc29a5bff0f50776a150978090c4f49907aa4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o13_03_dia1.cnf",
+   "orbit_index": 13,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "657c31fd42077bca66ea600590d6cadb627fb81e16e00fc37275694f9a813876",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o14_15_c4a0.cnf",
+   "orbit_index": 14,
+   "forcing_fiber": [
+    1,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      2,
+      10
+     ],
+     [
+      2,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -2056,
+   "good_unit_count": 56,
+   "sha256": "41e2a1def9a08d0ab6190a4637a59299527ef01433329c6f63afdbc298047ed8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o14_15_c4a1.cnf",
+   "orbit_index": 14,
+   "forcing_fiber": [
+    1,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      10
+     ]
+    ]
+   },
+   "defect_literal": -2065,
+   "good_unit_count": 56,
+   "sha256": "1637c530896fc08ae7e0b1884828b4792bfce3ace4a7e2b02a7c440553a30665",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o14_15_c4a2.cnf",
+   "orbit_index": 14,
+   "forcing_fiber": [
+    1,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      2,
+      11
+     ],
+     [
+      3,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -2118,
+   "good_unit_count": 56,
+   "sha256": "59ad7cd346cd7a1c976652b171adf7708222af0dfe4e85b3218d70e7cef1b535",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o14_15_c4a3.cnf",
+   "orbit_index": 14,
+   "forcing_fiber": [
+    1,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      3,
+      10
+     ],
+     [
+      3,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -2541,
+   "good_unit_count": 56,
+   "sha256": "d70c793a577a446d046dad7ff17794e6c9a52f78158dfb5deeed4460277852cb",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o14_15_dia0.cnf",
+   "orbit_index": 14,
+   "forcing_fiber": [
+    1,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      11
+     ]
+    ]
+   },
+   "defect_literal": 2066,
+   "good_unit_count": 56,
+   "sha256": "cd5e10b999e159d3d946bf6b0f6d4dbc85504177d136d0820d8c2134ccf296c0",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o14_15_dia1.cnf",
+   "orbit_index": 14,
+   "forcing_fiber": [
+    1,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      2,
+      11
+     ],
+     [
+      3,
+      10
+     ]
+    ]
+   },
+   "defect_literal": 2117,
+   "good_unit_count": 56,
+   "sha256": "88edb2f80802a9c282f928688de49e825f11acc6e6a85ea94b7b8bf016f903d6",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o15_04_c4a0.cnf",
+   "orbit_index": 15,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "903f91547a3fbd288092c02609c49a66e6ab646d634d993af2c950159c27aebe",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o15_04_c4a1.cnf",
+   "orbit_index": 15,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "86f23f3754e2d59454d5621a5d0a99334a06086f1244765a6fdb19145a1cdfc7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o15_04_c4a2.cnf",
+   "orbit_index": 15,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "e1839f2704c9749d0504e4e1d8c7e59616837fc5b2f40932cea762bcd680824c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o15_04_c4a3.cnf",
+   "orbit_index": 15,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "6ec19c1440c79762ac559f4b130282dec5a3466dc32fac5e9b4aece7d78325a3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o15_04_dia0.cnf",
+   "orbit_index": 15,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "a15cc7eaf6cb8aabf5e2417000ff3f2e180f41c6e916c57c2d3e594d2bb04064",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o15_04_dia1.cnf",
+   "orbit_index": 15,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "121883167818d64598a8e235baca5085529376f0ecebf8dacba54cdedf6c4d9f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o16_03_c4a0.cnf",
+   "orbit_index": 16,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "b10735a44c2ea54da5048556a56f34c9955ef3c02009c772712bad0c70b08083",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o16_03_c4a1.cnf",
+   "orbit_index": 16,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "f86b51e755669a65c0fcb84981347a0d1e4e09c6ee689cfe43a68b5012906c0e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o16_03_c4a2.cnf",
+   "orbit_index": 16,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "18aaa58d6e6edc271b3e18261f14ffb0ef44214fec4ec78a6cd99e8e74d3fafc",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o16_03_c4a3.cnf",
+   "orbit_index": 16,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "7597081cbf679094e55ac331b856b25c0e67633036da6efb52de5ed15cce5a0f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o16_03_dia0.cnf",
+   "orbit_index": 16,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "3882d34227840795a40655dfb3549e554eded80ff53d3a381009805a856fc531",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o16_03_dia1.cnf",
+   "orbit_index": 16,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "6e3caa2e92825ca00e9417a4829dfb70a1f9b59b3cc52a8b4e803e06eb8cf641",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o17_03_c4a0.cnf",
+   "orbit_index": 17,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "83cb15ebf25e02904ec28cfce4b914d577446f2d3846ca53aa9161c5a656a1ea",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o17_03_c4a1.cnf",
+   "orbit_index": 17,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "c2bd318dd974214fec5e3801822766c90ce110824b3e2e747e7e9ebd02266bef",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o17_03_c4a2.cnf",
+   "orbit_index": 17,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "3bc0f76f1bf7db4417278cd0c000289270a4040b1d6f1aa076d01176eefe3eb8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o17_03_c4a3.cnf",
+   "orbit_index": 17,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "3039320ee6142f39d1cdace5456b4b5c46d30523f505b78609247d7e4f82e9e1",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o17_03_dia0.cnf",
+   "orbit_index": 17,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "d473ec4019409a5f41211702c7a4f8f1ce4138302409c9a3a80c61a20a68cea2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o17_03_dia1.cnf",
+   "orbit_index": 17,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "24be28609ab27b3e554f75bca80a99af839df839e8772ef96978957ec8ad968d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o18_56_c4a0.cnf",
+   "orbit_index": 18,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3481,
+   "good_unit_count": 56,
+   "sha256": "39bd4cd29530274f5b75d973aca17bb9d2e3d46d4f29bb550d32c7d418748358",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o18_56_c4a1.cnf",
+   "orbit_index": 18,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      12
+     ]
+    ]
+   },
+   "defect_literal": -3482,
+   "good_unit_count": 56,
+   "sha256": "a3d1d7a6c0e5d4fe1b1bd8eed718b1c5284ccd72229fdb1fb966ab145d3cba73",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o18_56_c4a2.cnf",
+   "orbit_index": 18,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3485,
+   "good_unit_count": 56,
+   "sha256": "677b5d307f90f9f6a447f316eb90dcb1d430d3a0e0e23c4d5bff08db4e804275",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o18_56_c4a3.cnf",
+   "orbit_index": 18,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      11,
+      12
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3486,
+   "good_unit_count": 56,
+   "sha256": "b7410b2fb08db0f51067967f4b8683272ea56ce51721a8740fda6ca5eab17404",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o18_56_dia0.cnf",
+   "orbit_index": 18,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": 3483,
+   "good_unit_count": 56,
+   "sha256": "854a33a458278c134c3be635472fa499d9d92c8b626bb92f0f24d499fd729097",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o18_56_dia1.cnf",
+   "orbit_index": 18,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      12
+     ]
+    ]
+   },
+   "defect_literal": 3484,
+   "good_unit_count": 56,
+   "sha256": "01f48949863966ae1f29c6fc1165130e7780c2c46cf4d9d1991692667630a9f4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o19_03_c4a0.cnf",
+   "orbit_index": 19,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "f6396f8fbb4b5b3d5d2241d608dcfa0c04791704b29f8660189511fa5141f220",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o19_03_c4a1.cnf",
+   "orbit_index": 19,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "0333f95b741a6b1c0726d11659fd0ac40b7a999f3b0a9afe019c520b57d9f244",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o19_03_c4a2.cnf",
+   "orbit_index": 19,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "e849f208f89d250856dd2b5f80cc97cd7dc998efd3231fb058ac869e52e52158",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o19_03_c4a3.cnf",
+   "orbit_index": 19,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "31b306c10fe1f7b8d78c4b3c4ba2be68389e9aaeb9bd57034c470d9cfb682e90",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o19_03_dia0.cnf",
+   "orbit_index": 19,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "89532e663e81dbb4732ec1a1d6f196d657ab66a929d82ea32d71171f8ab62eb1",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o19_03_dia1.cnf",
+   "orbit_index": 19,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "3697e91be1e4dc7ab5806625322cd5368e8e19265588a90f734cff6b85140182",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o20_03_c4a0.cnf",
+   "orbit_index": 20,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "701e41c9d19bd7bd222a63d8fec612b083e59438172b56793181fda89aa003c4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o20_03_c4a1.cnf",
+   "orbit_index": 20,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "ca19d75ecc43cb9ff12da9e932dff56762875b2379d84a449e6cbc34d318e86d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o20_03_c4a2.cnf",
+   "orbit_index": 20,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "651046c77283ee91c27e3903bdbb99769d61ed19826a895160effbb7172ecfde",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o20_03_c4a3.cnf",
+   "orbit_index": 20,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "50749416cab1505ef19bfe3d42ce500231fccdb102c74b3b500b0993439925c9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o20_03_dia0.cnf",
+   "orbit_index": 20,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "2e908b261c7fe6cb125ad4f139ffadac08b44515b5efb5acd0c8bdb3b7c6e135",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o20_03_dia1.cnf",
+   "orbit_index": 20,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "3f885ce1fca29b7ad9de58826c7382972c66d46d53c8e603067e81cf88bdfa17",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o21_03_c4a0.cnf",
+   "orbit_index": 21,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "8c1409a6b0bb93baa69cdffa5a21b149da6af29df94137015ca187c43a687b22",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o21_03_c4a1.cnf",
+   "orbit_index": 21,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "824a3e38055820cc40d593c47748c234fa6d9eefa1cdafa5fc659e29fb591fc8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o21_03_c4a2.cnf",
+   "orbit_index": 21,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "fc2c5182441f655ca6e966e9aeb2276513a3908e0ed17ccb82bee13201a63f5f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o21_03_c4a3.cnf",
+   "orbit_index": 21,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "296e63661e853f5cf853cefe342105f9099d02e427be688229cb363088301e8f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o21_03_dia0.cnf",
+   "orbit_index": 21,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "d6522dbb942467aeeddf1c00813d74868b7ecad0eed9b6e608ab60f750d9ce75",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o21_03_dia1.cnf",
+   "orbit_index": 21,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "e326d33af1ebcf68c354335ec46a0cb41915b7e0cfb70615e6a8db3ad42701f6",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o22_03_c4a0.cnf",
+   "orbit_index": 22,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "da49c9439775fd0e606e8845ae7ddcc26c2dd72afaf194310b2410ccc24c3ef4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o22_03_c4a1.cnf",
+   "orbit_index": 22,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "07349f1e34db2dd7d28a9179df0d551677b314ef80e6a533ccc418c75d74afb5",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o22_03_c4a2.cnf",
+   "orbit_index": 22,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "1c9f5a1ae748a64e0faa0f553b4848e79f0b65651f3cc2d7aa8e1b784715b720",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o22_03_c4a3.cnf",
+   "orbit_index": 22,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "ff9c5e8d19c2fba9e77f3ad9b5ba4cbb6ac32ea022076375eaebab3a20bd3207",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o22_03_dia0.cnf",
+   "orbit_index": 22,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "bb28310dc696214acd23fb737fbeb5cf02a43da424403dec6cc7361587482234",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o22_03_dia1.cnf",
+   "orbit_index": 22,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "3793fb4cb6d990b9b1f08b6b27400333fbc3b69e7932d8f5e90192f8fdd87582",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o23_01_c4a0.cnf",
+   "orbit_index": 23,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ]
+    ]
+   },
+   "defect_literal": -1,
+   "good_unit_count": 56,
+   "sha256": "74ba21d46aa8a8b4272eb5cb614f4aeedae11679825623c69f5eef4335e5df8f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o23_01_c4a1.cnf",
+   "orbit_index": 23,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "defect_literal": -12,
+   "good_unit_count": 56,
+   "sha256": "4d34a79c79f2b16f66fd29f6f46ac121c87b21420cef541b84aaf9021bf12451",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o23_01_c4a2.cnf",
+   "orbit_index": 23,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "defect_literal": -95,
+   "good_unit_count": 56,
+   "sha256": "97e97a977e6ff4e8a2c144520f7049db3f2fbf72113f6e1e4e50f05ce347f9e3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o23_01_c4a3.cnf",
+   "orbit_index": 23,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "defect_literal": -931,
+   "good_unit_count": 56,
+   "sha256": "fe55685e898b25082873401816a4b57dedb765dab483888bd20e1b837c9474a6",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o23_01_dia0.cnf",
+   "orbit_index": 23,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "defect_literal": 13,
+   "good_unit_count": 56,
+   "sha256": "2fc12a8e709fe509822958145457350ae8d607a88ca9f264083e47171f7f7634",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o23_01_dia1.cnf",
+   "orbit_index": 23,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "defect_literal": 94,
+   "good_unit_count": 56,
+   "sha256": "3ee06994b901ed5d6c1b75412aafadb825aadae600e5ad92c3a7549e4d58043c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o24_04_c4a0.cnf",
+   "orbit_index": 24,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      0,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -484,
+   "good_unit_count": 56,
+   "sha256": "f403d2056cbee6a16d1b0a2ff3128441668d4b61799d272c9fa199037e10cd2c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o24_04_c4a1.cnf",
+   "orbit_index": 24,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -495,
+   "good_unit_count": 56,
+   "sha256": "a7a858a0385b3a32b57afcf2fd95c9d2c37bd2930755e3d26a71767e73a2eb44",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o24_04_c4a2.cnf",
+   "orbit_index": 24,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -572,
+   "good_unit_count": 56,
+   "sha256": "fbbd548ff3dfebe908ffa47ab583f7be7858773a923c244cdcf4ec9393b9547c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o24_04_c4a3.cnf",
+   "orbit_index": 24,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -1342,
+   "good_unit_count": 56,
+   "sha256": "4de25b9304d7cba2447ea51ce1b5fa6988c2cc85ee0fa50413517c4e071da440",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o24_04_dia0.cnf",
+   "orbit_index": 24,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 496,
+   "good_unit_count": 56,
+   "sha256": "36cadea06ff2094d1c491c912611de4f63006cd3b13ae485461ef8a5a6b42cd7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o24_04_dia1.cnf",
+   "orbit_index": 24,
+   "forcing_fiber": [
+    0,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 571,
+   "good_unit_count": 56,
+   "sha256": "7d7870710e672465392c7a2d1313eaa09d139601c414c5a47aa4fb4588e62a9b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o25_03_c4a0.cnf",
+   "orbit_index": 25,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "2ead98b89b2b2de55388fb57c6b7d3c62d377a82da2341174b1c9863fdd68073",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o25_03_c4a1.cnf",
+   "orbit_index": 25,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "5cc9ff4965fa68ce749f2213be1eb9475d0b4881cee63893b550cecf00ce88bf",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o25_03_c4a2.cnf",
+   "orbit_index": 25,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "473714ab2f9bfa88fc37a703bc00ef898ecd515fdd0c1c97ed287e724a5e038d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o25_03_c4a3.cnf",
+   "orbit_index": 25,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "64ab509395313fdc7d8a3201e172233182781ce375bdcffc521740720e86d22c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o25_03_dia0.cnf",
+   "orbit_index": 25,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "9fa5edf64d3b12e0a9b64f19faca04f426aded065772dd496e0eebe6b0a5b87b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o25_03_dia1.cnf",
+   "orbit_index": 25,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "c23a291e20e2eef0026a163b56246a00438b6e162145b48aee47fa664e95a35b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o26_03_c4a0.cnf",
+   "orbit_index": 26,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "37e2ad969cb4b06d843ccb8f2990c50aee62cd6a95f41952032c8cc152c75f3d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o26_03_c4a1.cnf",
+   "orbit_index": 26,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "979bd6e87730de55382718a0556a110ffdd3a773e8475df724d20c7eea789f45",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o26_03_c4a2.cnf",
+   "orbit_index": 26,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "79d9fabe88eefad7007fa5bf72236d8da2ee057b7f21b919c4d6db7003389c82",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o26_03_c4a3.cnf",
+   "orbit_index": 26,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "ea62be0d0681585b0fcb8c2ebf46acfd79da917988412b4b5dba33e6472acd20",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o26_03_dia0.cnf",
+   "orbit_index": 26,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "0f45a8efdfcb6f71bcfe2d7c78b58953c69d16ce51679044b5b7dfa9d985d42f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o26_03_dia1.cnf",
+   "orbit_index": 26,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "c5df04b243a98cee848d72b9df7a1657af6f039d55b61755ba06b6e65212f9c3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o27_03_c4a0.cnf",
+   "orbit_index": 27,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "4e4b6b0b9a33a5f040b85274481767d799023f2c5e0f2c5e6a99be600e78f469",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o27_03_c4a1.cnf",
+   "orbit_index": 27,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "eaf1ed9c2e198568ee1feefe9359798a98d535bc669460e6b54208ea86d08ec5",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o27_03_c4a2.cnf",
+   "orbit_index": 27,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "f4b61bb6c4f05ec0619a83c73a976711e02f7035a720ea7adb3b358c94d4787b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o27_03_c4a3.cnf",
+   "orbit_index": 27,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "b31861c75db052994f6920cf66b87a7ae850906f5a6c4728220b87075780e67f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o27_03_dia0.cnf",
+   "orbit_index": 27,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "4fa5b4213bffd87f5d99ad34f75ecae347496399f87fff04c081c94a74d3d189",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o27_03_dia1.cnf",
+   "orbit_index": 27,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "772ec08dcca38985801042903b9af18594f52b50562940ec2b9e1599b9a20421",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o28_45_c4a0.cnf",
+   "orbit_index": 28,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      8,
+      10
+     ],
+     [
+      8,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3421,
+   "good_unit_count": 56,
+   "sha256": "875cc8fc9c288b70780118d30e92bf79b9065c275e192572e9431704aa512c4e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o28_45_c4a1.cnf",
+   "orbit_index": 28,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      10
+     ]
+    ]
+   },
+   "defect_literal": -3424,
+   "good_unit_count": 56,
+   "sha256": "136c9e99e8fe1c9ac30a73fc997113b6b22a835dbee6d1504cc73cd9ce315cb2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o28_45_c4a2.cnf",
+   "orbit_index": 28,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      8,
+      11
+     ],
+     [
+      9,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3435,
+   "good_unit_count": 56,
+   "sha256": "95c412da30b379378fbe66da91d26c4b81cbc50f0ca4df796367f751ed38fc54",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o28_45_c4a3.cnf",
+   "orbit_index": 28,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3459,
+   "good_unit_count": 56,
+   "sha256": "f82f6a6de0af0af018b61bc5fcaf4f6557e7c06aeef28756afc5614aa5e90b8f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o28_45_dia0.cnf",
+   "orbit_index": 28,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      11
+     ]
+    ]
+   },
+   "defect_literal": 3425,
+   "good_unit_count": 56,
+   "sha256": "9c628d2dc3d150bfff676797e3c385f32a346e44ac844612070d05a7528d4862",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o28_45_dia1.cnf",
+   "orbit_index": 28,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      8,
+      11
+     ],
+     [
+      9,
+      10
+     ]
+    ]
+   },
+   "defect_literal": 3434,
+   "good_unit_count": 56,
+   "sha256": "b6a40d1a2a39ba092532d519bd55338bf531b350291994998683ccb785f32892",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o29_24_c4a0.cnf",
+   "orbit_index": 29,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -2784,
+   "good_unit_count": 56,
+   "sha256": "b8302707312cbf301a4e3023d18fa40ba3bd6a89c3cf9b180f27a748596323f2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o29_24_c4a1.cnf",
+   "orbit_index": 29,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -2791,
+   "good_unit_count": 56,
+   "sha256": "3fa93a6cba47c2bbf850c98cd3b57e11ad580324b86f230766e2a62485cc85f7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o29_24_c4a2.cnf",
+   "orbit_index": 29,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -2828,
+   "good_unit_count": 56,
+   "sha256": "11c83ac40f5fc90bf5db53ee3f67f2e42fd5b34aa5d71410ae39b87bc3325716",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o29_24_c4a3.cnf",
+   "orbit_index": 29,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -3052,
+   "good_unit_count": 56,
+   "sha256": "60afba3d4a5f92f77ffbad0e83327e485a63a4699b20af66cc3bd947fe71ea3b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o29_24_dia0.cnf",
+   "orbit_index": 29,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 2792,
+   "good_unit_count": 56,
+   "sha256": "d706d277905e9bd928371954648698de316b5f9bf01018d2e52cc0afd309a299",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o29_24_dia1.cnf",
+   "orbit_index": 29,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 2827,
+   "good_unit_count": 56,
+   "sha256": "41243771f34a596f0ac2c83581f57b287ab7877731cf01ec77bd6a77ffca452b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o30_24_c4a0.cnf",
+   "orbit_index": 30,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -2784,
+   "good_unit_count": 56,
+   "sha256": "fe0219fb03fcbb5284d9578d6ee805b1220a42206a13f095736b9d8c0ea6d259",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o30_24_c4a1.cnf",
+   "orbit_index": 30,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -2791,
+   "good_unit_count": 56,
+   "sha256": "46da00d8c58f8026eb4b618649e8497a4d76ac600d0097d99ea7b4a9b9826e0b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o30_24_c4a2.cnf",
+   "orbit_index": 30,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -2828,
+   "good_unit_count": 56,
+   "sha256": "7a834c8dbb02c614a815a521d422b9e18b4a4dd28cdf69db8f6cf114656b37d2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o30_24_c4a3.cnf",
+   "orbit_index": 30,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -3052,
+   "good_unit_count": 56,
+   "sha256": "827669b0a81b8f128ceea43d97fe498bd4705384aa6a4a32370983e3d87c7b7f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o30_24_dia0.cnf",
+   "orbit_index": 30,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 2792,
+   "good_unit_count": 56,
+   "sha256": "c52404715b39b114f1bf6b6e3f33a066429009407994107be7f8d752cc59b78a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o30_24_dia1.cnf",
+   "orbit_index": 30,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 2827,
+   "good_unit_count": 56,
+   "sha256": "ea677435dc12557ffcf973270a6a3f88450560cbc9f29f502672652e5a83a384",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o31_24_c4a0.cnf",
+   "orbit_index": 31,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -2784,
+   "good_unit_count": 56,
+   "sha256": "eaac8e275c09ea001dffada638dbd511571745fb830254bab94370a495be17a8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o31_24_c4a1.cnf",
+   "orbit_index": 31,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      8
+     ]
+    ]
+   },
+   "defect_literal": -2791,
+   "good_unit_count": 56,
+   "sha256": "f7b0f6a3c1cfc6f8258abcc89678283ceb861b305cf34537325ca6e3eaa07d57",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o31_24_c4a2.cnf",
+   "orbit_index": 31,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -2828,
+   "good_unit_count": 56,
+   "sha256": "367f6805855d1433b9f0bc5a2b3323423958d41c98f3d11a7258ee6be1c47768",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o31_24_c4a3.cnf",
+   "orbit_index": 31,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      5,
+      8
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": -3052,
+   "good_unit_count": 56,
+   "sha256": "2d026d980c1cff9a74363f0535e23532cf34d3c577d24396d6323b9d79ccc3e3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o31_24_dia0.cnf",
+   "orbit_index": 31,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      8
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   },
+   "defect_literal": 2792,
+   "good_unit_count": 56,
+   "sha256": "11cf9bf5d1e8b076e3df3ad5909c156be3a0a16e7c329f37a791286311e82cdc",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o31_24_dia1.cnf",
+   "orbit_index": 31,
+   "forcing_fiber": [
+    2,
+    4
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      8
+     ]
+    ]
+   },
+   "defect_literal": 2827,
+   "good_unit_count": 56,
+   "sha256": "503726b131dd568c59dd6763fc85f0dbfa732814b7b154967d6f477ebf8e066f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o32_45_c4a0.cnf",
+   "orbit_index": 32,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      8,
+      10
+     ],
+     [
+      8,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3421,
+   "good_unit_count": 56,
+   "sha256": "9b91814192e548c627305f19bff0f8b03795cc71e1606059ec66b2e87e00dae5",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o32_45_c4a1.cnf",
+   "orbit_index": 32,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      10
+     ]
+    ]
+   },
+   "defect_literal": -3424,
+   "good_unit_count": 56,
+   "sha256": "27850e63d709dbb24287846051698bc685467af6de2b12f5143773771cb038f0",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o32_45_c4a2.cnf",
+   "orbit_index": 32,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      8,
+      11
+     ],
+     [
+      9,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3435,
+   "good_unit_count": 56,
+   "sha256": "0b0e49a64060744beccac3bb1fda96d81655796f1da7cbd4d7010dcbdd7de0df",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o32_45_c4a3.cnf",
+   "orbit_index": 32,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3459,
+   "good_unit_count": 56,
+   "sha256": "c734570a9ef694a7274fea48b4754f378b8c246c42a48b18770b7eafcbdf9e17",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o32_45_dia0.cnf",
+   "orbit_index": 32,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      11
+     ]
+    ]
+   },
+   "defect_literal": 3425,
+   "good_unit_count": 56,
+   "sha256": "aa6496502f5b9104bb741c6d36875472743eb692578f6ff4cbb9cb28beffb519",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o32_45_dia1.cnf",
+   "orbit_index": 32,
+   "forcing_fiber": [
+    4,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      8,
+      11
+     ],
+     [
+      9,
+      10
+     ]
+    ]
+   },
+   "defect_literal": 3434,
+   "good_unit_count": 56,
+   "sha256": "3005e61b3e43c1f64d7ef16b55290c5e10c1fbdbd39614a9e92af0ca19cb448e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o33_25_c4a0.cnf",
+   "orbit_index": 33,
+   "forcing_fiber": [
+    2,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -2857,
+   "good_unit_count": 56,
+   "sha256": "3ebea73ac933662b69b2afb35f870411a59fbbe20a16e016c90f6c26f40373f3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o33_25_c4a1.cnf",
+   "orbit_index": 33,
+   "forcing_fiber": [
+    2,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      10
+     ],
+     [
+      5,
+      10
+     ]
+    ]
+   },
+   "defect_literal": -2864,
+   "good_unit_count": 56,
+   "sha256": "3822d4a051bfc13ca7e18f2666f46942419aaf62adfb61e3b57440b54b9fc8dd",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o33_25_c4a2.cnf",
+   "orbit_index": 33,
+   "forcing_fiber": [
+    2,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      4,
+      11
+     ],
+     [
+      5,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -2899,
+   "good_unit_count": 56,
+   "sha256": "baeed35d5c706df810331716b6a0e86e197d4704cdba764777f9a01739c260ac",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o33_25_c4a3.cnf",
+   "orbit_index": 33,
+   "forcing_fiber": [
+    2,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3109,
+   "good_unit_count": 56,
+   "sha256": "5f1f170ee595d78b43d6deb59f369536908c4a2b0141b7c0168d9c95e4569fff",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o33_25_dia0.cnf",
+   "orbit_index": 33,
+   "forcing_fiber": [
+    2,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      10
+     ],
+     [
+      5,
+      11
+     ]
+    ]
+   },
+   "defect_literal": 2865,
+   "good_unit_count": 56,
+   "sha256": "c022409f2252ad8f78b597edf050330186cda9c9ebfd7a3be88e29197e9b79f7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o33_25_dia1.cnf",
+   "orbit_index": 33,
+   "forcing_fiber": [
+    2,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      4,
+      11
+     ],
+     [
+      5,
+      10
+     ]
+    ]
+   },
+   "defect_literal": 2898,
+   "good_unit_count": 56,
+   "sha256": "f10f997a5d5be19d630c789cafdc0d9e4be36cc94ec959b59f5532ead5061851",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o34_03_c4a0.cnf",
+   "orbit_index": 34,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "7e5d93e19c443f0125603223612988edaffdcc15c8e74c9e3df85fa198362412",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o34_03_c4a1.cnf",
+   "orbit_index": 34,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "c497e913bef4ab0fa0d7adf6375139e0af1a3ddbcf82e6a29ac37c01467d012f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o34_03_c4a2.cnf",
+   "orbit_index": 34,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "3d42582209a543e64ca2c99c98a95d90dcf6e2e7fe6509114e3bf8de5a912877",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o34_03_c4a3.cnf",
+   "orbit_index": 34,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "3a4b96f82e1116fd2c42b0e0afd86420109d59c23463cebf3d10e6372af0be55",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o34_03_dia0.cnf",
+   "orbit_index": 34,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "d24a2b04934158a0f32a09cdc365168460894a9fdc0eee03bb3b329b2b08c2f4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o34_03_dia1.cnf",
+   "orbit_index": 34,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "1882df1c048ced7ff388314ed473306ffa0a00b2c0f1c1970ffd99e87095382e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o35_35_c4a0.cnf",
+   "orbit_index": 35,
+   "forcing_fiber": [
+    3,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      6,
+      10
+     ],
+     [
+      6,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3256,
+   "good_unit_count": 56,
+   "sha256": "a249367122610b4f5bca7a9b821a1121bb60890106113fed02c9e433d9d881cd",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o35_35_c4a1.cnf",
+   "orbit_index": 35,
+   "forcing_fiber": [
+    3,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      10
+     ]
+    ]
+   },
+   "defect_literal": -3261,
+   "good_unit_count": 56,
+   "sha256": "c7b632a050f56db2795b3d97540b681933a00da45b83fdb85794269437e60d64",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o35_35_c4a2.cnf",
+   "orbit_index": 35,
+   "forcing_fiber": [
+    3,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3282,
+   "good_unit_count": 56,
+   "sha256": "7ea41531d4b53324175cfcfeedea48a6e3641688ea6c792c9c66c854ee8d9e64",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o35_35_c4a3.cnf",
+   "orbit_index": 35,
+   "forcing_fiber": [
+    3,
+    5
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      7,
+      10
+     ],
+     [
+      7,
+      11
+     ]
+    ]
+   },
+   "defect_literal": -3367,
+   "good_unit_count": 56,
+   "sha256": "6861f870164c5d54aa9fdf93268f5d5442ad74d50b783da4c2a167bf17f7f887",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o35_35_dia0.cnf",
+   "orbit_index": 35,
+   "forcing_fiber": [
+    3,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      11
+     ]
+    ]
+   },
+   "defect_literal": 3262,
+   "good_unit_count": 56,
+   "sha256": "4d9b10e46ad3e70ed74f5a1a8818d343a88d06e6e4807290643a96a33503785a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o35_35_dia1.cnf",
+   "orbit_index": 35,
+   "forcing_fiber": [
+    3,
+    5
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      10
+     ]
+    ]
+   },
+   "defect_literal": 3281,
+   "good_unit_count": 56,
+   "sha256": "bb3479ede34241447a381c65fd558fd9d8ca52b3911e03ffe603234949eb1e29",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o36_56_c4a0.cnf",
+   "orbit_index": 36,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3481,
+   "good_unit_count": 56,
+   "sha256": "a568190c8ddb1d04a2e7e00b851dfcb92afd00f69ee8c4497aec59db3386c41c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o36_56_c4a1.cnf",
+   "orbit_index": 36,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      12
+     ]
+    ]
+   },
+   "defect_literal": -3482,
+   "good_unit_count": 56,
+   "sha256": "45bf38fe8baa23b828934379f2d408ddb7b73e30cc7e01aceffa9dc16d3461bf",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o36_56_c4a2.cnf",
+   "orbit_index": 36,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3485,
+   "good_unit_count": 56,
+   "sha256": "7668da607e3a831585c41080f8f7722dcae84f8e5c02734583ffc31aaedbb54b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o36_56_c4a3.cnf",
+   "orbit_index": 36,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      11,
+      12
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3486,
+   "good_unit_count": 56,
+   "sha256": "9ae1bb55d7a965ab792bc4db50ad7d069ca9829af906dbc038d2f66f03ccd775",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o36_56_dia0.cnf",
+   "orbit_index": 36,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": 3483,
+   "good_unit_count": 56,
+   "sha256": "734edadf6781f648134c1efcaf72c8a67552efa303fe66bb72a97af3f7525b5e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o36_56_dia1.cnf",
+   "orbit_index": 36,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      12
+     ]
+    ]
+   },
+   "defect_literal": 3484,
+   "good_unit_count": 56,
+   "sha256": "3ee14141701017e4360bb97cd6b40de331d1d48302fa9aa59f4f1496346530ed",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o37_03_c4a0.cnf",
+   "orbit_index": 37,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "5ce12f2bb416cadddab9c2c7f3dbf76d61ffafb59c5140581270cb65cfc8a9a2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o37_03_c4a1.cnf",
+   "orbit_index": 37,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "d7d143c0ecd4dd21c26bffe911c5471283d5bb72fe807bfad75ffeac00e58094",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o37_03_c4a2.cnf",
+   "orbit_index": 37,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "986c136c3e7e8f724a605e9f520cbb975a3b9bc6aaf2b082299ca36b58a13dd5",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o37_03_c4a3.cnf",
+   "orbit_index": 37,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "e6593f618f9c1d2707258a8355c997b69127ef4d27eec43edbcfcc9980c5389b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o37_03_dia0.cnf",
+   "orbit_index": 37,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "6ece6b8049caad04aac6f7b04e82a61d5c9a5f940f637c32d05c9f59b1cf5bbf",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o37_03_dia1.cnf",
+   "orbit_index": 37,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "e646b45f2ac761f3077dd2d417be0bf87b50c921387f6e794a9adbf3cd78a119",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o38_03_c4a0.cnf",
+   "orbit_index": 38,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "2f0eca3e91dc6e615fde5955c98195b488029c6d7ca55c5124e73f465a9177b2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o38_03_c4a1.cnf",
+   "orbit_index": 38,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "a908c5c4f93fb650c4e5d3173262ebbe097d7f28791968d2fa4556080734c1b2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o38_03_c4a2.cnf",
+   "orbit_index": 38,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "e342332285b39f23fc78c40222d7650aed8d4c90db2c8e427ee08ae7b095e279",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o38_03_c4a3.cnf",
+   "orbit_index": 38,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "cb3b09dc63424f096e80b2b22f41ad01e1494f81949434d0827cca250522d0d3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o38_03_dia0.cnf",
+   "orbit_index": 38,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "a1f796c2ca672c477043dded38ad054eaf234dd64b953d588f7f6bc9bfbb861f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o38_03_dia1.cnf",
+   "orbit_index": 38,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "c331182c3bdd00cfa4a7bc6a5086671f22db8d5053112c5ce16d99221afcfb31",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o39_03_c4a0.cnf",
+   "orbit_index": 39,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "0d825c2dc286c88a8d06d57d3eb84a267693685cd68fb1aeb4cebbf9f8c074ff",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o39_03_c4a1.cnf",
+   "orbit_index": 39,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "1e6d36cac04ad1ae2daab93f802bdbfc4f6f9e081c02ed45f22723a65c4a77dc",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o39_03_c4a2.cnf",
+   "orbit_index": 39,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "7407afeece8edece874039958bbc653b4cc9b1e55bee7bd8065bf0ca1ec9c41b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o39_03_c4a3.cnf",
+   "orbit_index": 39,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "c12f19008feb604f7d654a82db2804ed565934c1ea1fca7bd6f87ad43d0fb5f2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o39_03_dia0.cnf",
+   "orbit_index": 39,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "b28e575ce44a361908ee5fbbacf9b8fbaa930241587a657edbf32d8f11fce336",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o39_03_dia1.cnf",
+   "orbit_index": 39,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "bdcffb56ec98b641198b89cccb24bddb95b4924a7f70570dff8aa4927570562b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o40_03_c4a0.cnf",
+   "orbit_index": 40,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "be809923f984803d6244c703a4ce53ab9c866cd3b4117b13bbd10f3e145b744d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o40_03_c4a1.cnf",
+   "orbit_index": 40,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "2d3f9bbc0576ac008f2119f9e424f70c2b4f98d9af76675a93a750f3d4ddfed2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o40_03_c4a2.cnf",
+   "orbit_index": 40,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "7a44bdfdbb79daf523ceccf9d0be131b7cdbb73a095be83a58447ecc6b3abba9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o40_03_c4a3.cnf",
+   "orbit_index": 40,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "dbcfbd9de92e9d2c43029844274fd3251cb9b968585d14a62b669ae684fe09e9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o40_03_dia0.cnf",
+   "orbit_index": 40,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "f0da6d299db7f8d9ab9897ac09a8657de254c4ba4f3aa9ad8d94d876289d028c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o40_03_dia1.cnf",
+   "orbit_index": 40,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "57b1e73653177fc1a7d81926db0f6c72794c0fd0d2960c4c110e9f9954af5ba3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o41_03_c4a0.cnf",
+   "orbit_index": 41,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "a3c2d5b9b7ea8f3312818c2574062ab3f86843a32f7b66b4b9391de060dc33bd",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o41_03_c4a1.cnf",
+   "orbit_index": 41,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "8a18af7e79a01aa5f23d5f15bed7e1b356b8943af7c8a9a5a08d32b2ce993b1e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o41_03_c4a2.cnf",
+   "orbit_index": 41,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "dbb4ca08992b9c7471207e58fa985e72b5b7a65face84cd3fe7d8eba91257c07",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o41_03_c4a3.cnf",
+   "orbit_index": 41,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "8d1d57dd7604e20e25f281b0e4a506de600b1900ab36c13f86dbefb23322d093",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o41_03_dia0.cnf",
+   "orbit_index": 41,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "7b699db6361f42f71f8ede857a567fba0d077db5d7b1a92d05fca5a3af3416d3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o41_03_dia1.cnf",
+   "orbit_index": 41,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "d618b0ee943bd0cb0e6d46651f21b282617966ca6e67b571bf2c0a15e7a7651a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o42_03_c4a0.cnf",
+   "orbit_index": 42,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "c3a03c0dd66c495ddebeff9ef14eb6514f6ca4446f6f1c395f16fd80886f0279",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o42_03_c4a1.cnf",
+   "orbit_index": 42,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "a4746f2e73e2310da51c65b62fe1d1925800e20608995be2a0a3c09b8dbdcfeb",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o42_03_c4a2.cnf",
+   "orbit_index": 42,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "8c4041432f9cd2c5a57f18bcc932bf4b554e7c8fcc9ebc71e2a44d0736faa178",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o42_03_c4a3.cnf",
+   "orbit_index": 42,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "7be910ffc5e5eb43f7230049fe0086d16462cd9bfba55f8db29c966ae1382cbb",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o42_03_dia0.cnf",
+   "orbit_index": 42,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "0af65b3b5f829d88c7e29039b7de0ffeb42f68a032a8253b0171faf4e2ee9ee0",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o42_03_dia1.cnf",
+   "orbit_index": 42,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "12c4c43c03885414d1c4537ebbc6153d91a3472cd47c8fa39d7d377e5f1e3872",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o43_03_c4a0.cnf",
+   "orbit_index": 43,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "d12de6049f5ba77a43c1c047893e10d58e73e6de26dc65e9bc896d7120a4abac",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o43_03_c4a1.cnf",
+   "orbit_index": 43,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "d0f70dc9156885fa2a3ade1ec0965bba6c5a92c1326ecec8a8b5191ab0d10843",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o43_03_c4a2.cnf",
+   "orbit_index": 43,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "93db9d1927e5d9ed7301db698380d856a51df74d4841db43cbc465d8d3e53178",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o43_03_c4a3.cnf",
+   "orbit_index": 43,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "dd6b273ee6b1397b6ac356e91f4794333b60368fe66c7072c619d5efad46d4b7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o43_03_dia0.cnf",
+   "orbit_index": 43,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "c795fe38790bd8655b00a0e33df23cba87ec021d523adb328c100e20d9998390",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o43_03_dia1.cnf",
+   "orbit_index": 43,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "577abc5559260264d17e2217ac97bca48dcd1604b7b5f1811e1b005da1522c5c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o44_03_c4a0.cnf",
+   "orbit_index": 44,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "883231746e52f33a1a358415723fb1b62d813288a120509fa40907ccd06e5518",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o44_03_c4a1.cnf",
+   "orbit_index": 44,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "34042f5bb735dca2e302bd094e2a25210946c33f92186e26d6ee13072b7e2de9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o44_03_c4a2.cnf",
+   "orbit_index": 44,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "58a793070783ba41cb7123848aa60f553e3ceba7d911e8511d114360a1b07ed3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o44_03_c4a3.cnf",
+   "orbit_index": 44,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "2cb0eb16fd3fe6071390d9913bc52bd01ff5377137ce1124aa897f0a66bbb7f4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o44_03_dia0.cnf",
+   "orbit_index": 44,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "fec4146d0a8371e7266d407932f00d2c98cf5ecaa91331d06ee995fcb20fae53",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o44_03_dia1.cnf",
+   "orbit_index": 44,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "0596a4fd7f49f489b69986b289d26343d79c5c441cab737007c67ac42a1144d3",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o45_03_c4a0.cnf",
+   "orbit_index": 45,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "3faa0d4a9e781e04755aa3bfe877f43ade9db51a09560cc18343f72d92d874c4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o45_03_c4a1.cnf",
+   "orbit_index": 45,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "97f1a2cca43be642e39a22f526d424c8666a1d160e429871d4233ff7b3b67770",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o45_03_c4a2.cnf",
+   "orbit_index": 45,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "713b869dfa9fc66835cec840c7c5d6a06410551602d075a195a0e5c7d4a3c1ff",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o45_03_c4a3.cnf",
+   "orbit_index": 45,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "e03cf53264b22286b1b1ac4f4f3080d07f7eb2fb760759acc97d5086652e5f2a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o45_03_dia0.cnf",
+   "orbit_index": 45,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "a5ca60fa4ed64f5377680ba85855bf5c2ecc24d8ebbb620861b0f56d4904d532",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o45_03_dia1.cnf",
+   "orbit_index": 45,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "2e94a8309a6e6992b52366dfcb6be956e0890340495524c10a9cbedfc5a8deb9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o46_03_c4a0.cnf",
+   "orbit_index": 46,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "5f9e897eabb195b110579830f5408551efb29019b14f2faface123a8ce260536",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o46_03_c4a1.cnf",
+   "orbit_index": 46,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "1f862f2b3af38aaf43f92f05a93eee4af35e2d7577853351a81996317243c8ab",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o46_03_c4a2.cnf",
+   "orbit_index": 46,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "93ae20a91cbf486f2bd14f436fa1055ea3162e75554ca1263479fd6b612e2036",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o46_03_c4a3.cnf",
+   "orbit_index": 46,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "b5a5aa602c592454e70a57bcd79f54ebbf61b7baf97c30914c251d1a4f604680",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o46_03_dia0.cnf",
+   "orbit_index": 46,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "06afd1dd314e7b3a71e443b2a12e3639e453854fc1eea0acd88ddc31001b9b4e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o46_03_dia1.cnf",
+   "orbit_index": 46,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "77d1ba39bf5a357c1708e5aaeef14aa06f66558543cfc1165f8d6b1b2f1ac311",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o47_01_c4a0.cnf",
+   "orbit_index": 47,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ]
+    ]
+   },
+   "defect_literal": -1,
+   "good_unit_count": 56,
+   "sha256": "b26e32cd4120d985e12f399ed2f721aa31f411b8d26864de1b902d8425de69a9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o47_01_c4a1.cnf",
+   "orbit_index": 47,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "defect_literal": -12,
+   "good_unit_count": 56,
+   "sha256": "c4fb3347e1df86088cf82a6f2fee03810bf35ae5546a43f0bd0d1e26fe1bd489",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o47_01_c4a2.cnf",
+   "orbit_index": 47,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "defect_literal": -95,
+   "good_unit_count": 56,
+   "sha256": "5c687333ef427ea09c0c01f797818598788c170e3920f340dcfbe87da836dd7c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o47_01_c4a3.cnf",
+   "orbit_index": 47,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "defect_literal": -931,
+   "good_unit_count": 56,
+   "sha256": "9d37939df23232074ee5855e7b40c562238a83f026906708d3b01805a46dee40",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o47_01_dia0.cnf",
+   "orbit_index": 47,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "defect_literal": 13,
+   "good_unit_count": 56,
+   "sha256": "de2d57b77e42f0d513e452178ded9aab8023bd8a3f514c6f516714c6f351f3b9",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o47_01_dia1.cnf",
+   "orbit_index": 47,
+   "forcing_fiber": [
+    0,
+    1
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "defect_literal": 94,
+   "good_unit_count": 56,
+   "sha256": "a3bd96958a93b91d448255325f4b99a87096fbbe336219298f2f2c4006f85b4e",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o48_03_c4a0.cnf",
+   "orbit_index": 48,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "a3936949f09c93f82bb656ef1d567b7713e9fdf0c1a010600e320a442ea72cec",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o48_03_c4a1.cnf",
+   "orbit_index": 48,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "c236dea11120a3e83d7fa7702cd8da896592a6121d5efd7b0a7985622f89cef5",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o48_03_c4a2.cnf",
+   "orbit_index": 48,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "85bb04a865fb5237731ef2c3c12ce00267a66f4c7352b0075e92a7dc37045dec",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o48_03_c4a3.cnf",
+   "orbit_index": 48,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "e96c3e18bceff9c34f415537d6a9fe45282b908bb34166865cd949c7332abdde",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o48_03_dia0.cnf",
+   "orbit_index": 48,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "257d64ca53d515144b86c14c8af028faeab43c0d2467384af5f36481c9cabc27",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o48_03_dia1.cnf",
+   "orbit_index": 48,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "85768b6f514d0caaff818a0a61b24645c7ead7797d31f4acf98387b2331076e1",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o49_56_c4a0.cnf",
+   "orbit_index": 49,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      10,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3481,
+   "good_unit_count": 56,
+   "sha256": "589c6a99cf400b602d790906ffe9f024d8c787a023d66abe766a2f20ae41796f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o49_56_c4a1.cnf",
+   "orbit_index": 49,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      12
+     ]
+    ]
+   },
+   "defect_literal": -3482,
+   "good_unit_count": 56,
+   "sha256": "eebc788657ab21f6c39c09ccd53bcd43542d0e4a7588a6714a89a2666176019f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o49_56_c4a2.cnf",
+   "orbit_index": 49,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3485,
+   "good_unit_count": 56,
+   "sha256": "24ddcee08dac4e6437458e7afba8f5f553e6395117e75d5fa0aefc7bd6f8df59",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o49_56_c4a3.cnf",
+   "orbit_index": 49,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      11,
+      12
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": -3486,
+   "good_unit_count": 56,
+   "sha256": "1dc1ad2f4fff302ab318e6ed622ff3ca5a07d19284b8caa9479a75be0d492412",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o49_56_dia0.cnf",
+   "orbit_index": 49,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      10,
+      12
+     ],
+     [
+      11,
+      13
+     ]
+    ]
+   },
+   "defect_literal": 3483,
+   "good_unit_count": 56,
+   "sha256": "e6f8c2eb8c6f0266467d6a54e06d2a0311d79fd17e6244433e75b3860740a7ea",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o49_56_dia1.cnf",
+   "orbit_index": 49,
+   "forcing_fiber": [
+    5,
+    6
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      10,
+      13
+     ],
+     [
+      11,
+      12
+     ]
+    ]
+   },
+   "defect_literal": 3484,
+   "good_unit_count": 56,
+   "sha256": "09a257bcd8fa778577c5fff94c91c196403e7816d921428bbcf23551f2611f22",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o50_03_c4a0.cnf",
+   "orbit_index": 50,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "d8f3a25989cd708f5c50e5288a0b13f885da0a85b2e25cda1d3966915a43a371",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o50_03_c4a1.cnf",
+   "orbit_index": 50,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "a6cccec11b25adcaf12767ba6641a3c5f4611103e856aebfc1f48ef2425ef179",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o50_03_c4a2.cnf",
+   "orbit_index": 50,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "139833e57adc15b8985c9f4151c25f03d44f9ceb0701304987cf504bb42210ed",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o50_03_c4a3.cnf",
+   "orbit_index": 50,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "865e76f1aedc576d721384bf0ba9ff15c23fcfd6c4dc38258eb911eeb8c66125",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o50_03_dia0.cnf",
+   "orbit_index": 50,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "c08240bc322bc86a0d295c2b82c347de3d4f6e8a7df7b874085b55874fe2b644",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o50_03_dia1.cnf",
+   "orbit_index": 50,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "7a3dd91181cd56d2bd30a41a06713866670d65f7d21c7dc66a422fd5d024bb60",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o51_03_c4a0.cnf",
+   "orbit_index": 51,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "95e778b76d892f7a9e47b948aa96f0a39927d5fb45e5e61ad44ed27ab889ffe7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o51_03_c4a1.cnf",
+   "orbit_index": 51,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "892d28b6821a5c7eb168372e99f13225c410c64f139f640a8028078816c49cbf",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o51_03_c4a2.cnf",
+   "orbit_index": 51,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "f86f3b6f21da54395c7a1f716f7a7c548d68ec85d09bf5c490bc494874cccdc2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o51_03_c4a3.cnf",
+   "orbit_index": 51,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "a040382e73077c5b96a60269f47195e9a7dca68ab4fb1f9d810a5ffef81ac73d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o51_03_dia0.cnf",
+   "orbit_index": 51,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "947762c10bf4b9cce22ae024687d80c168cfeb275d3b0dc0200f0a24982840bb",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o51_03_dia1.cnf",
+   "orbit_index": 51,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "cfb0f798a45d6d761319ae6113cf6f099d0a387b76d65d715524e07ad0970b0c",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o52_03_c4a0.cnf",
+   "orbit_index": 52,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "a09a9384fc3bbca25ec7cbd1acc4d4b2289f263a4322b36eedee2a6a8f9aad14",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o52_03_c4a1.cnf",
+   "orbit_index": 52,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "ad45caf4953c55ec3b678b81b839081fb7aa6fe264951ba30f148b5556c6da56",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o52_03_c4a2.cnf",
+   "orbit_index": 52,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "8462147791ca5339c3265de94242c169395f96ff799c8a713152372c0f3ee4a4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o52_03_c4a3.cnf",
+   "orbit_index": 52,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "4cb45895c18b0832ff3da9713f21d0d363b407fc35162bd53391e7ca3abc915b",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o52_03_dia0.cnf",
+   "orbit_index": 52,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "3d5649977b9b5b667393604f3a9253f6b3408bc944d39100957f4b44111358e8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o52_03_dia1.cnf",
+   "orbit_index": 52,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "0f5c6d4353b1edb7bb60f775937b04a292e7136e79a6f1019b840d8dde84a61a",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o53_03_c4a0.cnf",
+   "orbit_index": 53,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "6b4aa5e62bf4f86b2ea56bdf0f56a245932aeb505e1974fc67068d230985554f",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o53_03_c4a1.cnf",
+   "orbit_index": 53,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "8d313f0aa6994150f6eb7d2ed4a165ae1d8c227166c12951803030350767fcd8",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o53_03_c4a2.cnf",
+   "orbit_index": 53,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "86d26b6c08ecd08badaeac8334cce5e072cf6eb145450cafcb8ae15292b6b7c2",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o53_03_c4a3.cnf",
+   "orbit_index": 53,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "0aaab71e2bb14ff2469ee751140d276d0f13088a94179602cc7c89bd2244d85d",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o53_03_dia0.cnf",
+   "orbit_index": 53,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "05d30e585ce750de2b54aa50db15fde5882b170dc7ad561cc89ac0db302002f4",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o53_03_dia1.cnf",
+   "orbit_index": 53,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "6aae4364d77267520bee45a73098cd7c5fbecf2f1fe2ba7301c10a2f08c0d0fa",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o54_03_c4a0.cnf",
+   "orbit_index": 54,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -327,
+   "good_unit_count": 56,
+   "sha256": "2d039e70605ad65c824812442889b725cb6732cbeb861f9a45ac215a02d0ffdb",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o54_03_c4a1.cnf",
+   "orbit_index": 54,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": -338,
+   "good_unit_count": 56,
+   "sha256": "ff7c33f4a230a905da7a986a42da5f001a511dc480ea4fd5fa98ed46143876bd",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o54_03_c4a2.cnf",
+   "orbit_index": 54,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -417,
+   "good_unit_count": 56,
+   "sha256": "149b38bd5253c20026a975cb6838a2167ffd0a4526b9510b5442c287ef3f0418",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o54_03_c4a3.cnf",
+   "orbit_index": 54,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "c4_edge_absent",
+    "edge": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": -1209,
+   "good_unit_count": 56,
+   "sha256": "82dd215577030d9a939e559f98fd6a2c0dada48d977867bee0edb5191414afe7",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o54_03_dia0.cnf",
+   "orbit_index": 54,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ]
+   },
+   "defect_literal": 339,
+   "good_unit_count": 56,
+   "sha256": "205f67fa110b7d5fd482e9ac9e40c20fcaa7de3891a54008025638e7717c4f85",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  },
+  {
+   "file": "k14A_o54_03_dia1.cnf",
+   "orbit_index": 54,
+   "forcing_fiber": [
+    0,
+    3
+   ],
+   "defect": {
+    "kind": "diagonal_present",
+    "edge": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      6
+     ]
+    ]
+   },
+   "defect_literal": 416,
+   "good_unit_count": 56,
+   "sha256": "01898c615d369e5dd7bbadc01692d1cec4cff52fddfc0ebfea7810b281a5a532",
+   "verdict": "UNSAT",
+   "drat": "VERIFIED"
+  }
+ ]
+}

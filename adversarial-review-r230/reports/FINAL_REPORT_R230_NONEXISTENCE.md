@@ -1,26 +1,34 @@
 # Conway 99-Graph: R230 Certificate — Corrected Claim
 
-## Strengthening (2026-07-05): no vertex with ≥15 Paley fibers
+## Strengthening (2026-07-05): no vertex with ≥14 Paley fibers
 
 The R230 result below excludes a *fully* Paley-perfect vertex (all 21 fibers
 C4). A subsequent certificate campaign strengthens this to: **no
-`srg(99,14,1,2)` has a vertex at which 15 or more of its 21 rooted fibers
+`srg(99,14,1,2)` has a vertex at which 14 or more of its 21 rooted fibers
 induce a C4** (conditional on the same honest rooted-base encoding). The
 mechanism is a *fiber completion lemma* — enough good C4 fibers force the
-remaining ones — reduced by symmetry to 490 tiny certificates:
+remaining ones — reduced by symmetry to 830 tiny certificates:
 6 for the 20-fiber rung, 24 for the 19-fiber rung, 72 forcing certificates for
 the four 18-fiber triple orbits plus 1 index-triangle residual, 54 forcing
 certificates for the nine 17-fiber quadruple orbit-types plus 1 C4-cycle
 residual, 114 forcing certificates for the nineteen 16-fiber quintuple
-orbit-types plus 2 joint residuals, and 210 forcing certificates for the
-thirty-five 15-fiber six-subset orbit-types plus 6 joint residuals. The
-15-fiber rung splits the C(21,6)=54264 six-edge subgraphs into 41 S7
-orbit-types: thirty-five are per-fiber forcing (210 certs) and the other six
-are the 2-connected / multi-cycle core orbits — K4, C6 (the 6-cycle), K_{2,3}
-(complete bipartite), a bowtie, two disjoint triangles, and one further K4-ish
-graph — each a joint residual. Each residual is independently verified, with
-vacuity controls (`base + good-fiber units only` times out at 900 s) confirming
-the premises carry the content. The 18-fiber residual is dual-confirmed by an
+orbit-types plus 2 joint residuals, 210 forcing certificates for the
+thirty-five 15-fiber six-subset orbit-types plus 6 joint residuals, and 330
+forcing certificates for the fifty-five 14-fiber seven-subset orbit-types plus
+10 joint residuals. The 15-fiber rung splits the C(21,6)=54264 six-edge
+subgraphs into 41 S7 orbit-types: thirty-five are per-fiber forcing (210 certs)
+and the other six are the 2-connected / multi-cycle core orbits — K4, C6 (the
+6-cycle), K_{2,3} (complete bipartite), a bowtie, two disjoint triangles, and one
+further K4-ish graph — each a joint residual. The 14-fiber rung splits the
+C(21,7)=116280 seven-edge subgraphs into 65 S7 orbit-types: fifty-five are
+per-fiber forcing (330 certs) and the other ten are joint residuals — the dense
+7-edge 2-connected cores. All ten 14-fiber residuals are UNSAT and certified by
+`cake_lpr`, the formally-verified (HOL4/CakeML) LRAT proof checker (`s VERIFIED
+UNSAT` each), because their proofs are large (up to 28GB) so independent
+`drat-trim` checking would be infeasible; no residual is SAT, so no floor is
+reached and the completion argument holds at every 14-fiber orbit. Each residual
+is independently verified, with vacuity controls (`base + good-fiber units only`
+times out at 900 s) confirming the premises carry the content. The 18-fiber residual is dual-confirmed by an
 independent CryptoMiniSat + XOR UNSAT; the 17-fiber C4-cycle residual is
 double-verified (a genuine deep `drat-trim` `s VERIFIED` proof — 140K core
 clauses, 12.5K RAT lemmas — plus CMS+XOR with forced Gaussian elimination);
@@ -40,9 +48,9 @@ adversarial audit found it unsound — it trusts the solver's hints and prints
 `lrat-check` corroboration was retracted; see `../theorem_k19/tools/cake_lpr/PROVENANCE.md`.)
 All six are also
 re-confirmed by CMS+XOR with forced Gaussian elimination. See `../theorem_k19/`
-(theorem note, certificate manifests, and a reproducer that rebuilds all 490
-CNFs byte-identically — `MATCH=490 MISMATCH=0`). This is still **not**
-unconditional nonexistence: vertices with ≤14 C4 fibers remain unexcluded and
+(theorem note, certificate manifests, and a reproducer that rebuilds all 830
+CNFs byte-identically — `MATCH=830 MISMATCH=0`). This is still **not**
+unconditional nonexistence: vertices with ≤13 C4 fibers remain unexcluded and
 Conway's problem stays open.
 
 ## Verdict (corrected 2026-07-01)

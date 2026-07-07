@@ -1,0 +1,26 @@
+k=14 residuals: 10 of the 65 seven-exceptional-fiber orbits are joint residuals
+(dense 7-edge 2-connected cores). The other 55 orbits close by per-fiber forcing
+(330 Part-A certs, solve_k14A_results.txt: PASS=330 FAIL=0). Good units per config = 56.
+
+Each residual = base + 56 good-fiber C4-edge units + 7 six-literal nonC4 clauses.
+All 10 UNSAT (cadical --chrono=0 --unsat --restartint=50). NO residual is SAT => no floor at k14.
+Certified via LRAT with cake_lpr (formally-verified HOL4/CakeML checker; see tools/cake_lpr/PROVENANCE.md):
+
+  res0: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4]]  solve=10399.1s  cake_lpr s VERIFIED UNSAT
+  res1: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [2, 4]]  solve=23516.2s  cake_lpr s VERIFIED UNSAT
+  res2: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [3, 5], [4, 5]]  solve=78.6s  cake_lpr s VERIFIED UNSAT
+  res3: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 4], [3, 4]]  solve=69.9s  cake_lpr s VERIFIED UNSAT
+  res4: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 4], [3, 5], [4, 5]]  solve=1238.5s  cake_lpr s VERIFIED UNSAT
+  res5: [[0, 1], [0, 2], [0, 3], [1, 2], [3, 4], [3, 5], [4, 5]]  solve=156.5s  cake_lpr s VERIFIED UNSAT
+  res6: [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [3, 5]]  solve=20105.2s  cake_lpr s VERIFIED UNSAT
+  res7: [[0, 1], [0, 2], [0, 3], [1, 4], [2, 4], [3, 5], [4, 5]]  solve=51.8s  cake_lpr s VERIFIED UNSAT
+  res8: [[0, 1], [0, 2], [1, 2], [3, 4], [3, 5], [4, 6], [5, 6]]  solve=29.7s  cake_lpr s VERIFIED UNSAT
+  res9: [[0, 1], [0, 2], [1, 3], [2, 4], [3, 5], [4, 6], [5, 6]]  solve=1153.8s  cake_lpr s VERIFIED UNSAT
+
+Vacuity controls (base+56good only, no nonC4) for all 10: each ran the full ~900s
+with hundreds of thousands of conflicts and never reached UNSAT => timeout, non-vacuous.
+
+MEANING: once the other 14 fibers are C4, the 7 exceptional fibers of any of these orbits
+cannot all be non-C4 => at least one is C4 => >=15 C4 fibers => reduces to the k>=15 rung (locked).
+Combined with the 55 per-fiber forcing orbits, no vertex has exactly 14 C4 fibers, hence no
+vertex has >=14 C4 fibers (conditional on honest base encoding).

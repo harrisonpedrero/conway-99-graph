@@ -14,7 +14,7 @@
 \newcommand{\hash}[2]{\texttt{#1}\newline\texttt{#2}}
 \newcommand{\codepath}[1]{\texttt{\detokenize{#1}}}
 
-\title{No vertex of a Conway 99-graph has 15 or more Paley-perfect fibers}
+\title{No vertex of a Conway 99-graph has 14 or more Paley-perfect fibers}
 \author{Machine-certified theorem note from the R230/g2prime artifacts}
 \date{July 5, 2026}
 
@@ -24,7 +24,7 @@
 \begin{abstract}
 This note records the certificate chain proving that, subject to the standard
 faithfulness of the honest rooted CNF base, no strongly regular graph
-\(\srg(99,14,1,2)\) has a vertex at which at least \(15\) of its \(21\)
+\(\srg(99,14,1,2)\) has a vertex at which at least \(14\) of its \(21\)
 rooted fibers induce the Paley/C4 pattern.  The new machine-certified content
 is local to one root: six \(k=20\) completion certificates and twenty-four
 \(k=19\) two-exceptional-fiber certificates, plus the \(k=18\) triple
@@ -35,15 +35,23 @@ one joint \(C_4\)-cycle residual certificate), plus the \(k=16\)
 five-exceptional completion layer (one hundred fourteen per-fiber forcing
 certificates across nineteen forcing orbit-types and two joint residual
 certificates, the \(C_5\) five-cycle and the \(K_4\) minus an edge), plus the
-\(k=15\) six-exceptional completion layer: two hundred ten per-fiber forcing
+\(k=15\) six-exceptional completion layer (two hundred ten per-fiber forcing
 certificates across thirty-five forcing orbit-types and six joint residual
 certificates, the \(K_4\), the \(C_6\) six-cycle, the \(K_{2,3}\), a bowtie,
-two disjoint triangles, and one further \(K_4\)-ish graph.  All \(490\) listed
-local certificate instances are UNSAT by CaDiCaL and independently checked by
-\codepath{drat-trim} (except the \(k=15\) \(K_{2,3}\) residual, certified by
+two disjoint triangles, and one further \(K_4\)-ish graph), plus the \(k=14\)
+seven-exceptional completion layer: three hundred thirty per-fiber forcing
+certificates across fifty-five forcing orbit-types and ten joint residual
+certificates, the dense \(7\)-edge \(2\)-connected cores, all certified by
+\codepath{cake_lpr} because their proofs are large (up to \(28\) GB).  All
+\(830\) listed local certificate instances are UNSAT by CaDiCaL and
+independently checked by \codepath{drat-trim} (except the \(k=15\) \(K_{2,3}\)
+residual and all ten \(k=14\) residuals, certified by
 \codepath{cake_lpr}, a formally-verified (HOL4/CakeML) LRAT proof checker,
-\(\texttt{s VERIFIED UNSAT}\) on a \(22.4\) GB LRAT proof after \codepath{drat-trim}
-could not check its \(4.88\) GB DRAT proof locally); the \(k=18\) triangle
+\(\texttt{s VERIFIED UNSAT}\) each: the \(k=15\) \(K_{2,3}\) residual on a
+\(22.4\) GB LRAT proof after \codepath{drat-trim} could not check its
+\(4.88\) GB DRAT proof locally, and the ten \(k=14\) residuals because their
+LRAT proofs are large, up to \(28\) GB, so that independent \codepath{drat-trim}
+checking would be infeasible); the \(k=18\) triangle
 residual is also independently UNSAT by CMS+XOR, the \(k=17\) \(C_4\)-cycle
 residual is additionally re-confirmed by CMS+XOR
 with forced Gaussian elimination, the two \(k=16\) residuals are each
@@ -56,22 +64,22 @@ proof for Conway's \(\srg(99,14,1,2)\) problem.
 
 \section{The statement}
 
-\begin{theorem}[rooted \(k \geq 15\) exclusion]
-\label{thm:k15}
+\begin{theorem}[rooted \(k \geq 14\) exclusion]
+\label{thm:k14}
 Assuming the honest rooted CNF base faithfully encodes the rooted
 \(\srg(99,14,1,2)\) equations stated in Section~\ref{sec:base}, no strongly
-regular graph \(\srg(99,14,1,2)\) has a vertex at which \(\geq 15\) of its
+regular graph \(\srg(99,14,1,2)\) has a vertex at which \(\geq 14\) of its
 \(21\) rooted fibers induce a \(C_4\).
 \end{theorem}
 
-Equivalently, no vertex is ``\(15\)-of-\(21\) Paley-perfect''.  This strictly
+Equivalently, no vertex is ``\(14\)-of-\(21\) Paley-perfect''.  This strictly
 strengthens the published every-vertex Paley-pattern obstruction of Makhnev
 1988, condition \((*)\), and the repository-local R230 certificate excluding a
 single fully Paley-perfect vertex with all \(21\) fibers.
 
 The theorem is claim-bearing but deliberately scoped.  It proves neither
 unconditional nonexistence of \(\srg(99,14,1,2)\) nor the absence of vertices
-with at most \(14\) Paley-perfect fibers.
+with at most \(13\) Paley-perfect fibers.
 
 \section{Rooted setup and fibers}
 \label{sec:setup}
@@ -448,9 +456,74 @@ each returned \(\texttt{UNKNOWN(timeout)}\) at \(900\) seconds (\(500\)K to
 \(900\)K conflicts, never UNSAT), so the six non-\(C_4\) clauses carry the
 residual content.
 
-\section{Proof of Theorem~\ref{thm:k15}}
+\begin{proposition}[Seven-exceptional completion, \(k=14\)]
+\label{prop:k14}
+In the honest rooted system, if \(14\) fibers are asserted to be \(C_4\),
+then the seven remaining fibers cannot all be non-\(C_4\).
+\end{proposition}
 
-Suppose a rooted graph has at least \(15\) \(C_4\) fibers.  If it has exactly
+The \(\binom{21}{7}=116280\) seven-subsets of exceptional fibers are the
+\(7\)-edge graphs on the seven matched-pair indices.  Under the rooted \(S_7\)
+action they split into exactly sixty-five orbit-types, whose sizes sum to
+\(116280\).  Fifty-five of the sixty-five orbit-types are closed by per-fiber
+forcing.  In each of these fifty-five representatives, the \(14\) good fibers
+contribute \(56\) C4-edge unit premises (\(14\text{ good fibers}\times 4\text{
+edges}=56\)), and at least one exceptional fiber has each of its six possible
+defects
+-- absence of one of its four C4 edges, or presence of one of its two diagonals
+-- refuted by the base plus those \(56\) units, so that fiber is forced to be
+\(C_4\), contradicting ``exactly \(14\)''.  The manifest
+\codepath{certificates/k14/manifest_k14A.json} records \(330\) such
+certificates in total:
+\[
+55\text{ orbit-types}\times 1\text{ forcing fiber}\times 6\text{ defects}=330.
+\]
+The solve log \codepath{certificates/k14/solve_k14A_results.txt} records every
+one as \(\texttt{s UNSATISFIABLE}\) by CaDiCaL and
+\(\texttt{s VERIFIED}\) by \codepath{drat-trim}, with the summary line
+\(\texttt{k14A certs: PASS=330 FAIL=0}\).
+
+The remaining ten orbit-types are the dense \(7\)-edge \(2\)-connected cores
+with no free fiber.  Here the per-fiber mechanism does not apply: with only the
+\(56\) good-fiber units asserted, BCP forces none of the seven exceptional
+fibers to be \(C_4\).  Each residual is therefore posed jointly.  It is the
+honest base plus the \(56\) good-fiber unit clauses for the representative, plus
+one six-literal ``non-\(C_4\)'' disjunction for each of the seven exceptional
+fibers.  Each such disjunction says: at least one of the four C4 edges is
+absent, or at least one of the two diagonals is present.  The exact clauses are
+recorded in \codepath{certificates/k14/manifest_k14B.json}.
+
+All ten joint residual instances,
+\[
+\text{base}+56\text{ good units}+7\text{ non-}C_4\text{ clauses},
+\]
+are UNSAT (\codepath{cadical --chrono=0 --unsat --restartint=50}), with solve
+times ranging from about \(30\) seconds to \(6.5\) hours; the densest, res1,
+took \(23516\) seconds and produced a \(28\) GB LRAT proof.  No residual is SAT,
+so no ``floor'' is reached: the completion argument holds at every \(k=14\)
+orbit.  Because independent \codepath{drat-trim} checking of proofs up to
+\(28\) GB would be infeasible, all ten residuals are certified via LRAT with
+\codepath{cake_lpr}, the formally-verified (HOL4/CakeML) LRAT proof checker
+(\(\texttt{s VERIFIED UNSAT}\) each); the verdicts are recorded in
+\codepath{certificates/k14/residual_verdict.txt}, and the checker's provenance
+in \codepath{tools/cake_lpr/PROVENANCE.md}.  Each residual's meaning is narrower
+than per-fiber forcing.  It says that, once the other \(14\) fibers are \(C_4\),
+the seven exceptional fibers of that orbit cannot all be non-\(C_4\).  Therefore
+at least one exceptional fiber is \(C_4\), giving at least \(15\) \(C_4\) fibers
+and reducing the case to Proposition~\ref{prop:k15}.  The ten vacuity controls
+\[
+\text{base}+56\text{ good units only}
+\]
+each ran the full \(\sim 900\) seconds with hundreds of thousands of conflicts
+and never reached UNSAT (\(\texttt{UNKNOWN(timeout)}\)), so the seven non-\(C_4\)
+clauses carry the residual content.
+
+\section{Proof of Theorem~\ref{thm:k14}}
+
+Suppose a rooted graph has at least \(14\) \(C_4\) fibers.  If it has exactly
+\(14\), choose those \(14\) fibers.  Proposition~\ref{prop:k14} shows that the
+seven remaining fibers cannot all be non-\(C_4\), so the root has at least
+\(15\) \(C_4\) fibers after all.  If it has exactly
 \(15\), choose those \(15\) fibers.  Proposition~\ref{prop:k15} shows that the
 six remaining fibers cannot all be non-\(C_4\), so the root has at least
 \(16\) \(C_4\) fibers after all.  If it has exactly
@@ -570,6 +643,26 @@ non-\(C_4\) clauses and leave base plus \(60\) good units; all six return
 \(\texttt{UNKNOWN(timeout)}\) at \(900\) seconds (\(500\)K to \(900\)K
 conflicts).
 
+The \(k=14\) forcing certificates use the same base plus \(56\) good-fiber
+units and one defect unit on one of seven exceptional fibers.  There are
+\(330\) explicit certificates for the fifty-five forcing seven-subset orbits,
+all solved by CaDiCaL as \(\texttt{s UNSATISFIABLE}\) and checked by
+\codepath{drat-trim} as \(\texttt{s VERIFIED}\); the solve log records
+\(\texttt{k14A certs: PASS=330 FAIL=0}\).  There are ten residuals here, one for
+each of the dense \(7\)-edge \(2\)-connected core orbits, each a single joint
+instance: base, \(56\) good units, and seven six-literal non-\(C_4\) clauses.
+All ten are CaDiCaL UNSAT (\codepath{cadical --chrono=0 --unsat
+--restartint=50}), with solve times from about \(30\) seconds to \(6.5\) hours;
+the densest, res1, took \(23516\) seconds and produced a \(28\) GB LRAT proof,
+and no residual is SAT, so no floor is reached at \(k=14\).  Because independent
+\codepath{drat-trim} checking of proofs up to \(28\) GB would be infeasible, all
+ten residuals are certified via LRAT with \codepath{cake_lpr}, the
+formally-verified (HOL4/CakeML) LRAT proof checker, each
+\(\texttt{s VERIFIED UNSAT}\).  Their ten vacuity controls remove the seven
+non-\(C_4\) clauses and leave base plus \(56\) good units; each ran the full
+\(\sim 900\) seconds with hundreds of thousands of conflicts and never reached
+UNSAT (\(\texttt{UNKNOWN(timeout)}\)).
+
 The symmetry wrappers are also explicit.  The final transitivity report records
 one orbit on the \(21\) fibers, one orbit on the four C4-edge slots inside
 \(F_0\), and one orbit on the two diagonals inside \(F_0\).  The \(k=19\) rep
@@ -595,8 +688,10 @@ Rung & Instances & Recipe & Status\\
 \(k=16\) \(C_5\) and \(K_4{-}e\) residuals & 2 & base \(+64\) good units \(+5\) non-\(C_4\) clauses & UNSAT; DRAT VERIFIED\\
 \(k=15\) thirty-five forcing six-subset orbits & 210 & base \(+60\) good units \(+1\) defect unit & UNSAT; DRAT VERIFIED\\
 \(k=15\) \(K_4\), \(C_6\), \(K_{2,3}\), bowtie, 2-triangles, \(K_4\)-ish residuals & 6 & base \(+60\) good units \(+6\) non-\(C_4\) clauses & UNSAT; five DRAT VERIFIED, \(K_{2,3}\) LRAT VERIFIED\\
+\(k=14\) fifty-five forcing seven-subset orbits & 330 & base \(+56\) good units \(+1\) defect unit & UNSAT; DRAT VERIFIED\\
+\(k=14\) ten dense \(7\)-edge core residuals & 10 & base \(+56\) good units \(+7\) non-\(C_4\) clauses & UNSAT; all ten LRAT VERIFIED (\codepath{cake_lpr})\\
 \midrule
-Total local instances in the reproducer & 490 & \multicolumn{2}{l}{All SHA-checked from the committed recipe.}\\
+Total local instances in the reproducer & 830 & \multicolumn{2}{l}{All SHA-checked from the committed recipe.}\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -700,6 +795,15 @@ Machine-certified in this repository:
   \codepath{drat-trim} --- after \codepath{drat-trim} could not check its
   \(4.88\) GB DRAT proof locally, all six re-confirmed by CMS+XOR-Gauss)
   plus a \(900\)-second vacuity control.
+\item The \(k=14\) seven-exceptional extension: fifty-five seven-subset
+  orbit-types are closed by \(330\) per-fiber forcing certificates, and the ten
+  dense \(7\)-edge \(2\)-connected core orbits are each closed by one joint
+  residual certificate.  All ten \(k=14\) residuals are certified by
+  \codepath{cake_lpr}, the formally-verified (HOL4/CakeML) LRAT checker
+  (\(\texttt{s VERIFIED UNSAT}\) each), because their proofs are large (up to
+  \(28\) GB) so independent \codepath{drat-trim} checking would be infeasible;
+  no residual is SAT, so no floor is reached.  Each has a \(900\)-second vacuity
+  control.
 \item The symmetry reductions used here: the \(21\) fibers form one orbit; the
   two exceptional-fiber-pair types are exactly disjoint and intersecting; the
   five exceptional-fiber-triple types are exactly
@@ -720,8 +824,8 @@ Cited, not reproved here:
 Open or not claimed:
 \begin{itemize}
 \item Conway's problem remains open.  This note does not rule out an
-  \(\srg(99,14,1,2)\) in which every vertex has at most \(14\) \(C_4\) fibers.
-\item The \(k\leq 14\) range is open.
+  \(\srg(99,14,1,2)\) in which every vertex has at most \(13\) \(C_4\) fibers.
+\item The \(k\leq 13\) range is open.
 \item The base-encoding faithfulness remains the standing assumption.  The
   DRAT proofs check the emitted CNFs; the mathematical link from a hypothetical
   graph to those CNFs rests on the rooted label model and the \(P2/P3\)
@@ -761,7 +865,12 @@ The load-bearing artifacts read for this note are:
 \codepath{certificates/k15/solve_k15A_results.txt} & \(k=15\) forcing solve/check status\\
 \codepath{certificates/k15/manifest_k15B.json} & \(k=15\) six-residual hashes and clauses\\
 \codepath{certificates/k15/residual_verdict.txt} & \(k=15\) residual solve/check status (\(K_{2,3}\) via \codepath{cake_lpr})\\
-\codepath{tools/cake_lpr/PROVENANCE.md} & Formally-verified LRAT checker used for the \(K_{2,3}\) residual; note on the unsound bundled \codepath{lrat-check}\\
+\codepath{certificates/k14/rep_table_k14.json} & \(k=14\) seven-subset-orbit table and residual encoding\\
+\codepath{certificates/k14/manifest_k14A.json} & \(k=14\) forcing certificate hashes\\
+\codepath{certificates/k14/solve_k14A_results.txt} & \(k=14\) forcing solve/check status\\
+\codepath{certificates/k14/manifest_k14B.json} & \(k=14\) ten-residual hashes and clauses\\
+\codepath{certificates/k14/residual_verdict.txt} & \(k=14\) residual solve/check status (all ten via \codepath{cake_lpr})\\
+\codepath{tools/cake_lpr/PROVENANCE.md} & Formally-verified LRAT checker used for the \(K_{2,3}\) residual and all ten \(k=14\) residuals; note on the unsound bundled \codepath{lrat-check}\\
 \codepath{reports/FINAL_REPORT_R230_NONEXISTENCE.md} & R230 theorem and limitation\\
 \codepath{../literature/README.md} & Published-literature index
 \end{tabular}
