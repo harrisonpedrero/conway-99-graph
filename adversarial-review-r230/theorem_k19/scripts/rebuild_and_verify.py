@@ -165,6 +165,29 @@ def collect_cert_recipes(labels, edge_vars):
         residual = unit_clauses(gub) + [list(rc["clause"]) for rc in res["nonC4_clauses"]]
         certs.append((res["file"], residual, res.get("sha256")))
 
+    # --- k=15 Part A: 35 forcing orbits x forcing fiber x 6 defects ---
+    k15_dir = os.path.join(CERT_DIR, "k15")
+    rep15 = load_json(os.path.join(k15_dir, "rep_table_k15.json"))
+    good15 = {}
+    for orb in rep15["forcing_orbits"]:
+        lits = edge_lits(edge_vars, labels, orb["good_fiber_units"])
+        if len(lits) != 60:
+            raise ValueError(f"k15 orbit {orb['orbit_index']} has {len(lits)} good units")
+        good15[orb["orbit_index"]] = lits
+    k15a = load_json(os.path.join(k15_dir, "manifest_k15A.json"))
+    for rec in k15a["certs"]:
+        units = unit_clauses(good15[rec["orbit_index"]] + [rec["defect_literal"]])
+        certs.append((rec["file"], units, rec.get("sha256")))
+
+    # --- k=15 Part B: six residuals (K4, C6, K_{2,3}, bowtie, 2-triangles, ...) ---
+    k15b = load_json(os.path.join(k15_dir, "manifest_k15B.json"))
+    for res in k15b["residuals"]:
+        gub = edge_lits(edge_vars, labels, res["good_fiber_units"])
+        if len(gub) != 60:
+            raise ValueError(f"k15 residual {res['orbit_index']} has {len(gub)} good units")
+        residual = unit_clauses(gub) + [list(rc["clause"]) for rc in res["nonC4_clauses"]]
+        certs.append((res["file"], residual, res.get("sha256")))
+
     return certs
 
 
@@ -172,8 +195,8 @@ def main():
     base, labels, edge_vars, _ = build_base_cnf()
     base_body = clause_body(base.clauses)
     certs = collect_cert_recipes(labels, edge_vars)
-    if len(certs) != 274:
-        raise RuntimeError(f"expected 274 certificate recipes, got {len(certs)}")
+    if len(certs) != 490:
+        raise RuntimeError(f"expected 490 certificate recipes, got {len(certs)}")
 
     print(f"rebuilding {len(certs)} certificate CNFs; checking SHA-256")
     ok = bad = skip = 0
@@ -188,7 +211,7 @@ def main():
             bad += 1
             print(f"  MISMATCH {name}: {actual[:16]} != {expected[:16]}")
     print(f"MATCH={ok} MISMATCH={bad} SKIPPED={skip}")
-    passed = bad == 0 and skip == 0 and ok >= 274
+    passed = bad == 0 and skip == 0 and ok >= 490
     print("PASS" if passed else "FAIL")
     raise SystemExit(0 if passed else 1)
 

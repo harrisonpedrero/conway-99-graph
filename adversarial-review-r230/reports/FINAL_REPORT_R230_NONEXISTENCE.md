@@ -1,34 +1,49 @@
 # Conway 99-Graph: R230 Certificate — Corrected Claim
 
-## Strengthening (2026-07-05): no vertex with ≥16 Paley fibers
+## Strengthening (2026-07-05): no vertex with ≥15 Paley fibers
 
 The R230 result below excludes a *fully* Paley-perfect vertex (all 21 fibers
 C4). A subsequent certificate campaign strengthens this to: **no
-`srg(99,14,1,2)` has a vertex at which 16 or more of its 21 rooted fibers
+`srg(99,14,1,2)` has a vertex at which 15 or more of its 21 rooted fibers
 induce a C4** (conditional on the same honest rooted-base encoding). The
 mechanism is a *fiber completion lemma* — enough good C4 fibers force the
-remaining ones — reduced by symmetry to 274 tiny certificates:
+remaining ones — reduced by symmetry to 490 tiny certificates:
 6 for the 20-fiber rung, 24 for the 19-fiber rung, 72 forcing certificates for
 the four 18-fiber triple orbits plus 1 index-triangle residual, 54 forcing
 certificates for the nine 17-fiber quadruple orbit-types plus 1 C4-cycle
-residual, and 114 forcing certificates for the nineteen 16-fiber quintuple
-orbit-types plus 2 joint residuals. The 16-fiber rung splits the
-C(21,5)=20349 five-edge subgraphs into 21 S7 orbit-types: nineteen are
-per-fiber forcing (114 certs) and the other two are the 2-connected core
-orbits, C5 (the 5-cycle) and K4minusE (K4 minus one edge), each a joint
-residual. Each is independently `drat-trim`-verified, with vacuity controls
-(`base + good-fiber units only` times out at 900 s) confirming the premises
-carry the content. The 18-fiber residual is dual-confirmed by an independent
-CryptoMiniSat + XOR UNSAT; the 17-fiber C4-cycle residual is triple-verified
-(a genuine deep `drat-trim` proof — 140K core clauses, 12.5K RAT lemmas — plus
-`lrat-check` and CMS+XOR with forced Gaussian elimination); the two 16-fiber
-residuals are each `drat-trim` VERIFIED (C5: 46790 core clauses, 3036 RAT
-lemmas; K4minusE: 29778 core clauses, 1129 RAT lemmas) and re-confirmed by
-CMS+XOR with forced Gaussian elimination. See `../theorem_k19/` (theorem note,
-certificate manifests, and a reproducer that rebuilds all 274 CNFs
-byte-identically — `MATCH=274 MISMATCH=0`). This is still **not** unconditional
-nonexistence: vertices with ≤15 C4 fibers remain unexcluded and Conway's
-problem stays open.
+residual, 114 forcing certificates for the nineteen 16-fiber quintuple
+orbit-types plus 2 joint residuals, and 210 forcing certificates for the
+thirty-five 15-fiber six-subset orbit-types plus 6 joint residuals. The
+15-fiber rung splits the C(21,6)=54264 six-edge subgraphs into 41 S7
+orbit-types: thirty-five are per-fiber forcing (210 certs) and the other six
+are the 2-connected / multi-cycle core orbits — K4, C6 (the 6-cycle), K_{2,3}
+(complete bipartite), a bowtie, two disjoint triangles, and one further K4-ish
+graph — each a joint residual. Each residual is independently verified, with
+vacuity controls (`base + good-fiber units only` times out at 900 s) confirming
+the premises carry the content. The 18-fiber residual is dual-confirmed by an
+independent CryptoMiniSat + XOR UNSAT; the 17-fiber C4-cycle residual is
+double-verified (a genuine deep `drat-trim` `s VERIFIED` proof — 140K core
+clauses, 12.5K RAT lemmas — plus CMS+XOR with forced Gaussian elimination);
+the two 16-fiber residuals are each `drat-trim` VERIFIED (C5: 46790 core
+clauses, 3036 RAT lemmas; K4minusE: 29778 core clauses, 1129 RAT lemmas) and
+re-confirmed by CMS+XOR with forced Gaussian elimination. Of the six 15-fiber
+residuals, five are `drat-trim` VERIFIED (bowtie 158974 core; K4 275195 core /
+71360 RAT lemmas via `cadical --chrono=0 --unsat`; res2 36264; two-triangles
+50453; C6 235458) and the sixth — the K_{2,3} residual, the hardest instance in
+the whole ladder — is certified via `cake_lpr`, a formally-verified (HOL4/CakeML)
+LRAT proof checker whose soundness is a machine-checked theorem, `s VERIFIED UNSAT`
+on a 22.4GB LRAT proof after `drat-trim` could not check its 4.88GB DRAT proof
+locally (backward-mode OOM/timeout); `cake_lpr` is a stronger guarantee than
+`drat-trim`. (The standard bundled `lrat-check` is deliberately NOT used: an
+adversarial audit found it unsound — it trusts the solver's hints and prints
+`c VERIFIED` on a bogus proof of a satisfiable formula — so all earlier
+`lrat-check` corroboration was retracted; see `../theorem_k19/tools/cake_lpr/PROVENANCE.md`.)
+All six are also
+re-confirmed by CMS+XOR with forced Gaussian elimination. See `../theorem_k19/`
+(theorem note, certificate manifests, and a reproducer that rebuilds all 490
+CNFs byte-identically — `MATCH=490 MISMATCH=0`). This is still **not**
+unconditional nonexistence: vertices with ≤14 C4 fibers remain unexcluded and
+Conway's problem stays open.
 
 ## Verdict (corrected 2026-07-01)
 

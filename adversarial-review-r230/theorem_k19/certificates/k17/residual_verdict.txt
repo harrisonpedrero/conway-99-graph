@@ -5,9 +5,15 @@ CNF: k17_C4cycle_residual.cnf (59853782 B), SHA recipe==disk VERIFIED (manifest_
 CaDiCaL: s UNSATISFIABLE (exit 20), 700.47s, 913MB RAM, 524MB DRAT proof
 drat-trim: s VERIFIED, 803.6s, 139977/3109164 clauses in core, 404332/3451057 lemmas in core,
            30790494 resolution steps, 12532 RAT lemmas in core (GENUINE DEEP proof, 25x k18 core)
-cadical --lrat (independent re-solve): s UNSATISFIABLE (exit 20), 367.2s, 996MB LRAT proof
-lrat-check (independent format+checker): c VERIFIED, 26.88s, 6560238 added / 5534875 deleted clauses
+           ^^^ THIS drat-trim s VERIFIED is the theorem-grade certificate (drat-trim is sound).
 CMS+XOR forced-Gauss (independent solver + GF(2) layer, 734x1745 matrix): s UNSATISFIABLE, 268s
+           (independent corroboration by a second solver + the GF(2) algebraic layer.)
+
+RETRACTED (2026-07-06): an earlier revision also listed a "cadical --lrat + lrat-check c VERIFIED"
+corroboration. The committed lrat-check.exe was subsequently found UNSOUND (its "no-conflict =>
+FAILED" guard, lrat-check.c line 161, was disabled, so it accepts bogus proofs). That lrat-check
+line is therefore withdrawn. It was only ever a redundant third check; the theorem-grade
+certificate is the sound drat-trim s VERIFIED above, independently corroborated by CMS+XOR-Gauss.
 
 vacuity control base+68good-only: cadical exit 124 = TIMEOUT@900s, 1378095 conflicts (NOT fast-UNSAT)
   => the 4 nonC4 clauses carry the residual content; premises non-vacuous.

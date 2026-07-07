@@ -1,0 +1,43 @@
+k=15 residuals: 6 of the 41 six-exceptional-fiber orbits are joint residuals
+(the 2-connected / multi-cycle cores with no free fiber). The other 35 orbits
+are closed by per-fiber forcing (210 Part-A certs, solve_k15A_results.txt:
+k15A certs PASS=210 FAIL=0). Good units per config = 60 (15 good fibers x 4).
+
+Each residual = base(honest) + 60 good-fiber C4-edge units + 6 six-literal
+nonC4 disjunction clauses (one per exceptional fiber). All sha_match true
+(manifest_k15B.json). All 6 UNSAT; each independently re-confirmed UNSAT by
+CryptoMiniSat + XOR with forced Gaussian elimination.
+
+res0  bowtie (two triangles sharing a vertex) {01,02,03,04,12,34}:
+      CaDiCaL UNSAT ~140s; drat-trim s VERIFIED (158974 core clauses).
+res1  K4 (complete graph on 4 indices) {01,02,03,12,13,23}:
+      default cadical timed out; cadical --chrono=0 --unsat UNSAT;
+      drat-trim s VERIFIED (275195 core, 71360 RAT lemmas -- deep proof).
+res2  {01,02,03,12,14,34}: CaDiCaL UNSAT; drat-trim s VERIFIED (36264 core).
+res3  K_{2,3} (complete bipartite {0,4} x {1,2,3}) {01,02,03,14,24,34}:
+      THE HARDEST NODE. Resisted default cadical; cracked by cadical
+      --chrono=0 --unsat --restartint=50: s UNSATISFIABLE.
+      drat-trim could NOT check it locally: its 4.88 GB DRAT proof OOM'd
+      drat-trim's backward mode, and a re-run timed out at 3.9 h (the proof's
+      core is too large for backward resolution here). Certified instead via
+      LRAT with a FORMALLY-VERIFIED checker: cadical --lrat re-solve emitted a
+      22.4 GB LRAT proof; cake_lpr (HOL4/CakeML-verified LRAT checker)
+      s VERIFIED UNSAT (CML_HEAP_SIZE=24576). cake_lpr's soundness is a
+      machine-checked theorem, so this is a stronger guarantee than drat-trim.
+      NOTE: an earlier revision used the standard `lrat-check`, later found
+      unsound (accepts bogus proofs; it trusts solver hints). That claim is
+      retracted; cake_lpr replaces it. See tools/cake_lpr/PROVENANCE.md.
+res4  two disjoint triangles {01,02,12,34,35,45}:
+      CaDiCaL UNSAT; drat-trim s VERIFIED (50453 core).
+res5  C6 (6-cycle) {01,02,13,24,35,45}:
+      CaDiCaL UNSAT; drat-trim s VERIFIED (235458 core).
+
+Vacuity controls (base + 60 good units only, no nonC4) for all 6: each ran
+the full ~900 s with 500K-900K conflicts and NEVER reached UNSAT => timeout,
+non-vacuous. The nonC4 disjunctions carry the residual content.
+
+MEANING: once the other 15 fibers are C4, the 6 exceptional fibers of any of
+these orbits cannot all be non-C4. Therefore at least one is C4 => >=16 C4
+fibers => reduces to the k>=16 rung (locked). Combined with the 35 per-fiber
+forcing orbits, no vertex has exactly 15 C4 fibers, hence no vertex has >=15
+C4 fibers (conditional on honest base encoding). NO residual is SAT => no floor.
