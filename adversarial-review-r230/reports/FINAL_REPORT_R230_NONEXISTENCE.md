@@ -1,5 +1,20 @@
 # Conway 99-Graph: R230 Certificate — Corrected Claim
 
+## Independent method (2026-07-11): exact Gram/Euclidean certificates
+
+The entire SAT-ladder narrative below is now **also** obtained by an
+independent Euclidean-representation method whose certificates are exact
+rational and checkable in exact arithmetic — no SAT solver, no proof checker,
+no gigabyte proof bodies. It reproves most of the k≥14 ladder (and reproduces
+the whole forcing layer by exact propagation, with no search), resting only on
+the rooted counting model and the standard `theta=-4` representation rather than
+on solver/checker soundness. Six even/degree-heavy cores (`K4`, `K2,3`, `C6`,
+the C4-cycle, and two dense k14 residuals) remain SAT/LRAT-only. Full statement,
+soundness basis, and limits:
+[`GRAM_PSD_EUCLIDEAN_CERTIFICATES.md`](GRAM_PSD_EUCLIDEAN_CERTIFICATES.md). The
+SAT ladder below remains the authoritative record for the six excepted cores and
+for the rungs not yet re-covered.
+
 ## Strengthening (2026-07-05): no vertex with ≥14 Paley fibers
 
 The R230 result below excludes a *fully* Paley-perfect vertex (all 21 fibers

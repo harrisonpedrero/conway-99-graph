@@ -5,6 +5,15 @@ This directory contains a paper-grade theorem note:
 - `theorem_k19.tex`
 - `README_theorem_k19.md`
 
+> **Independent corroboration (2026-07-11).** Most of the ladder below is now
+> also certified by an exact Euclidean-representation method that uses no SAT
+> solver and no proof checker: the forcing (Part-A) layer is reproduced by
+> exact rooted propagation, and 14 of the 20 dense-core (Part-B) residuals
+> across k18–k14 carry kilobyte exact rational certificates. Six even/
+> degree-heavy cores remain SAT/LRAT-only. See
+> [`../reports/GRAM_PSD_EUCLIDEAN_CERTIFICATES.md`](../reports/GRAM_PSD_EUCLIDEAN_CERTIFICATES.md).
+> The SAT certificates below remain the authoritative record.
+
 ## Plain-English statement
 
 Assuming the repository's honest rooted CNF base faithfully encodes the rooted

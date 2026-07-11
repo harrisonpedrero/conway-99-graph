@@ -1,5 +1,22 @@
 
+# secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+
 # campaign scratch — ephemeral solver working dirs, large CNF/DRAT bodies
 adversarial-review-r230/scratchpad/
 .work/
-theorem_k19/**/__pycache__/
+__pycache__/
+
+# Obsidian vault + loose working notes that leak to the repo root
+# (kept local; the public repo carries only curated docs)
+/00_Obsidian_Graph.md
+/obsidian_graph_index.json
+/.obsidian/
+/moc_*.md
+/BDK_*.md
+/subagent_*.md
+/seidel_*.md
+/seidel_*.json

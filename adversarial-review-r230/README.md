@@ -1,5 +1,17 @@
 # R230 Adversarial Review Bundle
 
+## Where this sits in the larger picture
+
+R230 is the **earliest** result in this repository: no `srg(99,14,1,2)` has a
+fully *Paley-perfect* vertex (all 21 fibers C4). It has since been extended two
+ways — a fiber-completion **ladder** down to "no vertex with ≥14 C4 fibers"
+([`theorem_k19/README_theorem_k19.md`](theorem_k19/README_theorem_k19.md)), and
+an independent exact **Gram/Euclidean certificate** layer that reproves most of
+that ladder without any SAT solver
+([`reports/GRAM_PSD_EUCLIDEAN_CERTIFICATES.md`](reports/GRAM_PSD_EUCLIDEAN_CERTIFICATES.md)).
+This bundle documents and review-hardens the R230 base case; the two READMEs
+above carry the current frontier. Conway's problem remains open.
+
 ## Claim Under Review (corrected 2026-07-01)
 
 The R230 certificate proves, computationally: **no `srg(99,14,1,2)` contains a
@@ -10,7 +22,7 @@ by Makhnev (1988) and Keramatipour (2023), the single-Paley(9) question is open
 (Cesarz–Woldar, Remark 5.6), and proving the table itself is equivalent to
 resolving Conway's problem. An earlier revision of this bundle overclaimed
 unconditional nonexistence; see `reports/FINAL_REPORT_R230_NONEXISTENCE.md` and
-`scratchpad/ADVERSARIAL_REVIEW_FINDINGS.md` for the correction trail.
+`reports/ADVERSARIAL_REVIEW_FINDINGS.md` for the correction trail.
 
 This bundle is organized for adversarial review: it separates the mathematical
 reduction, the SAT encoding, the independent proof-check evidence, and the
