@@ -4,8 +4,9 @@
 
 R230 is the **earliest** result in this repository: no `srg(99,14,1,2)` has a
 fully *Paley-perfect* vertex (all 21 fibers C4). It has since been extended two
-ways — a fiber-completion **ladder** down to "no vertex with ≥14 C4 fibers"
-([`theorem_k19/README_theorem_k19.md`](theorem_k19/README_theorem_k19.md)), and
+ways — a fiber-completion **ladder** down to "no vertex with ≥13 C4 fibers"
+(k≥14 fully proof-checked, k=13 complete with one residual pending re-verification;
+[`theorem_k19/README_theorem_k19.md`](theorem_k19/README_theorem_k19.md)), and
 an independent exact **Gram/Euclidean certificate** layer that reproves most of
 that ladder without any SAT solver
 ([`reports/GRAM_PSD_EUCLIDEAN_CERTIFICATES.md`](reports/GRAM_PSD_EUCLIDEAN_CERTIFICATES.md)).

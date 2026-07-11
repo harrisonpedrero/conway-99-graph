@@ -1,4 +1,4 @@
-# The k>=14 theorem note
+# The k>=13 theorem note
 
 This directory contains a paper-grade theorem note:
 
@@ -17,8 +17,19 @@ This directory contains a paper-grade theorem note:
 ## Plain-English statement
 
 Assuming the repository's honest rooted CNF base faithfully encodes the rooted
-`srg(99,14,1,2)` equations, no vertex of a Conway 99-graph can have 14 or more
+`srg(99,14,1,2)` equations, no vertex of a Conway 99-graph can have 13 or more
 of its 21 rooted fibers inducing the Paley/C4 pattern.
+
+> **Evidence bar (2026-07-11).** The k>=14 portion is fully proof-checked and
+> reproducible from this tree. The k=13 extension is complete and was
+> cloud-verified (all 22 dense-core residuals UNSAT, 0 SAT, 450 forcing
+> certificates), but its retained proof evidence is uneven: 13 residuals carry
+> `cake_lpr` logs, 8 carry retained multi-GB LRAT proofs (re-checkable), and
+> **one residual (res1) has only a verdict line — its proof body was not
+> retained and a re-verification is queued.** See the k=13 entry under "What is
+> machine-certified"; the honest per-residual state is in
+> `certificates/k13/residual_verdict.txt`. Until res1 is re-verified, the fully
+> proof-backed claim is k>=14 and the k=13 claim carries that one caveat.
 
 The key mechanism is fiber completion. If 20 fibers at a root are C4, the last
 fiber is forced to be C4. The k=19 extension says that if 19 fibers are C4, the
@@ -72,6 +83,17 @@ per-fiber forced by BCP; instead, each is a joint residual instance proving its
 seven exceptional fibers cannot all be non-C4. All ten are UNSAT (no residual is
 SAT, so no floor is reached), reducing to the k=15 rung. Hence 14 C4 fibers force
 at least 15 C4 fibers, and the k=15 result applies.
+
+The k=13 extension splits on the 97 orbit-types of the eight exceptional fibers.
+Seventy-five orbit-types are per-fiber forced: in each, one exceptional fiber has
+all six of its defects refuted by the base plus the 52 good-fiber units (13 good
+fibers x 4 = 52). The other 22 are joint residuals — the dense 8-edge 2-connected
+cores with no free fiber — each proving its eight exceptional fibers cannot all
+be non-C4. All 22 are UNSAT (no residual is SAT, so no floor is reached),
+reducing to the k=14 rung. Hence 13 C4 fibers force at least 14 C4 fibers, and
+the k=14 result applies. (One residual, res1, is solved and was cloud-verified
+but its proof body was not retained; its re-verification is queued — see the
+evidence bar above.)
 
 ## What is machine-certified
 
@@ -147,8 +169,26 @@ at least 15 C4 fibers, and the k=15 result applies.
   checking of proofs up to 28GB would be infeasible, all ten are certified via
   LRAT with `cake_lpr`, the formally-verified (HOL4/CakeML) LRAT proof checker
   (`s VERIFIED UNSAT` each; see `tools/cake_lpr/PROVENANCE.md`).
+- k=13 Part A: 450 forcing certificates for the seventy-five forcing eight-subset
+  orbit-types, all `s UNSATISFIABLE` by CaDiCaL and verified; solve log line
+  `k13A certs: PASS=450 FAIL=0` (`certificates/k13/solve_k13A_results.txt`).
+- k=13 Part B: 22 joint residual CNFs, each base + 52 good-fiber units + eight
+  six-literal non-C4 clauses, for the 22 dense 8-edge 2-connected core orbits. All
+  22 rebuild byte-identically from the honest base (`manifest_k13B.json`,
+  `rebuild_all_match: true`; every `disk_sha256 == sha256`), and all 22 are
+  `s UNSATISFIABLE` by CaDiCaL (`--chrono=0 --unsat --restartint=50`). No residual
+  is SAT, so no floor is reached at k=13. The cloud run recorded `s VERIFIED
+  UNSAT` for all 22. **Retained proof evidence is uneven (stated openly in
+  `certificates/k13/residual_verdict.txt`):** 13 residuals keep a `cake_lpr`
+  `s VERIFIED UNSAT` log; 8 keep the multi-GB LRAT proof (re-checkable); and one,
+  **res1, has only the verdict line — its proof body was not retained, and a
+  targeted re-solve + `cake_lpr` re-verification is queued.** Until res1 is
+  re-verified it is below the fully-proof-backed bar; the k>=14 rungs above are
+  unaffected.
 - Total local completion instances in `scripts/rebuild_and_verify.py`: 830
-  SHA-checked recipes.
+  SHA-checked recipes (k>=14; the k=13 rung's 450 Part-A certs and 22 rebuilt
+  residuals are recorded in `certificates/k13/` but not yet wired into that
+  reproducer).
 - Vacuity controls: removing the good-fiber units gives `UNKNOWN(timeout)` at
   600 seconds for the k=20 control and both k=19 controls, so the good-fiber
   premises carry the content. For the k=18 residual, base + 72 good units
@@ -177,8 +217,11 @@ at least 15 C4 fibers, and the k=15 result applies.
 ## What is not claimed
 
 This is not an unconditional proof that `srg(99,14,1,2)` does not exist.
-Conway's problem remains open. Vertices with 13 or fewer C4 fibers are not
-excluded. The k<=13 range remains open.
+Conway's problem remains open. Vertices with 12 or fewer C4 fibers are not
+excluded. The k<=12 range remains open. Within the k=13 rung, residual res1's
+proof evidence is not yet restored (see the evidence bar and the k=13 Part B
+note); the fully proof-backed frontier is therefore k>=14, with k>=13 complete
+modulo that single re-verification.
 
 The CNF proof checking verifies the emitted CNFs. The mathematical bridge from
 a hypothetical graph to those CNFs rests on the honest rooted base equations:

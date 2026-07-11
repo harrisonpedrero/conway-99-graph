@@ -64,9 +64,18 @@ adversarial audit found it unsound — it trusts the solver's hints and prints
 All six are also
 re-confirmed by CMS+XOR with forced Gaussian elimination. See `../theorem_k19/`
 (theorem note, certificate manifests, and a reproducer that rebuilds all 830
-CNFs byte-identically — `MATCH=830 MISMATCH=0`). This is still **not**
-unconditional nonexistence: vertices with ≤13 C4 fibers remain unexcluded and
-Conway's problem stays open.
+CNFs byte-identically — `MATCH=830 MISMATCH=0`).
+
+A further rung (2026-07-11) extends this to **no vertex with ≥13 C4 fibers**: the
+k=13 split has 75 per-fiber forcing orbit-types (450 certificates, PASS=450) and
+22 dense 8-edge joint residuals, all UNSAT with no floor, rebuilt byte-identically
+(`certificates/k13/manifest_k13B.json`). The k≥14 rungs are fully proof-checked;
+the k=13 rung was cloud-verified but one residual (res1) has only a verdict line
+with its proof not retained and a re-verification queued, so the fully
+proof-backed frontier is k≥14 and k≥13 carries that one caveat
+(`certificates/k13/residual_verdict.txt`). This is still **not** unconditional
+nonexistence: vertices with ≤12 C4 fibers remain unexcluded and Conway's problem
+stays open.
 
 ## Verdict (corrected 2026-07-01)
 

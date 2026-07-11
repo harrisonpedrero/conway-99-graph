@@ -1,0 +1,54 @@
+k=13 residuals: 22 of the 97 eight-exceptional-fiber orbits are joint residuals
+(dense 8-edge 2-connected cores). The other 75 orbits close by per-fiber forcing
+(450 Part-A certs, solve_k13A_results.txt: PASS=450 FAIL=0). Good units per config = 52.
+
+Each residual = base + 52 good-fiber C4-edge units + 8 six-literal nonC4 clauses.
+All 22 CNFs rebuild byte-identically from honest_flip_cnf.build_base_cnf (rebuild_all_match
+= true in manifest_k13B.json; every disk_sha256 == rebuilt sha256).
+All 22 solved UNSATISFIABLE (cadical --chrono=0 --unsat --restartint=50). NO residual is
+SAT => no floor at k13. The cloud run recorded s VERIFIED UNSAT for all 22 (SUMMARY.txt).
+
+VERIFICATION-EVIDENCE STATE (honest; the large LRAT proof bodies live in the ignored
+working area, as for the k14 rung; retained evidence differs per residual):
+  - 13 residuals: cake_lpr 's VERIFIED UNSAT' log retained locally (formally-verified
+    HOL4/CakeML LRAT checker; see ../tools/cake_lpr/PROVENANCE.md).
+  - 8 residuals: solved UNSAT with the multi-GB LRAT proof retained locally and
+    re-checkable by cake_lpr; the cloud cake_lpr log was not retained after the node was
+    repurposed. Proof present => re-verifiable on demand.
+  - 1 residual (res1): cloud-verified (SUMMARY 's VERIFIED UNSAT') but its proof body
+    was cleaned from the compute node and not retained locally. *** ONLY THE VERDICT LINE
+    SURVIVES *** -- a targeted re-solve + cake_lpr re-verification is queued to restore it.
+    Until that completes, res1 is below the k14 evidence bar; this is stated openly.
+
+Per-residual (orbit: edges  solve_s  verdict  evidence):
+  res0: [[0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [1, 3], [4, 5]]  661.5s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res1: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4], [2, 3]]  cloud(config-A)  s UNSATISFIABLE  [verdict_only]
+  res2: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 5], [4, 5]]  25684.2s  s UNSATISFIABLE  [lrat_proof_retained]
+  res3: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [2, 4], [3, 4]]  19421.5s  s UNSATISFIABLE  [lrat_proof_retained]
+  res4: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [2, 5], [4, 5]]  13448.5s  s UNSATISFIABLE  [lrat_proof_retained]
+  res5: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 5], [2, 5], [3, 4]]  438.6s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res6: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 5], [3, 4], [3, 5]]  21129.8s  s UNSATISFIABLE  [lrat_proof_retained]
+  res7: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 5], [3, 5], [4, 5]]  83.0s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res8: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [3, 5], [4, 6], [5, 6]]  336.4s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res9: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 5], [2, 5], [3, 5], [4, 5]]  19701.4s  s UNSATISFIABLE  [lrat_proof_retained]
+  res10: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 5], [2, 5], [3, 6], [4, 6]]  2101.6s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res11: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 4], [3, 5], [4, 5]]  26513.9s  s UNSATISFIABLE  [lrat_proof_retained]
+  res12: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [4, 5], [4, 6], [5, 6]]  43.6s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res13: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 4], [2, 5], [3, 4], [3, 5]]  27988.1s  s UNSATISFIABLE  [lrat_proof_retained]
+  res14: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 4], [3, 4], [3, 5], [4, 5]]  5376.6s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res15: [[0, 1], [0, 2], [0, 3], [1, 2], [1, 4], [3, 5], [4, 6], [5, 6]]  550.1s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res16: [[0, 1], [0, 2], [0, 3], [1, 2], [3, 4], [3, 5], [4, 6], [5, 6]]  347.6s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res17: [[0, 1], [0, 2], [0, 3], [1, 2], [3, 4], [4, 5], [4, 6], [5, 6]]  130.5s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res18: [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [2, 5], [3, 4]]  20515.0s  s UNSATISFIABLE  [lrat_proof_retained]
+  res19: [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [3, 6], [5, 6]]  339.3s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res20: [[0, 1], [0, 2], [0, 3], [1, 4], [2, 4], [3, 5], [4, 6], [5, 6]]  2040.0s  s UNSATISFIABLE  [cake_lpr_log_retained]
+  res21: [[0, 1], [0, 2], [0, 3], [1, 4], [2, 5], [3, 6], [4, 5], [4, 6]]  1635.6s  s UNSATISFIABLE  [cake_lpr_log_retained]
+
+Vacuity controls (base+52good only, no nonC4): base+good-only CNFs time out without
+reaching UNSAT (k13_res*_control.cnf), so the nonC4 clauses carry the residual content.
+
+MEANING: once the other 13 fibers are C4, the 8 exceptional fibers of any of these orbits
+cannot all be non-C4 => at least one is C4 => >=14 C4 fibers => reduces to the k>=14 rung
+(locked). Combined with the 75 per-fiber forcing orbits, no vertex has exactly 13 C4 fibers,
+hence no vertex has >=13 C4 fibers (conditional on honest base encoding). Conway's problem
+remains open; res1's proof restoration is the one open evidence item at this rung.

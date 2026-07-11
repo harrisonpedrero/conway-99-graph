@@ -67,9 +67,12 @@ residuals that resist are exactly the even/degree-heavy cores:
 k17 C4-cycle,  k15 K4,  k15 K2,3,  k15 C6,  k14 res1,  k14 res6.
 ```
 
-These six still rest on their verified SAT/LRAT certificates. The descent below
-k=14 (k13 downward) is being screened and certified the same way and is
-ongoing.
+These six still rest on their verified SAT/LRAT certificates. The SAT ladder
+itself has since reached k=13 (all 22 dense-core residuals UNSAT, 450 forcing
+certificates, no floor; one residual's proof is being re-verified — see
+`../theorem_k19/README_theorem_k19.md`). The Gram screen has been run over the
+residual orbits of k13 down through k8 as well, with exact certificates for the
+kills recorded in the working area; that descent is ongoing.
 
 **3. A global first-moment survivor contains no graph.**
 An exact rational point survives the uncoupled 99-vertex first-moment Fantope
@@ -108,8 +111,8 @@ person can re-check in exact arithmetic.
 ## What it does NOT prove
 
 - Nonexistence of `srg(99,14,1,2)`. Conway's problem stays open.
-- Anything about vertices with 13 or fewer C4 fibers (the descent there is
-  ongoing, not complete).
+- Anything about vertices with 12 or fewer C4 fibers (the SAT ladder reached
+  k=13; the descent below that is ongoing, not complete).
 - The six resisting cores by this method — they remain SAT/LRAT-certified only.
 - Realizability: a PSD-feasible or fractional survivor is not a graph.
 - Independence from the counting model, or a third-party replay. The exact

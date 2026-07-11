@@ -18,10 +18,13 @@ vertices. A fiber is either a good `C4` (Paley) pattern or "exceptional".
 **Established (conditional on the rooted counting model faithfully describing a
 hypothetical graph):**
 
-- **No vertex has 14 or more C4 fibers.** A fiber-completion ladder reduces
-  this to small certified cases, rung by rung from 20 fibers down to 14. This
+- **No vertex has 13 or more C4 fibers.** A fiber-completion ladder reduces
+  this to small certified cases, rung by rung from 20 fibers down to 13. This
   is the SAT certificate ladder; see
   [`adversarial-review-r230/theorem_k19/README_theorem_k19.md`](adversarial-review-r230/theorem_k19/README_theorem_k19.md).
+  The k≥14 rungs are fully proof-checked; the k=13 rung is complete and
+  cloud-verified with one residual (res1) whose proof is being re-verified, so
+  the fully proof-backed frontier is k≥14 and k≥13 carries that one caveat.
 - Most of that ladder is now **also** proved by an independent
   Euclidean-representation method whose certificates are tiny and checkable in
   exact rational arithmetic — no SAT solver, no proof-checker trust, no
@@ -33,7 +36,7 @@ hypothetical graph):**
   [`adversarial-review-r230/reports/FINAL_REPORT_R230_NONEXISTENCE.md`](adversarial-review-r230/reports/FINAL_REPORT_R230_NONEXISTENCE.md).
 
 **Not established:** existence or nonexistence of the graph; anything about
-vertices with 13 or fewer C4 fibers (that descent is in progress); a
+vertices with 12 or fewer C4 fibers (that descent is in progress); a
 third-party clean-machine replay.
 
 > An early revision of this bundle overclaimed unconditional nonexistence. An
